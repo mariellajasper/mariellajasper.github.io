@@ -58,7 +58,7 @@
     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
     <section>
         <div class="chart-description">
-            <h2>Task 1: Hosting and Displaying 2 Basic Charts</h2>
+            <h2>Task 1: Hosting - Display Charts in Your Own Site</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                 The first chart demonstrates GDP per capita for 6 countries using a simple bar chart.
             </p>
@@ -73,9 +73,10 @@
         </div>
         <figure id="Location2"></figure> 
     </section>
+    
     <section>
         <div class="chart-description">
-            <h2>Task 2: Creating Visualisations</h2>
+            <h2>Task 2: Building - Creating Visualisations</h2>
             <p> 
                 This line graph uses data from the Economics Observatory API.
             </p>
@@ -91,6 +92,24 @@
         <figure id="Location4"></figure> 
     </section>
     
+    <section>
+        <div class="chart-description">
+            <h2>Task 3: Debating - Use a Visualisation in EconomicPolicy Commentary</h2>
+            <p> 
+                Has the new government got its priorities right for kick-starting Britain? Productivity is currently low - should be a priority to increase. 
+            </p>
+        </div>
+        <figure id="Location5"></figure>
+    </section>
+    <section>
+        <div class="chart-description">
+            <p>
+                This line graph uses data from the Economics Observatory API.
+            </p>
+        </div>
+        <figure id="Location6"></figure> 
+    </section>
+    
 
     <!-- This is a script, it's a way to run JavaScript code on the page -->
     <script>
@@ -104,6 +123,10 @@
         vegaEmbed('#Location3', figure_3_spec)
         let figure_4_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/wk2_chart2.json";
         vegaEmbed('#Location4', figure_4_spec)
+        let figure_5_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/wk3_chart1.json";
+        vegaEmbed('#Location5', figure_5_spec)
+        let figure_6_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/wk3_chart2.json";
+        vegaEmbed('#Location6', figure_6_spec)
     </script>
 
 
