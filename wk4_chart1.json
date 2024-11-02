@@ -1,0 +1,137 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 300,
+  "config": {
+    "background": "#f0f8ff",
+    "view": {"stroke": null},
+    "axis": {"labelColor": "#333", "titleColor": "#333"}
+  },
+  "title": {
+    "text": "AVERAGE STAMP DUTY SET TO SOAR UNDER LABOUR",
+    "fontSize": 23,
+    "fontStyle": "bold",
+    "anchor": "start",
+    "color": "black",
+    "style": "background-color: black",
+    "backgroundColor": "black"
+  },
+  "data": {
+    "values": [
+      {"year": 2005, "value": 1500, "type": "beforeholiday"},
+      {"year": 2006, "value": 1600, "type": "beforeholiday"},
+      {"year": 2007, "value": 1700, "type": "beforeholiday"},
+      {"year": 2008, "value": 1200, "type": "beforeholiday"},
+      {"year": 2009, "value": 1300, "type": "beforeholiday"},
+      {"year": 2010, "value": 1400, "type": "beforeholiday"},
+      {"year": 2011, "value": 1500, "type": "beforeholiday"},
+      {"year": 2012, "value": 1600, "type": "beforeholiday"},
+      {"year": 2013, "value": 1800, "type": "beforeholiday"},
+      {"year": 2014, "value": 2000, "type": "beforeholiday"},
+      {"year": 2015, "value": 1700, "type": "beforeholiday"},
+      {"year": 2016, "value": 2200, "type": "beforeholiday"},
+      {"year": 2017, "value": 2300, "type": "beforeholiday"},
+      {"year": 2018, "value": 2500, "type": "beforeholiday"},
+      {"year": 2019, "value": 2600, "type": "beforeholiday"},
+      {"year": 2020, "value": 2400, "type": "beforeholiday"},
+      {"year": 2021, "value": 2500, "type": "afterholiday"},
+      {"year": 2022, "value": 4100, "type": "afterholiday"},
+      {"year": 2023, "value": 5400, "type": "afterholiday"},
+      {"year": 2024, "value": 2300, "type": "afterholiday"},
+      {"year": 2025, "value": 6000, "type": "afterholiday"}
+    ]
+  },
+  "layer": [
+    {
+      "data": {"values": [{"start": 2024, "end": 2025}]},
+      "mark": {"type": "rect", "color": "#4682b4", "opacity": 0.3},
+      "encoding": {
+        "x": {"field": "start"},
+        "x2": {"field": "end"},
+        "y": {"value": 0},
+        "y2": {"value": 300}
+      }
+    },
+    {
+      "transform": [{"filter": "datum.type == 'beforeholiday'"}],
+      "mark": {"type": "line", "color": "red", "strokeWidth": 5},
+      "encoding": {
+        "x": {
+          "field": "year",
+          "axis": {
+            "labelAngle": 0,
+            "labelFontSize": 14,
+            "labelFontStyle": "bold",
+            "values": [2005, 2010, 2015, 2020, 2025],
+            "tickSize": 10,
+            "tickColor": "white"
+          },
+          "title": null
+        },
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title": null,
+          "axis": {
+            "domain": false,
+            "labelFontSize": 14,
+            "values": [0, 2000, 4000, 6000],
+            "tickSize": 5,
+            "tickColor": "white"
+          }
+        },
+        "scale": {"domain": [0, 6000]}
+      }
+    },
+    {
+      "transform": [{"filter": "datum.type == 'afterholiday'"}],
+      "mark": {"type": "line", "color": "red", "strokeWidth": 5},
+      "encoding": {
+        "x": {"field": "year"},
+        "y": {"field": "value", "type": "quantitative"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5,
+        "fontSize": 12
+      },
+      "encoding": {
+        "x": {"value": 430},
+        "y": {"value": 210},
+        "text": {"value": "Stamp duty"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5,
+        "fontSize": 12
+      },
+      "encoding": {
+        "x": {"value": 437},
+        "y": {"value": 225},
+        "text": {"value": "holiday"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 5,
+        "fontSize": 12
+      },
+      "encoding": {
+        "x": {"value": 528},
+        "y": {"value": 10},
+        "text": {"value": "Forecast"}
+      }
+    }
+  ]
+}
