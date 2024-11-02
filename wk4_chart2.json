@@ -1,20 +1,19 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Average Stamp Duty in £, Forecast 2024-25",
+    "fontSize": 15,
+    "fontStyle": "bold",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black",
+    "style": "background-color: black",
+    "backgroundColor": "black"
+  },
   "width": 600,
   "height": 300,
-  "config": {
-    "view": {"stroke": null},
-    "axis": {"labelColor": "#333", "titleColor": "#000000"}
-  },
-  "title": {
-    "text": "Average Stamp Duty Set to Soar Under Labour",
-    "subtitle": "Forecast 2024-2025",
-    "subtitleFontSize": 15,
-    "fontSize": 22,
-    "fontStyle": "bold",
-    "anchor": "start",
-    "color": "black"
-  },
+  "config": {"axis": {"labelColor": "#333"}},
   "data": {
     "values": [
       {"year": 2005, "value": 1500, "type": "beforeholiday"},
@@ -94,8 +93,8 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
-        "dx": 5,
-        "fontSize": 12
+        "fontSize": 12,
+        "dx": 5
       },
       "encoding": {
         "x": {"value": 430},
@@ -107,9 +106,9 @@
       "mark": {
         "type": "text",
         "align": "left",
+        "fontSize": 12,
         "baseline": "middle",
-        "dx": 5,
-        "fontSize": 12
+        "dx": 5
       },
       "encoding": {
         "x": {"value": 437},
