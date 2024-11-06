@@ -1,53 +1,56 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Global GDP",
+    "text": "Gender Inequality Index",
     "subtitle": [
-      "GDP: per capita PPP (international $)",
-      "Source: World Bank 2021",
-      ""
+      "2019 Rankings; Source: Wikipedia",
+      "Natural Earth Projection"
     ],
-    "fontSize": 16,
-    "subtitleFontSize": 12,
-    "subtitleFontWeight": "lighter",
-    "anchor": "middle"
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
   },
-  "description": "2021 World Bank data, GDP per capita in current international $ and converted to purchasing power parity. Grey countries have missing data.",
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "width": 600,
+  "height": 300,
   "data": {
-    "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/map_world.geojson",
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/map_world.geojson",
     "format": {"property": "features"}
   },
-  "width": 600,
-  "height": 330,
+  "projection": {"type": "naturalEarth1"},
   "transform": [
     {
       "lookup": "properties.ISO3",
       "from": {
-        "key": "ISO3",
-        "fields": ["country", "value"],
         "data": {
-          "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/global_gdp_perCapita_2021.csv"
-        }
+          "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/gii_wikipedia_clean.csv"
+        },
+        "key": "ISO3",
+        "fields": ["value", "Country"]
       }
     }
   ],
-  "projection": {
-    "type": "naturalEarth1",
-    "scale": 125,
-    "translate": [285, 180]
-  },
-  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.3},
-  "encoding": {
-    "color": {
-      "condition": {"value": "lightgrey", "test": "!datum['value']"},
-      "field": "value",
-      "type": "quantitative",
-      "legend": {"title": "", "format": "$,d"},
-      "scale": {"type": "log", "scheme": "viridis", "reverse": false}
+  "layer": [
+    {
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.1},
+      "transform": [{"filter": "datum.properties.ISO3 != 'ATA'"}],
+      "encoding": {"color": {"value": "lightgrey"}}
     },
-    "tooltip": [
-      {"field": "country", "title": "Country"},
-      {"field": "value", "title": "", "format": "$,d"}
-    ]
-  }
+    {
+      "mark": {"type": "geoshape"},
+      "encoding": {
+        "color": {
+          "field": "value",
+          "type": "quantitative",
+          "legend": {"title": "", "values": ["0", "0.2", "0.4", "0.6", "0.8"]},
+          "scale": {"scheme": "viridis", "reverse": false}
+        },
+        "tooltip": [
+          {"field": "Country", "title": "Country"},
+          {"field": "value", "title": ""}
+        ]
+      }
+    }
+  ]
 }
