@@ -1,12 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "ycnc to ycno ONS API (November 2024) for UK population. Uses newer API format where we define an enitre 'URI' to that time series. We can find this by taking the URL endpoint of the series when viewed on the ONS website. E.g., this API pulls in data from this series: https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/timeseries/ycnc/lms.",
+  "description": "ONS API (November 2024) for UK population. Uses newer API format where we define an enitre 'URI' to that time series. We can find this by taking the URL endpoint of the series when viewed on the ONS website. E.g., this API pulls in data from this series: https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/timeseries/ycni/lms.",
   "data": {
-    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/ONS_unemployment_data_ycnc.json",
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/ONS_unemployment_data_ycni.json",
     "format": {"property": "years"}
   },
   "title": {
-    "text": "ILO Unemployment Rate, North East",
+    "text": "ILO Unemployment Rate, London",
     "subtitle": "%, Seasonally Adjusted | Source: ONS API",
     "fontSize": 10,
     "subtitleFontStyle": "italic",
@@ -14,6 +14,7 @@
     "anchor": "start",
     "color": "black"
   },
+  "transform": [{"filter": "datum['value'] != ''"}],
   "width": 200,
   "height": 200,
   "mark": {"type": "line", "color": "red", "strokeWidth": 2, "opacity": 1},
