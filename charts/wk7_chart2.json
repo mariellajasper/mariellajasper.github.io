@@ -1,0 +1,106 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "International Territorial Level Map, to change regional hierarchy: replace x in 'ITLx_2021_20m' in URL, and 'ITLx21NM' in tooltip, with 1, 2 or 3.",
+  "title": {
+    "text": "Migration by Federal State, Germany",
+    "subtitle": ["Mercator Projection | Source: GENESIS-Online Destatis", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "width": 300,
+  "height": 300,
+  "params": [
+    {
+      "name": "Select",
+      "value": "Net Migration",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Net Migration",
+          "German Nationals Net Migration",
+          "Foreign Nationals Net Migration"
+        ]
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/germany_map.geo.json",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "mercator"},
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "key": "State",
+        "fields": [
+          "State",
+          "German Nationals Net Migration",
+          "Foreign Nationals Net Migration",
+          "Net Migration"
+        ],
+        "data": {
+          "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/germany_migration_data.csv"
+        }
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "geoshape"},
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "Select === 'Net Migration'",
+            "field": "Net Migration",
+            "type": "quantitative",
+            "legend": {"title": "", "orient": "right"},
+            "scale": {"scheme": "viridis", "reverse": false}
+          },
+          "value": null
+        },
+        "tooltip": [
+          {"field": "State", "title": "State"},
+          {"field": "Net Migration"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "geoshape"},
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "Select === 'German Nationals Net Migration'",
+            "field": "German Nationals Net Migration",
+            "type": "quantitative"
+          },
+          "value": null
+        },
+        "tooltip": [
+          {"field": "State", "title": "State"},
+          {"field": "German Nationals Net Migration"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "geoshape"},
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "Select === 'Foreign Nationals Net Migration'",
+            "field": "Foreign Nationals Net Migration",
+            "type": "quantitative"
+          },
+          "value": null
+        },
+        "tooltip": [
+          {"field": "State", "title": "State"},
+          {"field": "Foreign Nationals Net Migration"}
+        ]
+      }
+    }
+  ]
+}
