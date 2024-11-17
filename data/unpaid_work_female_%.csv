@@ -1,4 +1,4 @@
-country,country_code,year,value
+country,ISO3,year,value
 Albania,ALB,2011,21.73611
 Algeria,DZA,2012,21.66667
 Argentina,ARG,2013,23.41864
