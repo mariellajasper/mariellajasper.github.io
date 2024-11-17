@@ -1,179 +1,90 @@
-country,most_recent_value,year
-Albania,21.73611,2011
-Algeria,21.66667,2012
-Argentina,23.41864,2013
-Armenia,21.65833,2008
-Australia,20.83333,2006
-Austria,19.06954,2009
-Azerbaijan,25.41667,2008
-Belarus,19.16667,2015
-Belgium,15.90278,2013
-Bhutan,15,2015
-Bolivia,23.11926,2001
-Brazil,11.60814,2017
-Bulgaria,18.47222,2010
-Cambodia,12.5,2004
-Cameroon,15.82086,2014
-Canada,14.58333,2016
-Chile,22.10355,2015
-China,15.34722,2018
-Colombia,5.02051,2017
-Costa Rica,22.14571,2017
-Cuba,21,2016
-Denmark,15.625,2009
-Dominican Republic,16.70887,2016
-Ecuador,19.74505,2012
-"Egypt, Arab Rep.",22.36111,2015
-El Salvador,20.21275,2017
-Estonia,17.22222,2010
-Ethiopia,19.30556,2013
-Fiji,15.15812,2016
-Finland,15.20417,2010
-France,15.77314,2010
-Germany,16.4,2013
-Ghana,15.48611,2009
-Greece,18.125,2014
-Guatemala,19.48273,2017
-Honduras,17.29571,2009
-"Hong Kong SAR, China",10.83333,2013
-Hungary,17.27674,2010
-"Iran, Islamic Rep.",21.04167,2009
-Iraq,24.09722,2007
-Ireland,20.55556,2005
-Italy,20.4,2014
-Japan,15.13889,2016
-Kazakhstan,18.95833,2018
-"Korea, Rep.",14.09722,2019
-Kyrgyz Republic,16.80556,2015
-Lao PDR,13.6038,2017
-Latvia,18.26389,2003
-Lesotho,15.55556,2003
-Liberia,6.29234,2010
-Lithuania,18.68056,2003
-Luxembourg,14.44444,2014
-Malawi,8.68056,2005
-Malaysia,19.09722,2003
-Malta,18.75,2002
-Mauritius,18.95833,2003
-Mexico,27.76825,2019
-Moldova,20.13841,2012
-Mongolia,19.29129,2019
-Morocco,20.83333,2012
-Netherlands,14.72222,2012
-New Zealand,18.05556,2010
-North Macedonia,15.41667,2015
-Norway,15.30833,2011
-Oman,18.88889,2008
-Pakistan,19.86111,2007
-Panama,17.95164,2011
-Paraguay,14.52502,2016
-Peru,23.56031,2010
-Poland,18.2625,2013
-Portugal,17.81135,2015
-Qatar,8.19444,2013
-Romania,19.02778,2012
-Russian Federation,18.40278,2014
-Serbia,19.16756,2015
-Slovenia,20.55556,2001
-South Africa,15.55556,2010
-Spain,18.95833,2010
-Sweden,16.04201,2011
-Switzerland,16.83333,2016
-Tanzania,16.45833,2014
-Thailand,11.83333,2015
-Tunisia,21.94444,2006
-Turkiye,19.15117,2015
-Uganda,14.58333,2018
-United Kingdom,12.65278,2015
-United States,15.33333,2019
-Uruguay,19.87475,2013
-West Bank and Gaza,20.13889,2013
-Albania,3.47222,2011
-Algeria,3.75,2012
-Argentina,9.2486,2013
-Armenia,4.37083,2008
-Australia,11.38889,2006
-Austria,10.05396,2009
-Azerbaijan,8.88889,2008
-Belarus,9.51389,2015
-Belgium,10.06944,2013
-Bhutan,5.90278,2015
-Bolivia,12.13362,2001
-Brazil,5.13276,2017
-Bulgaria,9.23611,2010
-Cambodia,1.25,2004
-Cameroon,4.56784,2014
-Canada,9.58333,2016
-Chile,9.85396,2015
-China,5.90278,2018
-Colombia,2.92763,2017
-Costa Rica,8.37858,2017
-Cuba,12.47024,2016
-Denmark,11.25,2009
-Dominican Republic,3.78561,2016
-Ecuador,4.72192,2012
-"Egypt, Arab Rep.",2.43056,2015
-El Salvador,7.02928,2017
-Estonia,10.76389,2010
-Ethiopia,6.59722,2013
-Fiji,5.19476,2016
-Finland,10.49167,2010
-France,9.49464,2010
-Germany,10.4,2013
-Ghana,4.58333,2009
-Greece,7.01389,2014
-Guatemala,2.60537,2017
-Honduras,4.31393,2009
-"Hong Kong SAR, China",3.33333,2013
-Hungary,7.9796,2010
-"Iran, Islamic Rep.",5.20833,2009
-Iraq,4.16667,2007
-Ireland,8.95833,2005
-Italy,8.4,2014
-Japan,3.125,2016
-Kazakhstan,6.25,2018
-"Korea, Rep.",4.375,2019
-Kyrgyz Republic,9.51389,2015
-Lao PDR,10.06278,2017
-Latvia,9.09722,2003
-Lesotho,6.18056,2003
-Liberia,2.57656,2010
-Lithuania,8.95694,2003
-Luxembourg,7.08333,2014
-Malawi,1.25,2005
-Malaysia,5.97222,2003
-Malta,7.01389,2002
-Mauritius,4.79167,2003
-Mexico,11.11167,2019
-Moldova,11.2725,2012
-Mongolia,7.59633,2019
-Morocco,2.98611,2012
-Netherlands,9.23611,2012
-New Zealand,10.55556,2010
-North Macedonia,5.41667,2015
-Norway,12.33333,2011
-Oman,7.5,2008
-Pakistan,1.80556,2007
-Panama,7.57184,2011
-Paraguay,4.27041,2016
-Peru,8.94605,2010
-Poland,9.92917,2013
-Portugal,10.2414,2015
-Qatar,2.22222,2013
-Romania,9.375,2012
-Russian Federation,8.125,2014
-Serbia,8.69038,2015
-Slovenia,11.11111,2001
-South Africa,6.45833,2010
-Spain,8.61111,2010
-Sweden,12.82797,2011
-Switzerland,10.80417,2016
-Tanzania,4.23611,2014
-Thailand,3.75,2015
-Tunisia,2.70833,2006
-Turkiye,3.70575,2015
-Uganda,7.5,2018
-United Kingdom,6.96528,2015
-United States,9.66667,2019
-Uruguay,8.37738,2013
-West Bank and Gaza,2.98611,2013
+country,country_code,year,value
+Albania,ALB,2011,21.73611
+Algeria,DZA,2012,21.66667
+Argentina,ARG,2013,23.41864
+Armenia,ARM,2008,21.65833
+Australia,AUS,2006,20.83333
+Austria,AUT,2009,19.06954
+Azerbaijan,AZE,2008,25.41667
+Belarus,BLR,2015,19.16667
+Belgium,BEL,2013,15.90278
+Bhutan,BTN,2015,15
+Bolivia,BOL,2001,23.11926
+Brazil,BRA,2017,11.60814
+Bulgaria,BGR,2010,18.47222
+Cambodia,KHM,2004,12.5
+Cameroon,CMR,2014,15.82086
+Canada,CAN,2016,14.58333
+Chile,CHL,2015,22.10355
+China,CHN,2018,15.34722
+Colombia,COL,2017,5.02051
+Costa Rica,CRI,2017,22.14571
+Cuba,CUB,2016,21
+Denmark,DNK,2009,15.625
+Dominican Republic,DOM,2016,16.70887
+Ecuador,ECU,2012,19.74505
+"Egypt, Arab Rep.",EGY,2015,22.36111
+El Salvador,SLV,2017,20.21275
+Estonia,EST,2010,17.22222
+Ethiopia,ETH,2013,19.30556
+Fiji,FJI,2016,15.15812
+Finland,FIN,2010,15.20417
+France,FRA,2010,15.77314
+Germany,DEU,2013,16.4
+Ghana,GHA,2009,15.48611
+Greece,GRC,2014,18.125
+Guatemala,GTM,2017,19.48273
+Honduras,HND,2009,17.29571
+"Hong Kong SAR, China",HKG,2013,10.83333
+Hungary,HUN,2010,17.27674
+"Iran, Islamic Rep.",IRN,2009,21.04167
+Iraq,IRQ,2007,24.09722
+Ireland,IRL,2005,20.55556
+Italy,ITA,2014,20.4
+Japan,JPN,2016,15.13889
+Kazakhstan,KAZ,2018,18.95833
+"Korea, Rep.",KOR,2019,4.375
+Kyrgyz Republic,KGZ,2015,16.80556
+Lao PDR,LAO,2017,13.6038
+Latvia,LVA,2003,18.26389
+Lesotho,LSO,2003,15.55556
+Liberia,LBR,2010,6.29234
+Lithuania,LTU,2003,18.68056
+Luxembourg,LUX,2014,14.44444
+Malawi,MWI,2005,8.68056
+Malaysia,MYS,2003,19.09722
+Malta,MLT,2002,18.75
+Mauritius,MUS,2003,18.95833
+Mexico,MEX,2019,11.11167
+Moldova,MDA,2012,20.13841
+Mongolia,MNG,2019,19.29129
+Morocco,MAR,2012,20.83333
+Netherlands,NLD,2012,14.72222
+New Zealand,NZL,2010,18.05556
+North Macedonia,MKD,2015,15.41667
+Norway,NOR,2011,15.30833
+Oman,OMN,2008,18.88889
+Pakistan,PAK,2007,19.86111
+Panama,PAN,2011,17.95164
+Paraguay,PRY,2016,14.52502
+Peru,PER,2010,23.56031
+Poland,POL,2013,18.2625
+Portugal,PRT,2015,17.81135
+Qatar,QAT,2013,8.19444
+Romania,ROU,2012,19.02778
+Russian Federation,RUS,2014,18.40278
+Serbia,SRB,2015,19.16756
+Slovenia,SVN,2001,20.55556
+South Africa,ZAF,2010,15.55556
+Spain,ESP,2010,18.95833
+Sweden,SWE,2011,16.04201
+Switzerland,CHE,2016,16.83333
+Tanzania,TZA,2014,16.45833
+Thailand,THA,2015,11.83333
+Tunisia,TUN,2006,21.94444
+Turkiye,TUR,2015,19.15117
+Uganda,UGA,2018,14.58333
+United Kingdom,GBR,2015,12.65278
+United States,USA,2019,9.66667
+Uruguay,URY,2013,19.87475
+West Bank and Gaza,PSE,2013,20.13889
