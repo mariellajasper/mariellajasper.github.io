@@ -1,4 +1,4 @@
-country,ISO3,most_recent_value,year
+country_male,ISO3,most_recent_value_male,year_male
 Albania,ALB,3.47222,2011
 Algeria,DZA,3.75,2012
 Argentina,ARG,9.2486,2013
