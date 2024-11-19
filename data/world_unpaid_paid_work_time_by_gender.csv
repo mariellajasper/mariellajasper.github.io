@@ -1,4 +1,7 @@
-﻿work_type,women,men
-unpaid,04:25,01:23
-paid,03:03,05:21
-total,07:28,06:44
+﻿gender,work_type,hours
+women,unpaid,04:25
+women,paid,03:03
+women,total,07:28
+men,unpaid,01:23
+men,paid,05:21
+men,total,06:44
