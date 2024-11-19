@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/technical_brief_clean.csv"
+  },
+  "transform": [{"fold": ["Male", "Female"], "as": ["Sex", "Value"]}],
+  "title": {
+    "text": "Proportion of time spent in unpaid care and domestic work, by sex",
+    "subtitle": [
+      "Estimates and projections of proportion of time spent in unpaid care and domestic work, % of 24 hour day",
+      "SOURCE UN Women and the Pardee Center for International Futures"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "subtitleColor": "black",
+    "anchor": "start",
+    "color": "black"
+  },
+  "mark": {"type": "line", "size": 2.2},
+  "height": 120,
+  "width": 200,
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelAngle": 0,
+        "values": ["2015", "2023", "2050"]
+      }
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "axis": {"title": null, "grid": false}
+    },
+    "color": {
+      "field": "Sex",
+      "type": "nominal",
+      "scale": {"domain": ["Female", "Male"], "range": ["#f28e2b", "#4e79a7"]},
+      "legend": {"title": "Sex"}
+    },
+    "tooltip": [
+      {"field": "Year", "type": "quantitative", "title": "Year"},
+      {"field": "Value", "type": "quantitative", "title": "Proportion of Time"}
+    ],
+    "facet": {
+      "field": "Region",
+      "spacing": {"row": 30},
+      "columns": 3,
+      "title": null
+    }
+  },
+  "config": {}
+}

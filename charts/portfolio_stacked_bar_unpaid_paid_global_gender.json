@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stacked bar chart showing hours per day for unpaid care work and paid work for women and men.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/world_unpaid_paid_work_time_by_gender.csv"
+  },
+  "title": {
+    "text": "Gender distribution of unpaid and paid work",
+    "anchor": "start",
+    "subtitle": [
+      "Weighted world average from 64 countries, latest year, age group 15 and older",
+      "Source: ILO calculations based on Charmes, forthcoming"
+    ],
+    "fontSize": 14,
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic",
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "height": 280,
+  "width": 300,
+  "mark": "bar",
+  "config": {"axis": {"grid": false, "domain": false}},
+  "transform": [
+    {"filter": "datum.work_type === 'unpaid' || datum.work_type === 'paid'"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "gender",
+      "scale": {"padding": 0.4},
+      "axis": {
+        "title": null,
+        "labelPadding": 5,
+        "ticks": false,
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "hours",
+      "type": "quantitative",
+      "axis": {
+        "titlePadding": 10,
+        "title": "Hours per day",
+        "values": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+      }
+    },
+    "color": {
+      "field": "work_type",
+      "type": "nominal",
+      "scale": {"domain": ["unpaid", "paid"], "range": ["#F28E2B", "#4E79A7"]},
+      "legend": {"orient": "top-left", "direction": "horizontal", "title": null}
+    },
+    "tooltip": [
+      {"field": "work_type", "title": "Type of Work", "type": "nominal"},
+      {"field": "hours", "title": "Hours", "type": "quantitative"}
+    ]
+  }
+}
