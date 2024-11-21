@@ -1,0 +1,217 @@
+Activity,Time of Day,Value
+Sleep and personal care,12 AM,88.4
+Eating and drinking,12 AM,0.4
+Household activities,12 AM,0.5
+Purchasing goods and services,12 AM,0.1
+Unpaid care,12 AM,0.2
+Paid work,12 AM,1.8
+Education,12 AM,0.3
+Leisure and sports,12 AM,7.5
+Other,12 AM,0.7
+Sleep and personal care,1 AM,93.4
+Eating and drinking,1 AM,0.2
+Household activities,1 AM,0.4
+Purchasing goods and services,1 AM,0.1
+Unpaid care,1 AM,0.4
+Paid work,1 AM,1.3
+Education,1 AM,0.2
+Leisure and sports,1 AM,3.7
+Other,1 AM,0.2
+Sleep and personal care,2 AM,95.6
+Eating and drinking,2 AM,0.1
+Household activities,2 AM,0.3
+Purchasing goods and services,2 AM,0.1
+Unpaid care,2 AM,0.3
+Paid work,2 AM,1.1
+Education,2 AM,0.1
+Leisure and sports,2 AM,2.1
+Other,2 AM,0.2
+Sleep and personal care,3 AM,96.3
+Eating and drinking,3 AM,0.1
+Household activities,3 AM,0.3
+Purchasing goods and services,3 AM,0
+Unpaid care,3 AM,0.2
+Paid work,3 AM,1.1
+Education,3 AM,0.1
+Leisure and sports,3 AM,1.6
+Other,3 AM,0.1
+Sleep and personal care,4 AM,93.7
+Eating and drinking,4 AM,0.5
+Household activities,4 AM,1.2
+Purchasing goods and services,4 AM,0
+Unpaid care,4 AM,0.5
+Paid work,4 AM,1.9
+Education,4 AM,0
+Leisure and sports,4 AM,1.9
+Other,4 AM,0.4
+Sleep and personal care,5 AM,88.3
+Eating and drinking,5 AM,1.3
+Household activities,5 AM,1.9
+Purchasing goods and services,5 AM,0.2
+Unpaid care,5 AM,0.4
+Paid work,5 AM,3.7
+Education,5 AM,0.1
+Leisure and sports,5 AM,3.4
+Other,5 AM,0.8
+Sleep and personal care,6 AM,75.2
+Eating and drinking,6 AM,2.8
+Household activities,6 AM,5.3
+Purchasing goods and services,6 AM,0.3
+Unpaid care,6 AM,1.5
+Paid work,6 AM,7.8
+Education,6 AM,0.2
+Leisure and sports,6 AM,5.6
+Other,6 AM,1.2
+Sleep and personal care,7 AM,53.3
+Eating and drinking,7 AM,5.8
+Household activities,7 AM,9.3
+Purchasing goods and services,7 AM,1.0
+Unpaid care,7 AM,4.1000000000000005
+Paid work,7 AM,15.6
+Education,7 AM,0.7
+Leisure and sports,7 AM,8.3
+Other,7 AM,1.9
+Sleep and personal care,8 AM,32.4
+Eating and drinking,8 AM,7.5
+Household activities,8 AM,12.1
+Purchasing goods and services,8 AM,1.9
+Unpaid care,8 AM,4.5
+Paid work,8 AM,25.0
+Education,8 AM,2.2
+Leisure and sports,8 AM,11.5
+Other,8 AM,3.0
+Sleep and personal care,9 AM,19.9
+Eating and drinking,9 AM,6.6
+Household activities,9 AM,13.2
+Purchasing goods and services,9 AM,3.7
+Unpaid care,9 AM,3.5
+Paid work,9 AM,30.3
+Education,9 AM,3.4
+Leisure and sports,9 AM,15.3
+Other,9 AM,4.2
+Sleep and personal care,10 AM,12.1
+Eating and drinking,10 AM,5.1
+Household activities,10 AM,14.7
+Purchasing goods and services,10 AM,5.7
+Unpaid care,10 AM,3.5999999999999996
+Paid work,10 AM,32.5
+Education,10 AM,3.8
+Leisure and sports,10 AM,17.8
+Other,10 AM,4.7
+Sleep and personal care,11 AM,8.3
+Eating and drinking,11 AM,6.6
+Household activities,11 AM,14.7
+Purchasing goods and services,11 AM,7.2
+Unpaid care,11 AM,3.4
+Paid work,11 AM,31.8
+Education,11 AM,3.8
+Leisure and sports,11 AM,19.8
+Other,11 AM,4.5
+Sleep and personal care,12 PM,5.9
+Eating and drinking,12 PM,16.4
+Household activities,12 PM,14.6
+Purchasing goods and services,12 PM,7.6
+Unpaid care,12 PM,3.6
+Paid work,12 PM,24.8
+Education,12 PM,3.1
+Leisure and sports,12 PM,20.3
+Other,12 PM,3.9000000000000004
+Sleep and personal care,1 PM,5.6
+Eating and drinking,1 PM,10.7
+Household activities,1 PM,13.1
+Purchasing goods and services,1 PM,7.1
+Unpaid care,1 PM,3.0999999999999996
+Paid work,1 PM,30.1
+Education,1 PM,3.2
+Leisure and sports,1 PM,23.9
+Other,1 PM,3.0
+Sleep and personal care,2 PM,6.2
+Eating and drinking,2 PM,6.1
+Household activities,2 PM,12.2
+Purchasing goods and services,2 PM,6.5
+Unpaid care,2 PM,3.9000000000000004
+Paid work,2 PM,31.5
+Education,2 PM,3.4
+Leisure and sports,2 PM,26.8
+Other,2 PM,3.3
+Sleep and personal care,3 PM,6.5
+Eating and drinking,3 PM,4.3
+Household activities,3 PM,12.6
+Purchasing goods and services,3 PM,5.7
+Unpaid care,3 PM,4.9
+Paid work,3 PM,30.6
+Education,3 PM,2.9
+Leisure and sports,3 PM,29.1
+Other,3 PM,3.4
+Sleep and personal care,4 PM,6.5
+Eating and drinking,4 PM,4.8
+Household activities,4 PM,13.5
+Purchasing goods and services,4 PM,5.7
+Unpaid care,4 PM,5.8
+Paid work,4 PM,26.5
+Education,4 PM,2.4
+Leisure and sports,4 PM,31.5
+Other,4 PM,3.5
+Sleep and personal care,5 PM,6.3
+Eating and drinking,5 PM,8.9
+Household activities,5 PM,15.9
+Purchasing goods and services,5 PM,5.1
+Unpaid care,5 PM,5.6
+Paid work,5 PM,18.5
+Education,5 PM,1.8
+Leisure and sports,5 PM,34.1
+Other,5 PM,3.8000000000000003
+Sleep and personal care,6 PM,5.6
+Eating and drinking,6 PM,15.7
+Household activities,6 PM,15.6
+Purchasing goods and services,6 PM,5.1
+Unpaid care,6 PM,5.5
+Paid work,6 PM,10.7
+Education,6 PM,1.6
+Leisure and sports,6 PM,36.2
+Other,6 PM,3.9000000000000004
+Sleep and personal care,7 PM,6.9
+Eating and drinking,7 PM,13.7
+Household activities,7 PM,12.3
+Purchasing goods and services,7 PM,3.3
+Unpaid care,7 PM,5.4
+Paid work,7 PM,7.1
+Education,7 PM,1.3
+Leisure and sports,7 PM,45.8
+Other,7 PM,4.2
+Sleep and personal care,8 PM,12.8
+Eating and drinking,8 PM,8.6
+Household activities,8 PM,8.4
+Purchasing goods and services,8 PM,2.1
+Unpaid care,8 PM,5.2
+Paid work,8 PM,6.0
+Education,8 PM,1.3
+Leisure and sports,8 PM,51.7
+Other,8 PM,4.0
+Sleep and personal care,9 PM,26.8
+Eating and drinking,9 PM,4.0
+Household activities,9 PM,5.2
+Purchasing goods and services,9 PM,1.1
+Unpaid care,9 PM,3.2
+Paid work,9 PM,4.8
+Education,9 PM,0.9
+Leisure and sports,9 PM,50.8
+Other,9 PM,3.1
+Sleep and personal care,10 PM,53.1
+Eating and drinking,10 PM,2.0
+Household activities,10 PM,3.2
+Purchasing goods and services,10 PM,0.4
+Unpaid care,10 PM,1.7
+Paid work,10 PM,3.5
+Education,10 PM,0.8
+Leisure and sports,10 PM,32.8
+Other,10 PM,2.4
+Sleep and personal care,11 PM,76.8
+Eating and drinking,11 PM,0.8
+Household activities,11 PM,1.1
+Purchasing goods and services,11 PM,0.3
+Unpaid care,11 PM,0.7
+Paid work,11 PM,2.3
+Education,11 PM,0.6
+Leisure and sports,11 PM,16.5
+Other,11 PM,1.0
