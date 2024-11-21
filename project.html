@@ -61,13 +61,35 @@
         <figure id="trellis_line_unpaid_paid_work_projections"></figure>
     </section>
 
+    <section>
+        <div class="chart-description">
+            <h2>Unpaid care and domestic work in daily life</h2>
+            <p> 
+                Percent of the UK population engaging in selected activities by time of day, March 2023 weekly averages
+            </p>
+        </div>
+        <figure id="ons_24h"></figure>
+    </section>
+    <section>
+        <div class="chart-description">
+            <p> 
+                Percent of the US population (15+) engaging in selected activities by time of day, 2023 annual averages
+            </p>
+        </div>
+        <figure id="atus_24h"></figure>
+    </section>
+
     <script>
-        let figure_1_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/portfolio_stacked_bar_unpaid_paid_global_gender.json"; 
+        let figure_1_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_stacked_bar_unpaid_paid_global_gender.json"; 
         vegaEmbed('#stacked_bar_unpaid_paid_global_gender', figure_1_spec)
-        let figure_2_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/portfolio_unpaid_work_maps.json";                                                                                                                  // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+        let figure_2_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_unpaid_work_maps.json";                                                                                                                  // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
         vegaEmbed('#unpaid_work_maps', figure_2_spec)
-        let figure_3_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/portfolio_trellis_line_unpaid_paid_work_projections.json";
+        let figure_3_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_trellis_line_unpaid_paid_work_projections.json";
         vegaEmbed('#trellis_line_unpaid_paid_work_projections', figure_3_spec)
+        let figure_4_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_ons_24h.json";
+        vegaEmbed('#ons_24h', figure_4_spec)
+        let figure_5_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_atus_24h.json";
+        vegaEmbed('#atus_24h', figure_5_spec)
     </script>
 
 </body>
