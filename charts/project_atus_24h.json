@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "config": {
+    "view": {"stroke": "transparent"},
+    "title": {"anchor": "start"},
+    "legend": {"orient": "right", "direction": "vertical"},
+    "axisY": {"ticks": false}
+  },
+  "title": {
+    "text": "How adults spend their day",
+    "subtitle": [
+      "Percent of the population (15+) engaging in selected activities by time of day, 2023 annual averages",
+      "Source: American Time Use Survey, Bureau of Labor Statistics"
+    ]
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/atus_24h.csv"
+  },
+  "transform": [
+    {"calculate": "datetime(2024, 0, 1, datum.Time)", "as": "Time2"},
+    {"calculate": "format(datum.Time, '00') + ':00'", "as": "TimeFormatted"},
+    {
+      "calculate": "indexof(['Sleep and personal care', 'Household activities', 'Unpaid care', 'Paid work', 'Leisure and sports', 'Eating and drinking', 'Purchasing goods and services','Education', 'Other'],datum.Activity)",
+      "as": "order"
+    }
+  ],
+  "mark": {"type": "area"},
+  "encoding": {
+    "x": {
+      "field": "Time2",
+      "type": "temporal",
+      "title": "",
+      "axis": {"format": "%H:00"}
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Value",
+      "axis": {"format": ".0%"},
+      "title": "",
+      "stack": "normalize"
+    },
+    "color": {
+      "field": "Activity",
+      "title": "",
+      "legend": {
+        "orient": "right",
+        "title": "Activity",
+        "direction": "vertical"
+      },
+      "scale": {"scheme": "category20"},
+      "sort": [
+        "Sleep and personal care",
+        "Household activities",
+        "Unpaid care",
+        "Paid work",
+        "Leisure and sports",
+        "Eating and drinking",
+        "Purchasing goods and services",
+        "Education",
+        "Other"
+      ]
+    },
+    "order": {"field": "order"},
+    "tooltip": [
+      {"field": "Activity", "title": "Activity", "type": "nominal"},
+      {
+        "field": "TimeFormatted",
+        "title": "Time",
+        "type": "nominal",
+        "format": ""
+      },
+      {"field": "sum_Value", "title": "% of people", "type": "quantitative"}
+    ]
+  }
+}

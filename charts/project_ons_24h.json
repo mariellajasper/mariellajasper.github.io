@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "config": {
+    "view": {"stroke": "transparent"},
+    "title": {"anchor": "start"},
+    "legend": {"orient": "right", "direction": "vertical"},
+    "axisY": {"ticks": false}
+  },
+  "title": {
+    "text": "How adults spend their day",
+    "subtitle": [
+      "Percent of the population engaging in selected activities by time of day, March 2023 weekly averages",
+      "Source: Time Use Survey, Office for National Statistics"
+    ]
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/ons_24h.csv"
+  },
+  "transform": [
+    {"calculate": "timeParse(datum.Time, '%H:%M')", "as": "parsed_time"},
+    {
+      "calculate": "indexof(['Sleep and rest', 'Unpaid household work', 'Unpaid care', 'Paid work', 'Watching television', 'Personal care', 'Entertainment and leisure','Education and study', 'Travel', 'Other'],datum.Activity)",
+      "as": "order"
+    }
+  ],
+  "mark": {"type": "area"},
+  "encoding": {
+    "x": {
+      "field": "parsed_time",
+      "type": "temporal",
+      "title": "",
+      "axis": {"format": "%H:00"}
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "Value",
+      "axis": {"format": ".0%"},
+      "title": "",
+      "stack": "normalize"
+    },
+    "color": {
+      "field": "Activity",
+      "title": "",
+      "legend": {
+        "orient": "right",
+        "title": "Activity",
+        "direction": "vertical"
+      },
+      "scale": {"scheme": "category20"},
+      "sort": [
+        "Sleep and rest",
+        "Unpaid household work",
+        "Unpaid care",
+        "Paid work",
+        "Watching television",
+        "Personal care",
+        "Entertainment and leisure",
+        "Education and study",
+        "Travel",
+        "Other"
+      ]
+    },
+    "order": {"field": "order"},
+    "tooltip": [
+      {"field": "Activity", "title": "Activity", "type": "nominal"},
+      {"field": "Time", "title": "Time", "type": "nominal", "format": ""},
+      {"field": "sum_Value", "title": "% of people", "type": "quantitative"}
+    ]
+  }
+}
