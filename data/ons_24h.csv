@@ -1,145 +1,1441 @@
-﻿Time,Sleep and rest,Personal care,Paid work,Travel,Unpaid household work,Unpaid care,Watching television,Entertainment and leisure,Education and study,Other
-04:00,96.84,0.90,0.79,0.21,0.23,0.10,0.20,0.33,0.00,0.40
-04:10,96.87,0.80,0.79,0.21,0.23,0.10,0.20,0.33,0.00,0.43
-04:20,96.84,0.87,0.81,0.19,0.23,0.10,0.20,0.40,0.00,0.40
-04:30,96.40,0.90,0.84,0.16,0.40,0.10,0.23,0.40,0.00,0.50
-04:40,96.13,1.10,0.84,0.23,0.33,0.13,0.23,0.40,0.00,0.50
-04:50,95.89,1.27,0.84,0.26,0.33,0.13,0.30,0.40,0.00,0.53
-05:00,94.51,1.91,0.91,0.40,0.67,0.07,0.30,0.61,0.00,0.53
-05:10,94.39,1.81,0.91,0.50,0.79,0.10,0.33,0.64,0.00,0.53
-05:20,93.99,2.00,0.91,0.60,0.64,0.10,0.33,0.61,0.00,0.77
-05:30,92.17,2.83,1.06,0.99,0.74,0.23,0.33,0.74,0.00,0.84
-05:40,91.41,2.93,1.13,1.47,0.80,0.23,0.40,0.84,0.00,0.76
-05:50,90.89,2.89,1.57,1.44,0.87,0.23,0.40,0.99,0.00,0.76
-06:00,84.70,6.33,2.30,1.24,2.14,0.57,0.34,1.57,0.07,0.70
-06:10,83.33,6.37,2.46,1.50,2.54,0.53,0.44,1.97,0.07,0.91
-06:20,81.47,7.17,2.60,1.74,2.83,0.63,0.44,2.34,0.07,0.70
-06:30,75.00,11.13,3.16,2.26,3.83,0.87,0.50,2.94,0.00,0.36
-06:40,73.47,11.67,3.26,2.30,4.19,1.01,0.60,3.24,0.00,0.23
-06:50,72.26,11.43,3.61,2.51,4.56,1.04,0.99,3.37,0.00,0.23
-07:00,58.89,18.44,4.91,3.29,7.24,1.86,1.06,3.81,0.03,0.47
-07:10,56.91,18.09,5.34,3.77,7.44,1.99,1.27,4.53,0.10,0.50
-07:20,55.36,17.76,5.63,4.60,7.69,2.09,1.36,4.96,0.10,0.60
-07:30,47.57,20.53,7.00,5.86,9.34,2.09,1.51,5.50,0.03,0.57
-07:40,45.99,20.44,7.61,6.99,9.11,2.10,1.61,5.59,0.10,0.46
-07:50,44.60,19.73,8.67,7.43,9.19,2.30,1.87,5.57,0.10,0.57
-08:00,33.14,23.67,12.73,7.86,11.04,2.47,1.80,6.20,0.24,0.77
-08:10,31.66,23.44,13.59,8.16,11.14,2.47,1.86,6.96,0.27,0.53
-08:20,30.16,22.37,14.76,8.73,11.47,2.56,1.83,7.16,0.27,0.70
-08:30,24.21,22.61,18.49,9.66,12.33,2.07,1.80,7.96,0.27,0.60
-08:40,23.29,21.56,19.77,9.54,12.19,1.79,2.33,8.27,0.37,0.83
-08:50,22.57,20.21,21.13,8.84,13.14,1.87,2.31,8.83,0.37,0.79
-09:00,15.73,19.84,26.11,6.64,16.20,1.99,2.51,8.76,1.33,0.96
-09:10,14.89,19.19,27.17,6.14,17.06,2.04,2.56,8.94,1.20,0.84
-09:20,14.54,17.89,27.96,5.96,17.33,1.94,2.64,9.64,1.20,0.94
-09:30,11.54,16.24,29.39,6.00,19.53,1.83,2.91,10.36,1.27,1.00
-09:40,11.34,15.39,29.91,5.77,19.54,1.90,2.86,10.81,1.27,1.13
-09:50,11.24,14.40,29.97,5.77,19.89,2.21,2.94,11.24,1.31,1.13
-10:00,7.67,14.84,30.63,6.27,21.57,2.13,2.96,11.51,1.40,1.11
-10:10,7.40,13.99,30.93,5.94,21.87,2.34,3.23,11.77,1.54,0.99
-10:20,7.07,13.41,31.17,5.71,21.89,2.39,3.13,12.47,1.57,1.09
-10:30,6.06,12.03,31.17,7.23,21.87,2.71,2.99,13.16,1.67,1.11
-10:40,5.91,11.33,31.76,6.81,22.59,2.70,2.91,12.91,1.81,1.19
-10:50,5.93,11.04,31.80,6.46,22.89,2.74,2.99,13.14,1.89,1.16
-11:00,4.21,11.43,31.60,7.21,23.89,2.63,2.67,13.60,1.83,0.96
-11:10,4.07,11.17,31.67,6.63,24.64,2.39,2.67,13.81,2.00,1.01
-11:20,4.04,10.51,31.64,6.77,25.31,2.41,2.57,13.60,1.86,1.17
-11:30,3.70,9.14,31.51,7.37,25.94,2.31,2.87,13.96,1.94,1.17
-11:40,3.64,9.40,31.37,6.90,26.19,2.41,2.96,14.01,1.94,1.10
-11:50,3.61,9.33,31.34,6.61,26.46,2.50,3.09,14.10,1.97,1.01
-12:00,2.74,12.71,28.61,6.37,27.03,2.46,3.33,13.61,1.87,1.23
-12:10,2.60,14.09,28.37,6.04,26.24,2.34,3.36,13.76,2.03,1.14
-12:20,2.56,15.31,27.94,6.20,25.39,2.01,3.63,13.76,1.96,1.19
-12:30,2.36,17.37,25.81,6.69,25.06,1.96,3.91,13.89,1.77,1.20
-12:40,2.36,17.97,25.74,6.61,23.84,2.06,4.19,13.89,1.77,1.44
-12:50,2.56,18.73,25.74,6.14,23.96,2.50,4.54,13.11,1.64,1.24
-13:00,2.63,18.09,26.10,6.26,23.39,2.40,5.00,12.83,1.87,1.33
-13:10,2.93,18.84,26.00,6.29,22.11,2.20,5.33,13.23,1.84,1.23
-13:20,3.13,18.00,25.80,5.83,22.43,2.31,5.46,13.90,2.01,1.17
-13:30,3.26,15.99,26.60,5.36,22.54,2.44,5.90,14.77,1.94,1.13
-13:40,3.19,15.04,27.09,5.41,22.39,2.49,6.24,15.26,2.01,1.06
-13:50,3.09,14.30,27.91,5.40,22.47,2.21,6.46,15.26,1.99,0.96
-14:00,2.96,11.07,29.73,6.64,22.46,2.14,6.74,15.19,2.13,0.94
-14:10,2.94,10.16,30.33,6.67,21.94,2.13,7.19,15.43,2.16,1.03
-14:20,3.21,9.39,30.49,6.14,21.64,2.26,7.43,16.19,2.27,0.99
-14:30,2.80,8.67,30.09,6.73,21.99,2.24,7.77,16.60,2.30,0.90
-14:40,2.87,8.26,29.94,6.73,21.56,2.43,8.10,17.01,2.29,0.79
-14:50,2.99,7.37,29.96,7.39,21.60,2.60,8.10,16.74,2.29,0.93
-15:00,3.19,6.87,28.81,8.73,20.49,3.09,8.26,16.83,2.39,1.43
-15:10,3.19,7.27,28.84,8.17,19.86,3.46,8.44,17.10,2.20,1.39
-15:20,3.20,6.49,28.84,8.29,19.57,3.64,8.84,17.90,2.17,1.06
-15:30,3.39,5.77,28.33,8.36,19.36,4.20,9.14,18.06,2.39,1.09
-15:40,3.49,5.64,28.21,7.76,20.07,4.26,9.20,17.70,2.46,1.19
-15:50,3.57,5.89,27.96,6.77,20.79,4.36,9.19,17.96,2.50,1.07
-16:00,3.09,6.59,26.04,8.26,21.71,4.37,9.70,17.10,2.24,0.91
-16:10,3.26,7.01,25.63,7.36,21.39,4.49,9.71,17.61,2.24,1.20
-16:20,3.27,7.26,24.91,7.61,21.51,4.80,9.59,17.41,2.31,1.34
-16:30,3.31,7.26,21.79,9.79,22.49,4.64,9.54,17.63,2.27,1.29
-16:40,3.41,7.69,21.47,9.41,22.77,4.44,9.87,17.31,2.10,1.41
-16:50,3.44,7.97,21.11,8.96,23.10,4.57,10.21,17.54,1.77,1.34
-17:00,3.26,10.51,16.43,9.96,24.79,4.34,10.59,17.13,1.61,1.43
-17:10,3.01,11.80,15.37,9.37,24.97,4.49,10.83,17.07,1.61,1.43
-17:20,2.96,12.66,14.49,9.01,25.29,4.47,11.39,16.69,1.51,1.57
-17:30,2.76,15.33,11.31,9.06,26.20,4.20,11.86,16.57,1.40,1.21
-17:40,2.69,16.16,10.93,8.76,26.39,3.94,12.31,16.66,1.29,0.96
-17:50,2.56,17.04,10.61,8.46,25.57,4.09,12.67,16.66,1.26,1.10
-18:00,2.00,20.66,8.17,8.04,24.64,4.13,14.07,15.91,1.27,1.10
-18:10,2.09,21.37,7.73,6.91,23.41,3.94,15.10,16.57,1.27,1.60
-18:20,2.29,21.34,7.47,6.27,23.17,4.07,15.61,17.04,1.21,1.54
-18:30,2.34,20.97,6.31,6.99,21.37,4.86,16.60,17.73,1.19,1.51
-18:40,2.20,20.30,6.00,6.56,21.30,5.19,17.49,18.24,1.26,1.47
-18:50,2.00,19.77,5.63,6.41,20.66,5.46,18.56,18.93,1.10,1.49
-19:00,2.20,20.03,5.17,5.74,18.66,5.64,21.46,18.67,1.16,1.37
-19:10,2.10,19.70,5.01,5.31,17.21,6.04,23.00,19.31,1.13,1.20
-19:20,1.93,18.44,4.90,4.84,16.69,6.00,25.29,19.46,1.09,1.16
-19:30,1.90,17.83,4.64,3.87,15.27,5.26,28.66,20.09,1.14,1.36
-19:40,2.14,16.74,4.60,3.57,13.46,4.99,30.91,21.07,1.11,1.43
-19:50,2.20,15.81,4.60,3.59,12.57,4.81,32.57,20.99,1.26,1.50
-20:00,2.73,14.30,3.90,3.60,11.27,4.00,37.96,19.49,1.17,1.66
-20:10,2.86,13.26,3.73,2.86,10.71,3.83,39.53,20.17,1.21,1.89
-20:20,3.26,12.67,3.77,2.47,9.61,3.50,41.10,20.77,1.07,1.84
-20:30,3.99,11.40,3.56,2.43,8.70,2.84,43.01,20.84,1.03,2.23
-20:40,4.26,11.26,3.46,1.99,8.01,2.63,44.09,20.96,1.03,2.26
-20:50,4.97,10.31,3.41,2.30,7.47,2.54,45.06,20.64,1.03,2.33
-21:00,7.94,10.11,2.83,2.79,6.59,2.29,43.66,20.36,0.99,2.26
-21:10,8.81,9.96,2.69,2.20,5.90,2.20,44.67,20.27,0.94,2.33
-21:20,9.81,9.03,2.59,1.91,5.76,1.90,44.71,20.74,0.94,2.57
-21:30,12.57,9.69,2.53,1.99,4.14,1.60,43.47,20.50,0.87,2.47
-21:40,14.33,9.09,2.63,2.06,3.76,1.57,42.47,21.11,0.80,2.21
-21:50,15.80,8.61,2.60,1.90,4.10,1.14,41.59,21.07,0.63,2.39
-22:00,26.94,9.56,2.13,2.16,3.80,1.04,32.74,18.83,0.31,2.44
-22:10,30.71,7.90,2.13,2.06,3.70,1.09,30.67,19.14,0.29,2.39
-22:20,34.47,7.37,2.06,2.13,2.89,0.96,28.10,18.99,0.43,2.69
-22:30,43.16,7.73,1.60,2.10,2.81,0.90,21.59,17.16,0.54,2.41
-22:40,47.23,6.94,1.60,1.69,2.76,0.76,19.61,16.56,0.64,2.39
-22:50,51.20,6.06,1.60,1.20,2.44,0.73,18.16,15.66,0.57,2.24
-23:00,63.10,5.50,1.40,1.37,2.04,0.34,11.73,11.73,0.60,2.16
-23:10,66.90,4.41,1.40,1.50,1.87,0.34,10.26,10.59,0.57,2.09
-23:20,70.09,3.89,1.40,1.26,1.91,0.37,9.19,9.33,0.50,2.07
-23:30,76.60,3.29,1.30,0.91,1.21,0.34,6.94,7.17,0.40,1.86
-23:40,79.14,2.29,1.27,0.83,1.07,0.24,6.13,6.84,0.33,1.83
-23:50,81.00,1.89,1.27,0.70,1.06,0.24,5.51,6.17,0.33,1.83
-00:00,85.86,1.81,1.00,0.53,0.69,0.20,3.41,4.51,0.17,1.91
-00:10,87.51,1.31,0.96,0.50,0.49,0.27,2.91,3.99,0.17,1.89
-00:20,88.96,1.10,0.96,0.34,0.56,0.20,2.66,3.29,0.17,1.74
-00:30,90.09,1.21,1.00,0.31,0.41,0.23,1.97,2.96,0.17,1.61
-00:40,91.19,0.94,1.00,0.24,0.33,0.20,1.81,2.71,0.10,1.57
-00:50,91.43,0.89,1.03,0.29,0.33,0.20,1.73,2.54,0.10,1.54
-01:00,92.79,0.69,1.03,0.26,0.11,0.21,1.29,2.09,0.03,1.37
-01:10,93.14,0.64,1.06,0.23,0.16,0.14,1.23,2.03,0.03,1.44
-01:20,93.39,0.57,1.06,0.23,0.16,0.07,0.94,2.11,0.03,1.41
-01:30,93.86,0.66,1.13,0.09,0.06,0.10,0.97,1.70,0.00,1.41
-01:40,94.01,0.57,1.06,0.11,0.06,0.16,0.97,1.63,0.00,1.39
-01:50,94.19,0.54,1.06,0.09,0.16,0.16,0.97,1.53,0.00,1.31
-02:00,94.89,0.46,0.96,0.16,0.16,0.26,0.61,1.13,0.00,1.39
-02:10,94.99,0.46,0.96,0.21,0.16,0.23,0.54,1.07,0.00,1.41
-02:20,95.29,0.39,0.96,0.21,0.16,0.13,0.51,0.97,0.00,1.41
-02:30,95.81,0.39,0.93,0.21,0.16,0.16,0.34,0.63,0.00,1.34
-02:40,95.83,0.49,0.90,0.14,0.16,0.10,0.31,0.63,0.00,1.34
-02:50,95.89,0.39,0.90,0.14,0.16,0.10,0.31,0.63,0.00,1.41
-03:00,95.93,0.41,0.90,0.11,0.26,0.13,0.24,0.53,0.00,1.49
-03:10,95.99,0.41,0.83,0.16,0.23,0.10,0.24,0.46,0.00,1.49
-03:20,95.71,0.69,0.83,0.09,0.30,0.17,0.24,0.39,0.00,1.49
-03:30,95.36,0.81,0.83,0.09,0.33,0.27,0.17,0.43,0.00,1.69
-03:40,95.14,0.76,0.83,0.14,0.33,0.27,0.17,0.63,0.00,1.66
-03:50,94.91,0.96,0.83,0.14,0.40,0.20,0.17,0.63,0.00,1.69
+Time,Activity,Value
+04:00,Sleep and rest,96.84
+04:10,Sleep and rest,96.87
+04:20,Sleep and rest,96.84
+04:30,Sleep and rest,96.4
+04:40,Sleep and rest,96.13
+04:50,Sleep and rest,95.89
+05:00,Sleep and rest,94.51
+05:10,Sleep and rest,94.39
+05:20,Sleep and rest,93.99
+05:30,Sleep and rest,92.17
+05:40,Sleep and rest,91.41
+05:50,Sleep and rest,90.89
+06:00,Sleep and rest,84.7
+06:10,Sleep and rest,83.33
+06:20,Sleep and rest,81.47
+06:30,Sleep and rest,75.0
+06:40,Sleep and rest,73.47
+06:50,Sleep and rest,72.26
+07:00,Sleep and rest,58.89
+07:10,Sleep and rest,56.91
+07:20,Sleep and rest,55.36
+07:30,Sleep and rest,47.57
+07:40,Sleep and rest,45.99
+07:50,Sleep and rest,44.6
+08:00,Sleep and rest,33.14
+08:10,Sleep and rest,31.66
+08:20,Sleep and rest,30.16
+08:30,Sleep and rest,24.21
+08:40,Sleep and rest,23.29
+08:50,Sleep and rest,22.57
+09:00,Sleep and rest,15.73
+09:10,Sleep and rest,14.89
+09:20,Sleep and rest,14.54
+09:30,Sleep and rest,11.54
+09:40,Sleep and rest,11.34
+09:50,Sleep and rest,11.24
+10:00,Sleep and rest,7.67
+10:10,Sleep and rest,7.4
+10:20,Sleep and rest,7.07
+10:30,Sleep and rest,6.06
+10:40,Sleep and rest,5.91
+10:50,Sleep and rest,5.93
+11:00,Sleep and rest,4.21
+11:10,Sleep and rest,4.07
+11:20,Sleep and rest,4.04
+11:30,Sleep and rest,3.7
+11:40,Sleep and rest,3.64
+11:50,Sleep and rest,3.61
+12:00,Sleep and rest,2.74
+12:10,Sleep and rest,2.6
+12:20,Sleep and rest,2.56
+12:30,Sleep and rest,2.36
+12:40,Sleep and rest,2.36
+12:50,Sleep and rest,2.56
+13:00,Sleep and rest,2.63
+13:10,Sleep and rest,2.93
+13:20,Sleep and rest,3.13
+13:30,Sleep and rest,3.26
+13:40,Sleep and rest,3.19
+13:50,Sleep and rest,3.09
+14:00,Sleep and rest,2.96
+14:10,Sleep and rest,2.94
+14:20,Sleep and rest,3.21
+14:30,Sleep and rest,2.8
+14:40,Sleep and rest,2.87
+14:50,Sleep and rest,2.99
+15:00,Sleep and rest,3.19
+15:10,Sleep and rest,3.19
+15:20,Sleep and rest,3.2
+15:30,Sleep and rest,3.39
+15:40,Sleep and rest,3.49
+15:50,Sleep and rest,3.57
+16:00,Sleep and rest,3.09
+16:10,Sleep and rest,3.26
+16:20,Sleep and rest,3.27
+16:30,Sleep and rest,3.31
+16:40,Sleep and rest,3.41
+16:50,Sleep and rest,3.44
+17:00,Sleep and rest,3.26
+17:10,Sleep and rest,3.01
+17:20,Sleep and rest,2.96
+17:30,Sleep and rest,2.76
+17:40,Sleep and rest,2.69
+17:50,Sleep and rest,2.56
+18:00,Sleep and rest,2.0
+18:10,Sleep and rest,2.09
+18:20,Sleep and rest,2.29
+18:30,Sleep and rest,2.34
+18:40,Sleep and rest,2.2
+18:50,Sleep and rest,2.0
+19:00,Sleep and rest,2.2
+19:10,Sleep and rest,2.1
+19:20,Sleep and rest,1.93
+19:30,Sleep and rest,1.9
+19:40,Sleep and rest,2.14
+19:50,Sleep and rest,2.2
+20:00,Sleep and rest,2.73
+20:10,Sleep and rest,2.86
+20:20,Sleep and rest,3.26
+20:30,Sleep and rest,3.99
+20:40,Sleep and rest,4.26
+20:50,Sleep and rest,4.97
+21:00,Sleep and rest,7.94
+21:10,Sleep and rest,8.81
+21:20,Sleep and rest,9.81
+21:30,Sleep and rest,12.57
+21:40,Sleep and rest,14.33
+21:50,Sleep and rest,15.8
+22:00,Sleep and rest,26.94
+22:10,Sleep and rest,30.71
+22:20,Sleep and rest,34.47
+22:30,Sleep and rest,43.16
+22:40,Sleep and rest,47.23
+22:50,Sleep and rest,51.2
+23:00,Sleep and rest,63.1
+23:10,Sleep and rest,66.9
+23:20,Sleep and rest,70.09
+23:30,Sleep and rest,76.6
+23:40,Sleep and rest,79.14
+23:50,Sleep and rest,81.0
+00:00,Sleep and rest,85.86
+00:10,Sleep and rest,87.51
+00:20,Sleep and rest,88.96
+00:30,Sleep and rest,90.09
+00:40,Sleep and rest,91.19
+00:50,Sleep and rest,91.43
+01:00,Sleep and rest,92.79
+01:10,Sleep and rest,93.14
+01:20,Sleep and rest,93.39
+01:30,Sleep and rest,93.86
+01:40,Sleep and rest,94.01
+01:50,Sleep and rest,94.19
+02:00,Sleep and rest,94.89
+02:10,Sleep and rest,94.99
+02:20,Sleep and rest,95.29
+02:30,Sleep and rest,95.81
+02:40,Sleep and rest,95.83
+02:50,Sleep and rest,95.89
+03:00,Sleep and rest,95.93
+03:10,Sleep and rest,95.99
+03:20,Sleep and rest,95.71
+03:30,Sleep and rest,95.36
+03:40,Sleep and rest,95.14
+03:50,Sleep and rest,94.91
+04:00,Personal care,0.9
+04:10,Personal care,0.8
+04:20,Personal care,0.87
+04:30,Personal care,0.9
+04:40,Personal care,1.1
+04:50,Personal care,1.27
+05:00,Personal care,1.91
+05:10,Personal care,1.81
+05:20,Personal care,2.0
+05:30,Personal care,2.83
+05:40,Personal care,2.93
+05:50,Personal care,2.89
+06:00,Personal care,6.33
+06:10,Personal care,6.37
+06:20,Personal care,7.17
+06:30,Personal care,11.13
+06:40,Personal care,11.67
+06:50,Personal care,11.43
+07:00,Personal care,18.44
+07:10,Personal care,18.09
+07:20,Personal care,17.76
+07:30,Personal care,20.53
+07:40,Personal care,20.44
+07:50,Personal care,19.73
+08:00,Personal care,23.67
+08:10,Personal care,23.44
+08:20,Personal care,22.37
+08:30,Personal care,22.61
+08:40,Personal care,21.56
+08:50,Personal care,20.21
+09:00,Personal care,19.84
+09:10,Personal care,19.19
+09:20,Personal care,17.89
+09:30,Personal care,16.24
+09:40,Personal care,15.39
+09:50,Personal care,14.4
+10:00,Personal care,14.84
+10:10,Personal care,13.99
+10:20,Personal care,13.41
+10:30,Personal care,12.03
+10:40,Personal care,11.33
+10:50,Personal care,11.04
+11:00,Personal care,11.43
+11:10,Personal care,11.17
+11:20,Personal care,10.51
+11:30,Personal care,9.14
+11:40,Personal care,9.4
+11:50,Personal care,9.33
+12:00,Personal care,12.71
+12:10,Personal care,14.09
+12:20,Personal care,15.31
+12:30,Personal care,17.37
+12:40,Personal care,17.97
+12:50,Personal care,18.73
+13:00,Personal care,18.09
+13:10,Personal care,18.84
+13:20,Personal care,18.0
+13:30,Personal care,15.99
+13:40,Personal care,15.04
+13:50,Personal care,14.3
+14:00,Personal care,11.07
+14:10,Personal care,10.16
+14:20,Personal care,9.39
+14:30,Personal care,8.67
+14:40,Personal care,8.26
+14:50,Personal care,7.37
+15:00,Personal care,6.87
+15:10,Personal care,7.27
+15:20,Personal care,6.49
+15:30,Personal care,5.77
+15:40,Personal care,5.64
+15:50,Personal care,5.89
+16:00,Personal care,6.59
+16:10,Personal care,7.01
+16:20,Personal care,7.26
+16:30,Personal care,7.26
+16:40,Personal care,7.69
+16:50,Personal care,7.97
+17:00,Personal care,10.51
+17:10,Personal care,11.8
+17:20,Personal care,12.66
+17:30,Personal care,15.33
+17:40,Personal care,16.16
+17:50,Personal care,17.04
+18:00,Personal care,20.66
+18:10,Personal care,21.37
+18:20,Personal care,21.34
+18:30,Personal care,20.97
+18:40,Personal care,20.3
+18:50,Personal care,19.77
+19:00,Personal care,20.03
+19:10,Personal care,19.7
+19:20,Personal care,18.44
+19:30,Personal care,17.83
+19:40,Personal care,16.74
+19:50,Personal care,15.81
+20:00,Personal care,14.3
+20:10,Personal care,13.26
+20:20,Personal care,12.67
+20:30,Personal care,11.4
+20:40,Personal care,11.26
+20:50,Personal care,10.31
+21:00,Personal care,10.11
+21:10,Personal care,9.96
+21:20,Personal care,9.03
+21:30,Personal care,9.69
+21:40,Personal care,9.09
+21:50,Personal care,8.61
+22:00,Personal care,9.56
+22:10,Personal care,7.9
+22:20,Personal care,7.37
+22:30,Personal care,7.73
+22:40,Personal care,6.94
+22:50,Personal care,6.06
+23:00,Personal care,5.5
+23:10,Personal care,4.41
+23:20,Personal care,3.89
+23:30,Personal care,3.29
+23:40,Personal care,2.29
+23:50,Personal care,1.89
+00:00,Personal care,1.81
+00:10,Personal care,1.31
+00:20,Personal care,1.1
+00:30,Personal care,1.21
+00:40,Personal care,0.94
+00:50,Personal care,0.89
+01:00,Personal care,0.69
+01:10,Personal care,0.64
+01:20,Personal care,0.57
+01:30,Personal care,0.66
+01:40,Personal care,0.57
+01:50,Personal care,0.54
+02:00,Personal care,0.46
+02:10,Personal care,0.46
+02:20,Personal care,0.39
+02:30,Personal care,0.39
+02:40,Personal care,0.49
+02:50,Personal care,0.39
+03:00,Personal care,0.41
+03:10,Personal care,0.41
+03:20,Personal care,0.69
+03:30,Personal care,0.81
+03:40,Personal care,0.76
+03:50,Personal care,0.96
+04:00,Paid work,0.79
+04:10,Paid work,0.79
+04:20,Paid work,0.81
+04:30,Paid work,0.84
+04:40,Paid work,0.84
+04:50,Paid work,0.84
+05:00,Paid work,0.91
+05:10,Paid work,0.91
+05:20,Paid work,0.91
+05:30,Paid work,1.06
+05:40,Paid work,1.13
+05:50,Paid work,1.57
+06:00,Paid work,2.3
+06:10,Paid work,2.46
+06:20,Paid work,2.6
+06:30,Paid work,3.16
+06:40,Paid work,3.26
+06:50,Paid work,3.61
+07:00,Paid work,4.91
+07:10,Paid work,5.34
+07:20,Paid work,5.63
+07:30,Paid work,7.0
+07:40,Paid work,7.61
+07:50,Paid work,8.67
+08:00,Paid work,12.73
+08:10,Paid work,13.59
+08:20,Paid work,14.76
+08:30,Paid work,18.49
+08:40,Paid work,19.77
+08:50,Paid work,21.13
+09:00,Paid work,26.11
+09:10,Paid work,27.17
+09:20,Paid work,27.96
+09:30,Paid work,29.39
+09:40,Paid work,29.91
+09:50,Paid work,29.97
+10:00,Paid work,30.63
+10:10,Paid work,30.93
+10:20,Paid work,31.17
+10:30,Paid work,31.17
+10:40,Paid work,31.76
+10:50,Paid work,31.8
+11:00,Paid work,31.6
+11:10,Paid work,31.67
+11:20,Paid work,31.64
+11:30,Paid work,31.51
+11:40,Paid work,31.37
+11:50,Paid work,31.34
+12:00,Paid work,28.61
+12:10,Paid work,28.37
+12:20,Paid work,27.94
+12:30,Paid work,25.81
+12:40,Paid work,25.74
+12:50,Paid work,25.74
+13:00,Paid work,26.1
+13:10,Paid work,26.0
+13:20,Paid work,25.8
+13:30,Paid work,26.6
+13:40,Paid work,27.09
+13:50,Paid work,27.91
+14:00,Paid work,29.73
+14:10,Paid work,30.33
+14:20,Paid work,30.49
+14:30,Paid work,30.09
+14:40,Paid work,29.94
+14:50,Paid work,29.96
+15:00,Paid work,28.81
+15:10,Paid work,28.84
+15:20,Paid work,28.84
+15:30,Paid work,28.33
+15:40,Paid work,28.21
+15:50,Paid work,27.96
+16:00,Paid work,26.04
+16:10,Paid work,25.63
+16:20,Paid work,24.91
+16:30,Paid work,21.79
+16:40,Paid work,21.47
+16:50,Paid work,21.11
+17:00,Paid work,16.43
+17:10,Paid work,15.37
+17:20,Paid work,14.49
+17:30,Paid work,11.31
+17:40,Paid work,10.93
+17:50,Paid work,10.61
+18:00,Paid work,8.17
+18:10,Paid work,7.73
+18:20,Paid work,7.47
+18:30,Paid work,6.31
+18:40,Paid work,6.0
+18:50,Paid work,5.63
+19:00,Paid work,5.17
+19:10,Paid work,5.01
+19:20,Paid work,4.9
+19:30,Paid work,4.64
+19:40,Paid work,4.6
+19:50,Paid work,4.6
+20:00,Paid work,3.9
+20:10,Paid work,3.73
+20:20,Paid work,3.77
+20:30,Paid work,3.56
+20:40,Paid work,3.46
+20:50,Paid work,3.41
+21:00,Paid work,2.83
+21:10,Paid work,2.69
+21:20,Paid work,2.59
+21:30,Paid work,2.53
+21:40,Paid work,2.63
+21:50,Paid work,2.6
+22:00,Paid work,2.13
+22:10,Paid work,2.13
+22:20,Paid work,2.06
+22:30,Paid work,1.6
+22:40,Paid work,1.6
+22:50,Paid work,1.6
+23:00,Paid work,1.4
+23:10,Paid work,1.4
+23:20,Paid work,1.4
+23:30,Paid work,1.3
+23:40,Paid work,1.27
+23:50,Paid work,1.27
+00:00,Paid work,1.0
+00:10,Paid work,0.96
+00:20,Paid work,0.96
+00:30,Paid work,1.0
+00:40,Paid work,1.0
+00:50,Paid work,1.03
+01:00,Paid work,1.03
+01:10,Paid work,1.06
+01:20,Paid work,1.06
+01:30,Paid work,1.13
+01:40,Paid work,1.06
+01:50,Paid work,1.06
+02:00,Paid work,0.96
+02:10,Paid work,0.96
+02:20,Paid work,0.96
+02:30,Paid work,0.93
+02:40,Paid work,0.9
+02:50,Paid work,0.9
+03:00,Paid work,0.9
+03:10,Paid work,0.83
+03:20,Paid work,0.83
+03:30,Paid work,0.83
+03:40,Paid work,0.83
+03:50,Paid work,0.83
+04:00,Travel,0.21
+04:10,Travel,0.21
+04:20,Travel,0.19
+04:30,Travel,0.16
+04:40,Travel,0.23
+04:50,Travel,0.26
+05:00,Travel,0.4
+05:10,Travel,0.5
+05:20,Travel,0.6
+05:30,Travel,0.99
+05:40,Travel,1.47
+05:50,Travel,1.44
+06:00,Travel,1.24
+06:10,Travel,1.5
+06:20,Travel,1.74
+06:30,Travel,2.26
+06:40,Travel,2.3
+06:50,Travel,2.51
+07:00,Travel,3.29
+07:10,Travel,3.77
+07:20,Travel,4.6
+07:30,Travel,5.86
+07:40,Travel,6.99
+07:50,Travel,7.43
+08:00,Travel,7.86
+08:10,Travel,8.16
+08:20,Travel,8.73
+08:30,Travel,9.66
+08:40,Travel,9.54
+08:50,Travel,8.84
+09:00,Travel,6.64
+09:10,Travel,6.14
+09:20,Travel,5.96
+09:30,Travel,6.0
+09:40,Travel,5.77
+09:50,Travel,5.77
+10:00,Travel,6.27
+10:10,Travel,5.94
+10:20,Travel,5.71
+10:30,Travel,7.23
+10:40,Travel,6.81
+10:50,Travel,6.46
+11:00,Travel,7.21
+11:10,Travel,6.63
+11:20,Travel,6.77
+11:30,Travel,7.37
+11:40,Travel,6.9
+11:50,Travel,6.61
+12:00,Travel,6.37
+12:10,Travel,6.04
+12:20,Travel,6.2
+12:30,Travel,6.69
+12:40,Travel,6.61
+12:50,Travel,6.14
+13:00,Travel,6.26
+13:10,Travel,6.29
+13:20,Travel,5.83
+13:30,Travel,5.36
+13:40,Travel,5.41
+13:50,Travel,5.4
+14:00,Travel,6.64
+14:10,Travel,6.67
+14:20,Travel,6.14
+14:30,Travel,6.73
+14:40,Travel,6.73
+14:50,Travel,7.39
+15:00,Travel,8.73
+15:10,Travel,8.17
+15:20,Travel,8.29
+15:30,Travel,8.36
+15:40,Travel,7.76
+15:50,Travel,6.77
+16:00,Travel,8.26
+16:10,Travel,7.36
+16:20,Travel,7.61
+16:30,Travel,9.79
+16:40,Travel,9.41
+16:50,Travel,8.96
+17:00,Travel,9.96
+17:10,Travel,9.37
+17:20,Travel,9.01
+17:30,Travel,9.06
+17:40,Travel,8.76
+17:50,Travel,8.46
+18:00,Travel,8.04
+18:10,Travel,6.91
+18:20,Travel,6.27
+18:30,Travel,6.99
+18:40,Travel,6.56
+18:50,Travel,6.41
+19:00,Travel,5.74
+19:10,Travel,5.31
+19:20,Travel,4.84
+19:30,Travel,3.87
+19:40,Travel,3.57
+19:50,Travel,3.59
+20:00,Travel,3.6
+20:10,Travel,2.86
+20:20,Travel,2.47
+20:30,Travel,2.43
+20:40,Travel,1.99
+20:50,Travel,2.3
+21:00,Travel,2.79
+21:10,Travel,2.2
+21:20,Travel,1.91
+21:30,Travel,1.99
+21:40,Travel,2.06
+21:50,Travel,1.9
+22:00,Travel,2.16
+22:10,Travel,2.06
+22:20,Travel,2.13
+22:30,Travel,2.1
+22:40,Travel,1.69
+22:50,Travel,1.2
+23:00,Travel,1.37
+23:10,Travel,1.5
+23:20,Travel,1.26
+23:30,Travel,0.91
+23:40,Travel,0.83
+23:50,Travel,0.7
+00:00,Travel,0.53
+00:10,Travel,0.5
+00:20,Travel,0.34
+00:30,Travel,0.31
+00:40,Travel,0.24
+00:50,Travel,0.29
+01:00,Travel,0.26
+01:10,Travel,0.23
+01:20,Travel,0.23
+01:30,Travel,0.09
+01:40,Travel,0.11
+01:50,Travel,0.09
+02:00,Travel,0.16
+02:10,Travel,0.21
+02:20,Travel,0.21
+02:30,Travel,0.21
+02:40,Travel,0.14
+02:50,Travel,0.14
+03:00,Travel,0.11
+03:10,Travel,0.16
+03:20,Travel,0.09
+03:30,Travel,0.09
+03:40,Travel,0.14
+03:50,Travel,0.14
+04:00,Unpaid household work,0.23
+04:10,Unpaid household work,0.23
+04:20,Unpaid household work,0.23
+04:30,Unpaid household work,0.4
+04:40,Unpaid household work,0.33
+04:50,Unpaid household work,0.33
+05:00,Unpaid household work,0.67
+05:10,Unpaid household work,0.79
+05:20,Unpaid household work,0.64
+05:30,Unpaid household work,0.74
+05:40,Unpaid household work,0.8
+05:50,Unpaid household work,0.87
+06:00,Unpaid household work,2.14
+06:10,Unpaid household work,2.54
+06:20,Unpaid household work,2.83
+06:30,Unpaid household work,3.83
+06:40,Unpaid household work,4.19
+06:50,Unpaid household work,4.56
+07:00,Unpaid household work,7.24
+07:10,Unpaid household work,7.44
+07:20,Unpaid household work,7.69
+07:30,Unpaid household work,9.34
+07:40,Unpaid household work,9.11
+07:50,Unpaid household work,9.19
+08:00,Unpaid household work,11.04
+08:10,Unpaid household work,11.14
+08:20,Unpaid household work,11.47
+08:30,Unpaid household work,12.33
+08:40,Unpaid household work,12.19
+08:50,Unpaid household work,13.14
+09:00,Unpaid household work,16.2
+09:10,Unpaid household work,17.06
+09:20,Unpaid household work,17.33
+09:30,Unpaid household work,19.53
+09:40,Unpaid household work,19.54
+09:50,Unpaid household work,19.89
+10:00,Unpaid household work,21.57
+10:10,Unpaid household work,21.87
+10:20,Unpaid household work,21.89
+10:30,Unpaid household work,21.87
+10:40,Unpaid household work,22.59
+10:50,Unpaid household work,22.89
+11:00,Unpaid household work,23.89
+11:10,Unpaid household work,24.64
+11:20,Unpaid household work,25.31
+11:30,Unpaid household work,25.94
+11:40,Unpaid household work,26.19
+11:50,Unpaid household work,26.46
+12:00,Unpaid household work,27.03
+12:10,Unpaid household work,26.24
+12:20,Unpaid household work,25.39
+12:30,Unpaid household work,25.06
+12:40,Unpaid household work,23.84
+12:50,Unpaid household work,23.96
+13:00,Unpaid household work,23.39
+13:10,Unpaid household work,22.11
+13:20,Unpaid household work,22.43
+13:30,Unpaid household work,22.54
+13:40,Unpaid household work,22.39
+13:50,Unpaid household work,22.47
+14:00,Unpaid household work,22.46
+14:10,Unpaid household work,21.94
+14:20,Unpaid household work,21.64
+14:30,Unpaid household work,21.99
+14:40,Unpaid household work,21.56
+14:50,Unpaid household work,21.6
+15:00,Unpaid household work,20.49
+15:10,Unpaid household work,19.86
+15:20,Unpaid household work,19.57
+15:30,Unpaid household work,19.36
+15:40,Unpaid household work,20.07
+15:50,Unpaid household work,20.79
+16:00,Unpaid household work,21.71
+16:10,Unpaid household work,21.39
+16:20,Unpaid household work,21.51
+16:30,Unpaid household work,22.49
+16:40,Unpaid household work,22.77
+16:50,Unpaid household work,23.1
+17:00,Unpaid household work,24.79
+17:10,Unpaid household work,24.97
+17:20,Unpaid household work,25.29
+17:30,Unpaid household work,26.2
+17:40,Unpaid household work,26.39
+17:50,Unpaid household work,25.57
+18:00,Unpaid household work,24.64
+18:10,Unpaid household work,23.41
+18:20,Unpaid household work,23.17
+18:30,Unpaid household work,21.37
+18:40,Unpaid household work,21.3
+18:50,Unpaid household work,20.66
+19:00,Unpaid household work,18.66
+19:10,Unpaid household work,17.21
+19:20,Unpaid household work,16.69
+19:30,Unpaid household work,15.27
+19:40,Unpaid household work,13.46
+19:50,Unpaid household work,12.57
+20:00,Unpaid household work,11.27
+20:10,Unpaid household work,10.71
+20:20,Unpaid household work,9.61
+20:30,Unpaid household work,8.7
+20:40,Unpaid household work,8.01
+20:50,Unpaid household work,7.47
+21:00,Unpaid household work,6.59
+21:10,Unpaid household work,5.9
+21:20,Unpaid household work,5.76
+21:30,Unpaid household work,4.14
+21:40,Unpaid household work,3.76
+21:50,Unpaid household work,4.1
+22:00,Unpaid household work,3.8
+22:10,Unpaid household work,3.7
+22:20,Unpaid household work,2.89
+22:30,Unpaid household work,2.81
+22:40,Unpaid household work,2.76
+22:50,Unpaid household work,2.44
+23:00,Unpaid household work,2.04
+23:10,Unpaid household work,1.87
+23:20,Unpaid household work,1.91
+23:30,Unpaid household work,1.21
+23:40,Unpaid household work,1.07
+23:50,Unpaid household work,1.06
+00:00,Unpaid household work,0.69
+00:10,Unpaid household work,0.49
+00:20,Unpaid household work,0.56
+00:30,Unpaid household work,0.41
+00:40,Unpaid household work,0.33
+00:50,Unpaid household work,0.33
+01:00,Unpaid household work,0.11
+01:10,Unpaid household work,0.16
+01:20,Unpaid household work,0.16
+01:30,Unpaid household work,0.06
+01:40,Unpaid household work,0.06
+01:50,Unpaid household work,0.16
+02:00,Unpaid household work,0.16
+02:10,Unpaid household work,0.16
+02:20,Unpaid household work,0.16
+02:30,Unpaid household work,0.16
+02:40,Unpaid household work,0.16
+02:50,Unpaid household work,0.16
+03:00,Unpaid household work,0.26
+03:10,Unpaid household work,0.23
+03:20,Unpaid household work,0.3
+03:30,Unpaid household work,0.33
+03:40,Unpaid household work,0.33
+03:50,Unpaid household work,0.4
+04:00,Unpaid care,0.1
+04:10,Unpaid care,0.1
+04:20,Unpaid care,0.1
+04:30,Unpaid care,0.1
+04:40,Unpaid care,0.13
+04:50,Unpaid care,0.13
+05:00,Unpaid care,0.07
+05:10,Unpaid care,0.1
+05:20,Unpaid care,0.1
+05:30,Unpaid care,0.23
+05:40,Unpaid care,0.23
+05:50,Unpaid care,0.23
+06:00,Unpaid care,0.57
+06:10,Unpaid care,0.53
+06:20,Unpaid care,0.63
+06:30,Unpaid care,0.87
+06:40,Unpaid care,1.01
+06:50,Unpaid care,1.04
+07:00,Unpaid care,1.86
+07:10,Unpaid care,1.99
+07:20,Unpaid care,2.09
+07:30,Unpaid care,2.09
+07:40,Unpaid care,2.1
+07:50,Unpaid care,2.3
+08:00,Unpaid care,2.47
+08:10,Unpaid care,2.47
+08:20,Unpaid care,2.56
+08:30,Unpaid care,2.07
+08:40,Unpaid care,1.79
+08:50,Unpaid care,1.87
+09:00,Unpaid care,1.99
+09:10,Unpaid care,2.04
+09:20,Unpaid care,1.94
+09:30,Unpaid care,1.83
+09:40,Unpaid care,1.9
+09:50,Unpaid care,2.21
+10:00,Unpaid care,2.13
+10:10,Unpaid care,2.34
+10:20,Unpaid care,2.39
+10:30,Unpaid care,2.71
+10:40,Unpaid care,2.7
+10:50,Unpaid care,2.74
+11:00,Unpaid care,2.63
+11:10,Unpaid care,2.39
+11:20,Unpaid care,2.41
+11:30,Unpaid care,2.31
+11:40,Unpaid care,2.41
+11:50,Unpaid care,2.5
+12:00,Unpaid care,2.46
+12:10,Unpaid care,2.34
+12:20,Unpaid care,2.01
+12:30,Unpaid care,1.96
+12:40,Unpaid care,2.06
+12:50,Unpaid care,2.5
+13:00,Unpaid care,2.4
+13:10,Unpaid care,2.2
+13:20,Unpaid care,2.31
+13:30,Unpaid care,2.44
+13:40,Unpaid care,2.49
+13:50,Unpaid care,2.21
+14:00,Unpaid care,2.14
+14:10,Unpaid care,2.13
+14:20,Unpaid care,2.26
+14:30,Unpaid care,2.24
+14:40,Unpaid care,2.43
+14:50,Unpaid care,2.6
+15:00,Unpaid care,3.09
+15:10,Unpaid care,3.46
+15:20,Unpaid care,3.64
+15:30,Unpaid care,4.2
+15:40,Unpaid care,4.26
+15:50,Unpaid care,4.36
+16:00,Unpaid care,4.37
+16:10,Unpaid care,4.49
+16:20,Unpaid care,4.8
+16:30,Unpaid care,4.64
+16:40,Unpaid care,4.44
+16:50,Unpaid care,4.57
+17:00,Unpaid care,4.34
+17:10,Unpaid care,4.49
+17:20,Unpaid care,4.47
+17:30,Unpaid care,4.2
+17:40,Unpaid care,3.94
+17:50,Unpaid care,4.09
+18:00,Unpaid care,4.13
+18:10,Unpaid care,3.94
+18:20,Unpaid care,4.07
+18:30,Unpaid care,4.86
+18:40,Unpaid care,5.19
+18:50,Unpaid care,5.46
+19:00,Unpaid care,5.64
+19:10,Unpaid care,6.04
+19:20,Unpaid care,6.0
+19:30,Unpaid care,5.26
+19:40,Unpaid care,4.99
+19:50,Unpaid care,4.81
+20:00,Unpaid care,4.0
+20:10,Unpaid care,3.83
+20:20,Unpaid care,3.5
+20:30,Unpaid care,2.84
+20:40,Unpaid care,2.63
+20:50,Unpaid care,2.54
+21:00,Unpaid care,2.29
+21:10,Unpaid care,2.2
+21:20,Unpaid care,1.9
+21:30,Unpaid care,1.6
+21:40,Unpaid care,1.57
+21:50,Unpaid care,1.14
+22:00,Unpaid care,1.04
+22:10,Unpaid care,1.09
+22:20,Unpaid care,0.96
+22:30,Unpaid care,0.9
+22:40,Unpaid care,0.76
+22:50,Unpaid care,0.73
+23:00,Unpaid care,0.34
+23:10,Unpaid care,0.34
+23:20,Unpaid care,0.37
+23:30,Unpaid care,0.34
+23:40,Unpaid care,0.24
+23:50,Unpaid care,0.24
+00:00,Unpaid care,0.2
+00:10,Unpaid care,0.27
+00:20,Unpaid care,0.2
+00:30,Unpaid care,0.23
+00:40,Unpaid care,0.2
+00:50,Unpaid care,0.2
+01:00,Unpaid care,0.21
+01:10,Unpaid care,0.14
+01:20,Unpaid care,0.07
+01:30,Unpaid care,0.1
+01:40,Unpaid care,0.16
+01:50,Unpaid care,0.16
+02:00,Unpaid care,0.26
+02:10,Unpaid care,0.23
+02:20,Unpaid care,0.13
+02:30,Unpaid care,0.16
+02:40,Unpaid care,0.1
+02:50,Unpaid care,0.1
+03:00,Unpaid care,0.13
+03:10,Unpaid care,0.1
+03:20,Unpaid care,0.17
+03:30,Unpaid care,0.27
+03:40,Unpaid care,0.27
+03:50,Unpaid care,0.2
+04:00,Watching television,0.2
+04:10,Watching television,0.2
+04:20,Watching television,0.2
+04:30,Watching television,0.23
+04:40,Watching television,0.23
+04:50,Watching television,0.3
+05:00,Watching television,0.3
+05:10,Watching television,0.33
+05:20,Watching television,0.33
+05:30,Watching television,0.33
+05:40,Watching television,0.4
+05:50,Watching television,0.4
+06:00,Watching television,0.34
+06:10,Watching television,0.44
+06:20,Watching television,0.44
+06:30,Watching television,0.5
+06:40,Watching television,0.6
+06:50,Watching television,0.99
+07:00,Watching television,1.06
+07:10,Watching television,1.27
+07:20,Watching television,1.36
+07:30,Watching television,1.51
+07:40,Watching television,1.61
+07:50,Watching television,1.87
+08:00,Watching television,1.8
+08:10,Watching television,1.86
+08:20,Watching television,1.83
+08:30,Watching television,1.8
+08:40,Watching television,2.33
+08:50,Watching television,2.31
+09:00,Watching television,2.51
+09:10,Watching television,2.56
+09:20,Watching television,2.64
+09:30,Watching television,2.91
+09:40,Watching television,2.86
+09:50,Watching television,2.94
+10:00,Watching television,2.96
+10:10,Watching television,3.23
+10:20,Watching television,3.13
+10:30,Watching television,2.99
+10:40,Watching television,2.91
+10:50,Watching television,2.99
+11:00,Watching television,2.67
+11:10,Watching television,2.67
+11:20,Watching television,2.57
+11:30,Watching television,2.87
+11:40,Watching television,2.96
+11:50,Watching television,3.09
+12:00,Watching television,3.33
+12:10,Watching television,3.36
+12:20,Watching television,3.63
+12:30,Watching television,3.91
+12:40,Watching television,4.19
+12:50,Watching television,4.54
+13:00,Watching television,5.0
+13:10,Watching television,5.33
+13:20,Watching television,5.46
+13:30,Watching television,5.9
+13:40,Watching television,6.24
+13:50,Watching television,6.46
+14:00,Watching television,6.74
+14:10,Watching television,7.19
+14:20,Watching television,7.43
+14:30,Watching television,7.77
+14:40,Watching television,8.1
+14:50,Watching television,8.1
+15:00,Watching television,8.26
+15:10,Watching television,8.44
+15:20,Watching television,8.84
+15:30,Watching television,9.14
+15:40,Watching television,9.2
+15:50,Watching television,9.19
+16:00,Watching television,9.7
+16:10,Watching television,9.71
+16:20,Watching television,9.59
+16:30,Watching television,9.54
+16:40,Watching television,9.87
+16:50,Watching television,10.21
+17:00,Watching television,10.59
+17:10,Watching television,10.83
+17:20,Watching television,11.39
+17:30,Watching television,11.86
+17:40,Watching television,12.31
+17:50,Watching television,12.67
+18:00,Watching television,14.07
+18:10,Watching television,15.1
+18:20,Watching television,15.61
+18:30,Watching television,16.6
+18:40,Watching television,17.49
+18:50,Watching television,18.56
+19:00,Watching television,21.46
+19:10,Watching television,23.0
+19:20,Watching television,25.29
+19:30,Watching television,28.66
+19:40,Watching television,30.91
+19:50,Watching television,32.57
+20:00,Watching television,37.96
+20:10,Watching television,39.53
+20:20,Watching television,41.1
+20:30,Watching television,43.01
+20:40,Watching television,44.09
+20:50,Watching television,45.06
+21:00,Watching television,43.66
+21:10,Watching television,44.67
+21:20,Watching television,44.71
+21:30,Watching television,43.47
+21:40,Watching television,42.47
+21:50,Watching television,41.59
+22:00,Watching television,32.74
+22:10,Watching television,30.67
+22:20,Watching television,28.1
+22:30,Watching television,21.59
+22:40,Watching television,19.61
+22:50,Watching television,18.16
+23:00,Watching television,11.73
+23:10,Watching television,10.26
+23:20,Watching television,9.19
+23:30,Watching television,6.94
+23:40,Watching television,6.13
+23:50,Watching television,5.51
+00:00,Watching television,3.41
+00:10,Watching television,2.91
+00:20,Watching television,2.66
+00:30,Watching television,1.97
+00:40,Watching television,1.81
+00:50,Watching television,1.73
+01:00,Watching television,1.29
+01:10,Watching television,1.23
+01:20,Watching television,0.94
+01:30,Watching television,0.97
+01:40,Watching television,0.97
+01:50,Watching television,0.97
+02:00,Watching television,0.61
+02:10,Watching television,0.54
+02:20,Watching television,0.51
+02:30,Watching television,0.34
+02:40,Watching television,0.31
+02:50,Watching television,0.31
+03:00,Watching television,0.24
+03:10,Watching television,0.24
+03:20,Watching television,0.24
+03:30,Watching television,0.17
+03:40,Watching television,0.17
+03:50,Watching television,0.17
+04:00,Entertainment and leisure,0.33
+04:10,Entertainment and leisure,0.33
+04:20,Entertainment and leisure,0.4
+04:30,Entertainment and leisure,0.4
+04:40,Entertainment and leisure,0.4
+04:50,Entertainment and leisure,0.4
+05:00,Entertainment and leisure,0.61
+05:10,Entertainment and leisure,0.64
+05:20,Entertainment and leisure,0.61
+05:30,Entertainment and leisure,0.74
+05:40,Entertainment and leisure,0.84
+05:50,Entertainment and leisure,0.99
+06:00,Entertainment and leisure,1.57
+06:10,Entertainment and leisure,1.97
+06:20,Entertainment and leisure,2.34
+06:30,Entertainment and leisure,2.94
+06:40,Entertainment and leisure,3.24
+06:50,Entertainment and leisure,3.37
+07:00,Entertainment and leisure,3.81
+07:10,Entertainment and leisure,4.53
+07:20,Entertainment and leisure,4.96
+07:30,Entertainment and leisure,5.5
+07:40,Entertainment and leisure,5.59
+07:50,Entertainment and leisure,5.57
+08:00,Entertainment and leisure,6.2
+08:10,Entertainment and leisure,6.96
+08:20,Entertainment and leisure,7.16
+08:30,Entertainment and leisure,7.96
+08:40,Entertainment and leisure,8.27
+08:50,Entertainment and leisure,8.83
+09:00,Entertainment and leisure,8.76
+09:10,Entertainment and leisure,8.94
+09:20,Entertainment and leisure,9.64
+09:30,Entertainment and leisure,10.36
+09:40,Entertainment and leisure,10.81
+09:50,Entertainment and leisure,11.24
+10:00,Entertainment and leisure,11.51
+10:10,Entertainment and leisure,11.77
+10:20,Entertainment and leisure,12.47
+10:30,Entertainment and leisure,13.16
+10:40,Entertainment and leisure,12.91
+10:50,Entertainment and leisure,13.14
+11:00,Entertainment and leisure,13.6
+11:10,Entertainment and leisure,13.81
+11:20,Entertainment and leisure,13.6
+11:30,Entertainment and leisure,13.96
+11:40,Entertainment and leisure,14.01
+11:50,Entertainment and leisure,14.1
+12:00,Entertainment and leisure,13.61
+12:10,Entertainment and leisure,13.76
+12:20,Entertainment and leisure,13.76
+12:30,Entertainment and leisure,13.89
+12:40,Entertainment and leisure,13.89
+12:50,Entertainment and leisure,13.11
+13:00,Entertainment and leisure,12.83
+13:10,Entertainment and leisure,13.23
+13:20,Entertainment and leisure,13.9
+13:30,Entertainment and leisure,14.77
+13:40,Entertainment and leisure,15.26
+13:50,Entertainment and leisure,15.26
+14:00,Entertainment and leisure,15.19
+14:10,Entertainment and leisure,15.43
+14:20,Entertainment and leisure,16.19
+14:30,Entertainment and leisure,16.6
+14:40,Entertainment and leisure,17.01
+14:50,Entertainment and leisure,16.74
+15:00,Entertainment and leisure,16.83
+15:10,Entertainment and leisure,17.1
+15:20,Entertainment and leisure,17.9
+15:30,Entertainment and leisure,18.06
+15:40,Entertainment and leisure,17.7
+15:50,Entertainment and leisure,17.96
+16:00,Entertainment and leisure,17.1
+16:10,Entertainment and leisure,17.61
+16:20,Entertainment and leisure,17.41
+16:30,Entertainment and leisure,17.63
+16:40,Entertainment and leisure,17.31
+16:50,Entertainment and leisure,17.54
+17:00,Entertainment and leisure,17.13
+17:10,Entertainment and leisure,17.07
+17:20,Entertainment and leisure,16.69
+17:30,Entertainment and leisure,16.57
+17:40,Entertainment and leisure,16.66
+17:50,Entertainment and leisure,16.66
+18:00,Entertainment and leisure,15.91
+18:10,Entertainment and leisure,16.57
+18:20,Entertainment and leisure,17.04
+18:30,Entertainment and leisure,17.73
+18:40,Entertainment and leisure,18.24
+18:50,Entertainment and leisure,18.93
+19:00,Entertainment and leisure,18.67
+19:10,Entertainment and leisure,19.31
+19:20,Entertainment and leisure,19.46
+19:30,Entertainment and leisure,20.09
+19:40,Entertainment and leisure,21.07
+19:50,Entertainment and leisure,20.99
+20:00,Entertainment and leisure,19.49
+20:10,Entertainment and leisure,20.17
+20:20,Entertainment and leisure,20.77
+20:30,Entertainment and leisure,20.84
+20:40,Entertainment and leisure,20.96
+20:50,Entertainment and leisure,20.64
+21:00,Entertainment and leisure,20.36
+21:10,Entertainment and leisure,20.27
+21:20,Entertainment and leisure,20.74
+21:30,Entertainment and leisure,20.5
+21:40,Entertainment and leisure,21.11
+21:50,Entertainment and leisure,21.07
+22:00,Entertainment and leisure,18.83
+22:10,Entertainment and leisure,19.14
+22:20,Entertainment and leisure,18.99
+22:30,Entertainment and leisure,17.16
+22:40,Entertainment and leisure,16.56
+22:50,Entertainment and leisure,15.66
+23:00,Entertainment and leisure,11.73
+23:10,Entertainment and leisure,10.59
+23:20,Entertainment and leisure,9.33
+23:30,Entertainment and leisure,7.17
+23:40,Entertainment and leisure,6.84
+23:50,Entertainment and leisure,6.17
+00:00,Entertainment and leisure,4.51
+00:10,Entertainment and leisure,3.99
+00:20,Entertainment and leisure,3.29
+00:30,Entertainment and leisure,2.96
+00:40,Entertainment and leisure,2.71
+00:50,Entertainment and leisure,2.54
+01:00,Entertainment and leisure,2.09
+01:10,Entertainment and leisure,2.03
+01:20,Entertainment and leisure,2.11
+01:30,Entertainment and leisure,1.7
+01:40,Entertainment and leisure,1.63
+01:50,Entertainment and leisure,1.53
+02:00,Entertainment and leisure,1.13
+02:10,Entertainment and leisure,1.07
+02:20,Entertainment and leisure,0.97
+02:30,Entertainment and leisure,0.63
+02:40,Entertainment and leisure,0.63
+02:50,Entertainment and leisure,0.63
+03:00,Entertainment and leisure,0.53
+03:10,Entertainment and leisure,0.46
+03:20,Entertainment and leisure,0.39
+03:30,Entertainment and leisure,0.43
+03:40,Entertainment and leisure,0.63
+03:50,Entertainment and leisure,0.63
+04:00,Education and study,0.0
+04:10,Education and study,0.0
+04:20,Education and study,0.0
+04:30,Education and study,0.0
+04:40,Education and study,0.0
+04:50,Education and study,0.0
+05:00,Education and study,0.0
+05:10,Education and study,0.0
+05:20,Education and study,0.0
+05:30,Education and study,0.0
+05:40,Education and study,0.0
+05:50,Education and study,0.0
+06:00,Education and study,0.07
+06:10,Education and study,0.07
+06:20,Education and study,0.07
+06:30,Education and study,0.0
+06:40,Education and study,0.0
+06:50,Education and study,0.0
+07:00,Education and study,0.03
+07:10,Education and study,0.1
+07:20,Education and study,0.1
+07:30,Education and study,0.03
+07:40,Education and study,0.1
+07:50,Education and study,0.1
+08:00,Education and study,0.24
+08:10,Education and study,0.27
+08:20,Education and study,0.27
+08:30,Education and study,0.27
+08:40,Education and study,0.37
+08:50,Education and study,0.37
+09:00,Education and study,1.33
+09:10,Education and study,1.2
+09:20,Education and study,1.2
+09:30,Education and study,1.27
+09:40,Education and study,1.27
+09:50,Education and study,1.31
+10:00,Education and study,1.4
+10:10,Education and study,1.54
+10:20,Education and study,1.57
+10:30,Education and study,1.67
+10:40,Education and study,1.81
+10:50,Education and study,1.89
+11:00,Education and study,1.83
+11:10,Education and study,2.0
+11:20,Education and study,1.86
+11:30,Education and study,1.94
+11:40,Education and study,1.94
+11:50,Education and study,1.97
+12:00,Education and study,1.87
+12:10,Education and study,2.03
+12:20,Education and study,1.96
+12:30,Education and study,1.77
+12:40,Education and study,1.77
+12:50,Education and study,1.64
+13:00,Education and study,1.87
+13:10,Education and study,1.84
+13:20,Education and study,2.01
+13:30,Education and study,1.94
+13:40,Education and study,2.01
+13:50,Education and study,1.99
+14:00,Education and study,2.13
+14:10,Education and study,2.16
+14:20,Education and study,2.27
+14:30,Education and study,2.3
+14:40,Education and study,2.29
+14:50,Education and study,2.29
+15:00,Education and study,2.39
+15:10,Education and study,2.2
+15:20,Education and study,2.17
+15:30,Education and study,2.39
+15:40,Education and study,2.46
+15:50,Education and study,2.5
+16:00,Education and study,2.24
+16:10,Education and study,2.24
+16:20,Education and study,2.31
+16:30,Education and study,2.27
+16:40,Education and study,2.1
+16:50,Education and study,1.77
+17:00,Education and study,1.61
+17:10,Education and study,1.61
+17:20,Education and study,1.51
+17:30,Education and study,1.4
+17:40,Education and study,1.29
+17:50,Education and study,1.26
+18:00,Education and study,1.27
+18:10,Education and study,1.27
+18:20,Education and study,1.21
+18:30,Education and study,1.19
+18:40,Education and study,1.26
+18:50,Education and study,1.1
+19:00,Education and study,1.16
+19:10,Education and study,1.13
+19:20,Education and study,1.09
+19:30,Education and study,1.14
+19:40,Education and study,1.11
+19:50,Education and study,1.26
+20:00,Education and study,1.17
+20:10,Education and study,1.21
+20:20,Education and study,1.07
+20:30,Education and study,1.03
+20:40,Education and study,1.03
+20:50,Education and study,1.03
+21:00,Education and study,0.99
+21:10,Education and study,0.94
+21:20,Education and study,0.94
+21:30,Education and study,0.87
+21:40,Education and study,0.8
+21:50,Education and study,0.63
+22:00,Education and study,0.31
+22:10,Education and study,0.29
+22:20,Education and study,0.43
+22:30,Education and study,0.54
+22:40,Education and study,0.64
+22:50,Education and study,0.57
+23:00,Education and study,0.6
+23:10,Education and study,0.57
+23:20,Education and study,0.5
+23:30,Education and study,0.4
+23:40,Education and study,0.33
+23:50,Education and study,0.33
+00:00,Education and study,0.17
+00:10,Education and study,0.17
+00:20,Education and study,0.17
+00:30,Education and study,0.17
+00:40,Education and study,0.1
+00:50,Education and study,0.1
+01:00,Education and study,0.03
+01:10,Education and study,0.03
+01:20,Education and study,0.03
+01:30,Education and study,0.0
+01:40,Education and study,0.0
+01:50,Education and study,0.0
+02:00,Education and study,0.0
+02:10,Education and study,0.0
+02:20,Education and study,0.0
+02:30,Education and study,0.0
+02:40,Education and study,0.0
+02:50,Education and study,0.0
+03:00,Education and study,0.0
+03:10,Education and study,0.0
+03:20,Education and study,0.0
+03:30,Education and study,0.0
+03:40,Education and study,0.0
+03:50,Education and study,0.0
+04:00,Other,0.4
+04:10,Other,0.43
+04:20,Other,0.4
+04:30,Other,0.5
+04:40,Other,0.5
+04:50,Other,0.53
+05:00,Other,0.53
+05:10,Other,0.53
+05:20,Other,0.77
+05:30,Other,0.84
+05:40,Other,0.76
+05:50,Other,0.76
+06:00,Other,0.7
+06:10,Other,0.91
+06:20,Other,0.7
+06:30,Other,0.36
+06:40,Other,0.23
+06:50,Other,0.23
+07:00,Other,0.47
+07:10,Other,0.5
+07:20,Other,0.6
+07:30,Other,0.57
+07:40,Other,0.46
+07:50,Other,0.57
+08:00,Other,0.77
+08:10,Other,0.53
+08:20,Other,0.7
+08:30,Other,0.6
+08:40,Other,0.83
+08:50,Other,0.79
+09:00,Other,0.96
+09:10,Other,0.84
+09:20,Other,0.94
+09:30,Other,1.0
+09:40,Other,1.13
+09:50,Other,1.13
+10:00,Other,1.11
+10:10,Other,0.99
+10:20,Other,1.09
+10:30,Other,1.11
+10:40,Other,1.19
+10:50,Other,1.16
+11:00,Other,0.96
+11:10,Other,1.01
+11:20,Other,1.17
+11:30,Other,1.17
+11:40,Other,1.1
+11:50,Other,1.01
+12:00,Other,1.23
+12:10,Other,1.14
+12:20,Other,1.19
+12:30,Other,1.2
+12:40,Other,1.44
+12:50,Other,1.24
+13:00,Other,1.33
+13:10,Other,1.23
+13:20,Other,1.17
+13:30,Other,1.13
+13:40,Other,1.06
+13:50,Other,0.96
+14:00,Other,0.94
+14:10,Other,1.03
+14:20,Other,0.99
+14:30,Other,0.9
+14:40,Other,0.79
+14:50,Other,0.93
+15:00,Other,1.43
+15:10,Other,1.39
+15:20,Other,1.06
+15:30,Other,1.09
+15:40,Other,1.19
+15:50,Other,1.07
+16:00,Other,0.91
+16:10,Other,1.2
+16:20,Other,1.34
+16:30,Other,1.29
+16:40,Other,1.41
+16:50,Other,1.34
+17:00,Other,1.43
+17:10,Other,1.43
+17:20,Other,1.57
+17:30,Other,1.21
+17:40,Other,0.96
+17:50,Other,1.1
+18:00,Other,1.1
+18:10,Other,1.6
+18:20,Other,1.54
+18:30,Other,1.51
+18:40,Other,1.47
+18:50,Other,1.49
+19:00,Other,1.37
+19:10,Other,1.2
+19:20,Other,1.16
+19:30,Other,1.36
+19:40,Other,1.43
+19:50,Other,1.5
+20:00,Other,1.66
+20:10,Other,1.89
+20:20,Other,1.84
+20:30,Other,2.23
+20:40,Other,2.26
+20:50,Other,2.33
+21:00,Other,2.26
+21:10,Other,2.33
+21:20,Other,2.57
+21:30,Other,2.47
+21:40,Other,2.21
+21:50,Other,2.39
+22:00,Other,2.44
+22:10,Other,2.39
+22:20,Other,2.69
+22:30,Other,2.41
+22:40,Other,2.39
+22:50,Other,2.24
+23:00,Other,2.16
+23:10,Other,2.09
+23:20,Other,2.07
+23:30,Other,1.86
+23:40,Other,1.83
+23:50,Other,1.83
+00:00,Other,1.91
+00:10,Other,1.89
+00:20,Other,1.74
+00:30,Other,1.61
+00:40,Other,1.57
+00:50,Other,1.54
+01:00,Other,1.37
+01:10,Other,1.44
+01:20,Other,1.41
+01:30,Other,1.41
+01:40,Other,1.39
+01:50,Other,1.31
+02:00,Other,1.39
+02:10,Other,1.41
+02:20,Other,1.41
+02:30,Other,1.34
+02:40,Other,1.34
+02:50,Other,1.41
+03:00,Other,1.49
+03:10,Other,1.49
+03:20,Other,1.49
+03:30,Other,1.69
+03:40,Other,1.66
+03:50,Other,1.69
