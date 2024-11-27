@@ -1,0 +1,128 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #007acc; /* Accent color */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.btn {
+  background: #007acc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #005f99;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('hero-bg.jpg') no-repeat center center/cover; /* Replace with your image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Overlay effect */
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.about {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-in animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero h1, .hero p, .btn {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .blog .post {
+    width: calc(50% - 20px); /* 2 columns */
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .about, .blog {
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog .post {
+    width: 100%; /* Full width */
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
