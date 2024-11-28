@@ -13,15 +13,17 @@ body {
   line-height: 1.6;
   background-color: #eff3fc;
   margin:0 auto;
-  padding-top: 60px;
+  padding-top: 10px;
 }
 
 /* Hero Section*/
 .hero {
   text-align: center;
-  /*padding: 100px 20px;*/
+  padding: 100px 20px;
   background: linear-gradient(120deg, #6d2480, #6a93d9);
   color: white;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .hero h1 {
@@ -77,6 +79,8 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     background-color: #6d2480;
     color: white;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .page-title {
@@ -120,6 +124,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     width: 30px;
     height: 21px;
+    margin-bottom: 0;
 }
 
 .toggle-button .bar {
@@ -127,6 +132,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     background-color: white;
     border-radius: 10px;
+    margin-bottom: 1em;
 }
 
 /*button*/
@@ -166,9 +172,6 @@ p {
   max-width: 800px;
 }
 
-section {
-  margin-bottom: 2.5em;  /* We want a little more space between sections */
-}
 
 /* Links */
 /* We want the links to be a little more visible  and a different color */
@@ -179,6 +182,43 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* section settings*/
+.chart-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.5em;
+}
+
+/* Card styles */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 300px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.card canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .chart-section {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
   
