@@ -32,6 +32,10 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
     <style>
         #chartGrid {
             display: flex;
@@ -42,9 +46,9 @@
 
 <body> 
    
-    <button class="button-52" role="button" onclick="location.href='https://mariellajasper.github.io/project.html'">Project</button>
+    <button class="btn" role="button" onclick="location.href='https://mariellajasper.github.io/project.html'">Project</button>
     <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-    <button class="button-52" role="button" onclick="location.href='https://github.com/mariellajasper/mariellajasper.github.io'">GitHub</button> 
+    <button class="btn" role="button" onclick="location.href='https://github.com/mariellajasper/mariellajasper.github.io'">GitHub</button> 
     <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <!-- The body tag contains the elements that visitors to our page will see. -->
     <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
@@ -56,9 +60,11 @@
         Mariella Jasper | <a href="https://www.linkedin.com/in/mariellajasper/">LinkedIn</a> | <a
             href="https://mariellajasper.github.io/">GitHub</a>
     </p>
-    <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        This page demonstrates the portfolio of 10 tasks I completed for the Data Science Unit 2024.
-    </h3>
+    <header class="hero">
+        <div class="overlay"></div>
+        <h1>Data Science Portfolio 2024</h1>
+        <a href="#" class="btn">Learn More</a>
+    </header>
 
     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
     <section>
