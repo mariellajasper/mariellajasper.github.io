@@ -11,7 +11,7 @@ body {
   font-size: 16px;
   color: #333;
   line-height: 1.6;
-  background-color: #eff3fc;
+  background-color: #4a005a;
   margin:0 auto;
   padding-top: 0px;
 }
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #6d2480;
+    background-color: #4a005a;
     color: white;
     margin-bottom: 0;
     margin-top: 0;
@@ -194,7 +194,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
   padding: 40px 20px;
-  background-color: #ffffff;
+  background-color: #eff3fc;
   margin: 20px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 2.5em;
