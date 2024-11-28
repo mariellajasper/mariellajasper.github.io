@@ -29,38 +29,67 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-/*Title section */
-.hero {
-  position: relative;
-  height: 100vh;
-  background: #6d2480;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
+/* Navigation bar */
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6d2480;
+    color: white;
 }
 
-.hero .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Overlay effect */
-  z-index: -1;
+.page-title {
+    font-size: 1.9rem;
+    margin-left: 1rem;
+    margin: 0.5rem;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+.navbar-links {
+    height: 100%;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.navbar-links li:hover {
+    background-color: #da84b1;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*button*/
 
 .btn {
   background: #6d2480;
@@ -75,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #530a63;
 }
 
-/* We want the headings to be a little bigger than the paragraph text */
+/* Headings bigger than paragraph */
 .big { /* This is the class we created in the HTML file, you can use it to style any element */
   font-size: 2.5em;
 }
