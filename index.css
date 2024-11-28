@@ -19,7 +19,7 @@ body {
 /* Hero Section*/
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  /*padding: 100px 20px;*/
   background: linear-gradient(120deg, #6d2480, #6a93d9);
   color: white;
 }
@@ -30,6 +30,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: white;
   justify-content: center;
+  text-align: center;
 }
 
 .hero p {
@@ -38,6 +39,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: white;
   justify-content: center;
+  text-align: center;
 }
 
 .hero .btn {
