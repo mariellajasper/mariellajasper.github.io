@@ -211,12 +211,12 @@ a:hover {
   text-align: center;
   overflow: auto;
   display: inline-block;
-  max-width: 300px;
+  max-width: 400px;
   /*overflow: hidden;*/
 }
 
 .chart-container {
-  max-width: 100%;
+  max-width: 390px;
   overflow: auto;  /* Enable scrolling if the content overflows */
   display: flex;
   justify-content: center; /* Centering the chart */
@@ -228,7 +228,7 @@ a:hover {
   height: auto; /* Keep the aspect ratio, will adjust to card size */
   max-width: 100%; /* Make sure chart doesn't overflow horizontally */
   max-height: 100%; /* Make sure chart doesn't overflow vertically */
-  object-fit: contain; /* Ensure chart scales to fit inside container */
+  /*object-fit: contain; /* Ensure chart scales to fit inside container */
 }
   
 /* Images */
