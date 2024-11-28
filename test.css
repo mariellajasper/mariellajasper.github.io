@@ -6,15 +6,23 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Parkinsans", sans-serif;
+  font-size: 16px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   color: #333;
   line-height: 1.6;
+  background-color: #f9dfff;
+  margin:0 auto;
+  max-width: 800px;
+  padding-top: 60px;
 }
 
 /* Links */
 a {
   text-decoration: none;
-  color: #007acc; /* Accent color */
+  color: #6d2480; /* Accent color */
 }
 
 a:hover {
@@ -23,7 +31,7 @@ a:hover {
 
 /* Button */
 .btn {
-  background: #007acc;
+  background: #6d2480;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -32,7 +40,7 @@ a:hover {
 }
 
 .btn:hover {
-  background: #005f99;
+  background: #6c197e;
 }
 
 .hero {
@@ -73,12 +81,12 @@ a:hover {
   background: #f9f9f9;
 }
 
-.about h2 {
+.aims h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-.about p {
+.aims p {
   max-width: 600px;
   margin: 0 auto;
   font-size: 1.1rem;
@@ -104,7 +112,7 @@ html {
 }
 
 @media (max-width: 768px) {
-  .blog .post {
+  .charts .post {
     width: calc(50% - 20px); /* 2 columns */
   }
 
@@ -112,13 +120,13 @@ html {
     font-size: 2rem;
   }
 
-  .about, .blog {
+  .about, .charts {
     padding: 30px 10px;
   }
 }
 
 @media (max-width: 480px) {
-  .blog .post {
+  .charts .post {
     width: 100%; /* Full width */
   }
 
