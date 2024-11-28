@@ -38,7 +38,7 @@ a:hover {
 .hero {
   position: relative;
   height: 100vh;
-  background: url('hero-bg.jpg') no-repeat center center/cover; /* Replace with your image */
+  background: url('https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/purplebg.jpg') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
