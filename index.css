@@ -5,18 +5,51 @@
 
 
 body {
-  font-family: "Parkinsans", sans-serif;
+  font-family: 'Merriweather', serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   color: #333;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: #eff3fc;
   margin:0 auto;
-  max-width: 800px;
   padding-top: 60px;
 }
+
+/* Hero Section*/
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(120deg, #6d2480, #6a93d9);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background: #6d2480;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #530a63;
+  transform: scale(1.05);
+}
+
 
 
 /* Headings */
@@ -25,6 +58,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 24px;
   margin-bottom: 16px;
   font-weight: 600;
+  max-width: 800px;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Navigation bar */
@@ -96,10 +131,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   text-align: center;
   display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
   background: #530a63;
+  transform: scale(1.05);
 }
 
 /* Headings bigger than paragraph */
@@ -119,6 +156,7 @@ h2 {
 p {
   margin-bottom: 1em;
   font-weight: 300;
+  max-width: 800px;
 }
 
 section {
@@ -142,3 +180,62 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
+/* Cards CSS */
+.projects {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1 1 calc(33.333% - 20px);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.card p {
+  padding: 0 10px;
+}
+
+
+/* animations and interactivity */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .projects .card {
+    flex: 1 1 100%;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1 {
+  animation: fadeIn 1s ease-in-out;
+}
+
