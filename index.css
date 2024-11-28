@@ -171,7 +171,7 @@ h2 {
 p {
   margin-bottom: 1em;
   font-weight: 300;
-  max-width: 800px;
+  width: 100%;
   text-align: center;
 }
 
@@ -207,7 +207,6 @@ a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   flex: 1 1 calc(33.333% - 20px); /* Default card width */
-  min-width: 300px; /* Set a minimum width for cards */
   text-align: center;
   overflow: auto;
   display: inline-block;
@@ -220,14 +219,6 @@ a:hover {
   display: flex;
   justify-content: center; /* Centering the chart */
   align-items: center; /* Centering the chart */
-}
-
-.card canvas {
-  width: 100%; /* 100% width, but will maintain aspect ratio */
-  height: auto; /* Keep the aspect ratio, will adjust to card size */
-  max-width: 100%; /* Make sure chart doesn't overflow horizontally */
-  max-height: 100%; /* Make sure chart doesn't overflow vertically */
-  object-fit: contain; /* Ensure chart scales to fit inside container */
 }
 
 .card figure {
