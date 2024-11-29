@@ -1,83 +1,89 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html> 
 <head>    
     <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Project</title>
+    <title>Portfolio</title> 
+    
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
 
     <style>
         #chartGrid {
             display: flex;
         }
-        
     </style>
 </head>
-<body>
-  
-    <button class="button-52" role="button" onclick="location.href='https://mariellajasper.github.io/project.html'">Project</button>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-    <button class="button-52" role="button" onclick="location.href='https://github.com/mariellajasper/mariellajasper.github.io'">GitHub</button> 
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-    <h1 class="big" style="margin-bottom: 0px;">
-        Unpaid work, lifestyle, and gender
-    </h1>
-    <p style="margin-top: 0px; color: darkblue">
-        Mariella Jasper | <a href="https://www.linkedin.com/in/mariellajasper/">LinkedIn</a> | <a
-            href="https://mariellajasper.github.io/">GitHub</a>
-    </p>
-    <h3 class="small">
-        How does unpaid care and domestic work shape the lives of men and women?
-    </h3>
 
-    <section>
-        <div class="chart-description">
-            <h2>Stacked Bar Chart</h2>
-            <p>
-                Overview - women do more unpaid and total work than men.
-            </p>
-        </div>
-        <figure id="stacked_bar_unpaid_paid_global_gender"></figure>
-    </section>
-    
-    <section>
-        <div class="chart-description">
-            <h2>Map of time spent on unpaid work</h2>
-            <p> 
-                Map showing proportion of time spent on unpaid domestic and care work (% of 24 hour day) .
-            </p>
-        </div>
-        <figure id="unpaid_work_maps"></figure>
-    </section>
-    
-    <section>
-        <div class="chart-description">
-            <h2>Proportion of time spent in unpaid care and domestic work, by sex</h2>
-            <p> 
-                Different regions have different predicted trends by UN for unpaid work done by men and women. What will unpaid work commitments look like over next few years? How can policymakers work to address the imbalance?
-            </p>
-        </div>
-        <figure id="trellis_line_unpaid_paid_work_projections"></figure>
+<body> 
+    <nav class="navbar">
+      <div class="page-title">Mariella Jasper</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="https://github.com/mariellajasper/mariellajasper.github.io">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/mariellajasper/">LinkedIn</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="hero">
+        <h1>Project: Unpaid Work, Lifestyle, and Gender</h1>
+        <p>How does unpaid care and domestic work shape the lives of men and women?</p>
     </section>
 
-    <section>
-        <div class="chart-description">
-            <h2>Unpaid care and domestic work in daily life</h2>
-            <p> 
-                Percent of the UK population engaging in selected activities by time of day, March 2023 weekly averages
-            </p>
+    <section class="chart-section">
+        <p>Aims of project:</p>
+        <div class="card">
+            <figure id="stacked_bar_unpaid_paid_global_gender"></figure>
         </div>
-        <figure id="ons_24h"></figure>
-    </section>
-    <section>
-        <div class="chart-description">
-            <p> 
-                Percent of the US population (15+) engaging in selected activities by time of day, 2023 annual averages
-            </p>
+        <p>This stacked bar chart shows an overview: women do more unpaid and total work than men.</p>
+        
+        <div class="card">
+          <figure id="unpaid_work_maps"></figure>
         </div>
-        <figure id="atus_24h"></figure>
+        <p>Map showing proportion of time spent on unpaid domestic and care work (% of 24 hour day)</p>
+        
+        <div class="card">
+          <figure id="trellis_line_unpaid_paid_work_projections"></figure>
+        </div>
+        <p>Proportion of time spent in unpaid care and domestic work, by sex. Different regions have different predicted trends by UN for unpaid work done by men and women. What will unpaid work commitments look like over next few years? How can policymakers work to address the imbalance?</p>
+
+        <div class="card">
+          <figure id="ons_24h"></figure>
+        </div>
+        <p>Unpaid care and domestic work in daily life. Percent of the UK population engaging in selected activities by time of day, March 2023 weekly averages</p>
+
+        <div class="card">
+          <figure id="atus_24h"></figure>
+        </div>
+        <p>Percent of the US population (15+) engaging in selected activities by time of day, 2023 annual averages</p>
+
+        <div class="card">
+          <figure id="bubble_unpaid_gender_gdppc"></figure>
+        </div>
+        <p>Bubble unpaid work by gender with gdppc as a measure for lifestyle</p>
+
+        <div class="card">
+          <figure id="bubble_unpaidratio_labourforceparticipation"></figure>
+        </div>
+        <p>Bubble ratio labour force s</p>
+
+        <div class="card">
+          <figure id="project_spine_gdp"></figure>
+        </div>
+        <p>Spine</p>
     </section>
+
 
     <script>
         let figure_1_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_stacked_bar_unpaid_paid_global_gender.json"; 
@@ -90,6 +96,12 @@
         vegaEmbed('#ons_24h', figure_4_spec)
         let figure_5_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_atus_24h.json";
         vegaEmbed('#atus_24h', figure_5_spec)
+        let figure_6_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_bubble_unpaid_gender_gdppc.json";
+        vegaEmbed('#bubble_unpaid_gender_gdppc', figure_6_spec)
+        let figure_7_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_bubble_unpaidratio_labourforceparticipation.json";
+        vegaEmbed('#bubble_unpaidratio_labourforceparticipation', figure_7_spec)
+        let figure_8_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_spine_gdp.json";
+        vegaEmbed('#project_spine_gdp', figure_8_spec)
     </script>
 
 </body>
