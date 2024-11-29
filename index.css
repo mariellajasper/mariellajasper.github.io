@@ -208,18 +208,18 @@ a:hover {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 10px;
   /*flex: 1 1 calc(33.333% - 20px); /* Default card width */
   text-align: center;
   display: inline-block;
   max-width: 500px;
-  overflow: auto;
+  /*overflow: auto;
   /*overflow: hidden;overflow: auto;*/
 }
 
 .chart-container {
-  max-width: 340px;
-  /*overflow: auto;  /* Enable scrolling if the content overflows */
+  max-width: 480px;
+  overflow: auto;  /* Enable scrolling if the content overflows */
   display: flex;
   justify-content: center; /* Centering the chart */
   align-items: center; /* Centering the chart */
