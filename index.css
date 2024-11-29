@@ -212,13 +212,13 @@ a:hover {
   /*flex: 1 1 calc(33.333% - 20px); /* Default card width */
   text-align: center;
   display: inline-block;
-  max-width: 500px;
-  /*overflow: auto;
+  max-width: 600px;
+  overflow: auto;
   /*overflow: hidden;overflow: auto;*/
 }
 
 .chart-container {
-  max-width: 480px;
+  max-width: 580px;
   overflow: auto;  /* Enable scrolling if the content overflows */
   display: flex;
   justify-content: center; /* Centering the chart */
