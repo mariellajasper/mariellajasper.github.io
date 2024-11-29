@@ -203,23 +203,23 @@ a:hover {
   margin-bottom: 2.5em;
 }
 
-.chart-section:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 30px var(--surface-glow);
-}
-
 /* Card styles */
 .card {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  /*flex: 1 1 calc(33.333% - 20px); /* Default card width */
+  flex: 1 1 calc(33.333% - 20px); /* Default card width */
   text-align: center;
   display: inline-block;
   max-width: 600px;
   /*overflow: auto;
   /*overflow: hidden;overflow: auto;*/
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px var(--surface-glow);
 }
 
 .chart-container {
@@ -233,7 +233,7 @@ a:hover {
 
 .card figure {
   object-fit: contain; /* Ensure chart scales to fit inside container */
-  width: 100%; /* 100% width, but will maintain aspect ratio */
+  width: auto; /* 100% width, but will maintain aspect ratio */
   height: auto; /* Keep the aspect ratio, will adjust to card size */
   /*max-width: 100%; /* Make sure chart doesn't overflow horizontally */
   /*max-height: 100%; /* Make sure chart doesn't overflow vertically */
@@ -249,6 +249,10 @@ a:hover {
   display: inline-block;
   max-width: 800px;
   overflow: hidden;
+}
+.card2:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px var(--surface-glow);
 }
 .card2 figure {
   width: 90%; /* 100% width, but will maintain aspect ratio */
