@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bubble plot.",
+  "width": 300,
+  "height": 300,
+  "title": {
+    "text": "Unpaid Work Ratio and Female Labour Force Participation",
+    "subtitle": [
+      "Female Labor Force Participation Rate, 15+, 2023",
+      "Female-to-male ratio of time spent on unpaid work, various years",
+      "Sources: OECD Time Use Data; OECD Gender Statistics; IMF",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "subtitleColor": "black",
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/labourforceparticipation_ratiounpaidwork_gdppc.csv"
+  },
+  "params": [{"name": "view", "select": "interval", "bind": "scales"}],
+  "mark": "circle",
+  "encoding": {
+    "y": {
+      "field": "2023",
+      "type": "quantitative",
+      "scale": {"zero": false},
+      "axis": {"title": "Labor Force Participation, Female 15+, %"}
+    },
+    "x": {
+      "field": "ratio",
+      "scale": {"type": "linear", "zero": false},
+      "axis": {"title": "Female-to-Male Unpaid Work Ratio"}
+    },
+    "size": {
+      "field": "Value",
+      "type": "quantitative",
+      "legend": {"title": "GDP per Capita"}
+    },
+    "tooltip": [
+      {"field": "Country", "type": "nominal"},
+      {
+        "field": "2023",
+        "type": "quantitative",
+        "title": "Female Labor Force Participation Rate",
+        "format": ""
+      },
+      {
+        "field": "ratio",
+        "type": "quantitative",
+        "title": "Female-to-male ratio of unpaid work",
+        "format": ""
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Income per Capita",
+        "format": ".0f"
+      }
+    ],
+    "color": {"value": "#6d2480"}
+  },
+  "config": {}
+}

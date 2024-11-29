@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bubble plot.",
+  "width": 300,
+  "height": 300,
+  "title": {
+    "text": "Unpaid Work and Lifestyle in selected OECD Countries",
+    "subtitle": [
+      "Average minutes per day spent on unpaid work, males and females",
+      "With GDP per capita, current prices  (U.S. dollars) 2024",
+      "Sources: OECD Time Use Data; IMF",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "subtitleColor": "black",
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/unpaid_work_income_per_cap.csv"
+  },
+  "params": [{"name": "view", "select": "interval", "bind": "scales"}],
+  "mark": "circle",
+  "encoding": {
+    "y": {
+      "field": "unpaid_work_male",
+      "type": "quantitative",
+      "scale": {"zero": false, "domain": [0, 350]},
+      "axis": {"title": "Male"}
+    },
+    "x": {
+      "field": "unpaid_work_female",
+      "scale": {"type": "linear", "domain": [0, 350]},
+      "axis": {"title": "Female"}
+    },
+    "size": {
+      "field": "Value",
+      "type": "quantitative",
+      "legend": {"title": "GDP per Capita"}
+    },
+    "tooltip": [
+      {"field": "Country", "type": "nominal"},
+      {
+        "field": "unpaid_work_female",
+        "type": "quantitative",
+        "title": "Female Unpaid Work",
+        "format": ".0f"
+      },
+      {
+        "field": "unpaid_work_male",
+        "type": "quantitative",
+        "title": "Male Unpaid Work",
+        "format": ".0f"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Income per Capita",
+        "format": ".0f"
+      }
+    ],
+    "color": {"value": "#6d2480"}
+  },
+  "config": {}
+}

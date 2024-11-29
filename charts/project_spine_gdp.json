@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Spine chart showing unpaid care work as a percentage of GDP.",
+  "width": 450,
+  "height": 450,
+  "title": {
+    "text": "Unpaid and Unvalued",
+    "subtitle": [
+      "Value of unpaid care work as a percentage of GDP, US$ PPP 2011, by sex, latest year",
+      "Source: ILO calculations based on Charmes, forthcoming and ILOSTAT.",
+      "Time Use Surveys from 1999-2015"
+    ],
+    "anchor": "start"
+  },
+  "params": [
+    {
+      "name": "countryGroup",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": ["All", "OECD", "G7"],
+        "labels": ["All", "OECD", "G7"],
+        "name": "Country Group: "
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/unpaid_work_GDP.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "filter": "countryGroup == 'All' || (countryGroup == 'G7' && indexof(['Canada', 'France', 'Germany', 'Italy', 'Japan', 'United Kingdom', 'United States'], datum.Country) >= 0) ||(countryGroup == 'OECD' && indexof(['Australia', 'New Zealand', 'Canada', 'Germany', 'France', 'United Kingdom', 'Belgium', 'Netherlands', 'Slovenia', 'Greece', 'Japan', 'Ireland', 'Portugal', 'Spain', 'United States', 'Turkey', 'Poland', 'Lithuania', 'Latvia', 'Estonia', 'Hungary', 'Korea, Republic of'], datum.Country) >= 0)"
+    },
+    {
+      "calculate": "datum.Country === 'The former Yugoslav Republic of Macedonia' ? 'Macedonia' : datum.Country === 'Korea, Republic of' ? 'South Korea' : datum.Country === 'Iran, Islamic Republic of' ? 'Iran' : datum.Country === 'Moldova, Republic of' ? 'Moldova' : datum.Country === 'Tanzania, United Republic of' ? 'Tanzania' : datum.Country",
+      "as": "RenamedCountry"
+    },
+    {
+      "calculate": "datum.Gender == 'Male' ? -datum.Value : datum.Value",
+      "as": "AlignedValue"
+    },
+    {"calculate": "datum.Value + '%'", "as": "ValuePercent"}
+  ],
+  "encoding": {
+    "y": {
+      "field": "RenamedCountry",
+      "type": "nominal",
+      "axis": {"grid": true, "labelFontSize": 10, "title": null},
+      "sort": {"field": "Value", "order": "descending"}
+    }
+  },
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "AlignedValue",
+          "type": "quantitative",
+          "scale": {"domain": [-15, 30]},
+          "axis": {
+            "title": "← Male % Female →",
+            "titleAlign": "center",
+            "titleAnchor": "middle",
+            "titleX": 158,
+            "titleY": 20,
+            "values": [-15, -10, -5, 0, 5, 10, 15, 20, 25, 30],
+            "labelExpr": "datum.value < 0 ? -datum.value : datum.value"
+          }
+        },
+        "color": {
+          "field": "Gender",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Female", "Male"],
+            "range": ["#6d2480", "#fc5110"]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "RenamedCountry", "title": "Country", "type": "nominal"},
+          {
+            "field": "ValuePercent",
+            "title": "Value as % of GDP",
+            "type": "nominal"
+          },
+          {"field": "Gender", "type": "nominal"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "axisX": {
+      "format": ".0%",
+      "labelExpr": "datum.value < 0 ? -datum.value : datum.value"
+    }
+  }
+}
