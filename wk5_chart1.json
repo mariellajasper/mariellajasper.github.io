@@ -24,10 +24,10 @@
       "lookup": "properties.ISO3",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/gii_wikipedia_clean.csv"
+          "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/gii_wikipedia_clean.csv"
         },
         "key": "ISO3",
-        "fields": ["value", "Country"]
+        "fields": ["GII Value", "Country"]
       }
     }
   ],
@@ -41,14 +41,14 @@
       "mark": {"type": "geoshape"},
       "encoding": {
         "color": {
-          "field": "value",
+          "field": "GII Value",
           "type": "quantitative",
           "legend": {"title": "", "values": ["0", "0.2", "0.4", "0.6", "0.8"]},
           "scale": {"scheme": "viridis", "reverse": false}
         },
         "tooltip": [
           {"field": "Country", "title": "Country"},
-          {"field": "value", "title": ""}
+          {"field": "GII Value", "title": ""}
         ]
       }
     }
