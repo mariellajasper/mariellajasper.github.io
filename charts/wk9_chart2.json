@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "UK Median Hourly Rates, £",
+    "subtitle": ["Wages. Source: ONS.", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {"view": {"stroke": null}},
+  "height": 200,
+  "width": 250,
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/hourly_rates_price_data.csv"
+  },
+  "layer": [
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "temporal",
+          "title": null,
+          "axis": {"grid": false}
+        },
+        "y": {"field": "Hourly_Rate", "type": "quantitative", "title": null},
+        "color": {
+          "field": "Category",
+          "type": "nominal",
+          "title": "Job Role",
+          "scale": {"scheme": "category10"},
+          "legend": null
+        },
+        "tooltip": [{"field": "Hourly_Rate", "title": "Hourly Rate"}]
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 5},
+      "encoding": {
+        "x": {"field": "year", "type": "temporal"},
+        "y": {"field": "Hourly_Rate", "type": "quantitative"},
+        "text": {"field": "Category", "type": "nominal"},
+        "color": {"field": "Category", "type": "nominal"}
+      },
+      "transform": [{"filter": "datum.year === 1704067200000"}]
+    }
+  ]
+}
