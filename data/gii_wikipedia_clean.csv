@@ -1,0 +1,164 @@
+Country,GII Value,ISO3
+Switzerland,0.025,CHE
+Norway,0.038,NOR
+Finland,0.039,FIN
+Netherlands,0.043,NLD
+Denmark,0.043,DNK
+Sweden,0.045,SWE
+Belgium,0.045,BEL
+South Korea,0.047,
+France,0.049,FRA
+Iceland,0.058,ISL
+Slovenia,0.063,SVN
+Taiwan,0.064,
+Luxembourg,0.065,LUX
+Singapore,0.065,SGP
+Austria,0.069,AUT
+Italy,0.069,ITA
+Spain,0.07,ESP
+Japan,0.075,JPN
+Portugal,0.079,PRT
+Canada,0.08,CAN
+Germany,0.084,DEU
+Cyprus,0.086,CYP
+Estonia,0.086,EST
+Ireland,0.093,IRL
+New Zealand,0.094,NZL
+Australia,0.097,AUS
+United Kingdom,0.109,
+Montenegro,0.109,MNE
+Poland,0.115,POL
+Greece,0.116,GRC
+Croatia,0.116,HRV
+United Arab Emirates,0.118,ARE
+Belarus,0.118,BLR
+Israel,0.123,ISR
+Lithuania,0.124,LTU
+Serbia,0.132,SRB
+Czech Republic,0.136,
+North Macedonia,0.143,MKD
+Bosnia and Herzegovina,0.149,BIH
+China,0.168,CHN
+Malta,0.175,MLT
+Latvia,0.176,LVA
+Albania,0.181,ALB
+Qatar,0.185,QAT
+Kazakhstan,0.19,KAZ
+Slovakia,0.191,SVK
+United States,0.204,
+Moldova,0.204,
+Bulgaria,0.206,BGR
+Bahrain,0.212,BHR
+Russia,0.225,
+Hungary,0.233,HUN
+Ukraine,0.234,UKR
+Kuwait,0.242,KWT
+Armenia,0.245,ARM
+Chile,0.247,CHL
+Libya,0.252,LBY
+Saudi Arabia,0.252,SAU
+Barbados,0.252,BRB
+Malaysia,0.253,MYS
+Brunei,0.255,
+Romania,0.276,ROU
+Uruguay,0.288,URY
+Uzbekistan,0.288,UZB
+Costa Rica,0.288,CRI
+Tunisia,0.296,TUN
+Vietnam,0.296,
+Cuba,0.304,CUB
+Oman,0.306,OMN
+Turkey,0.306,
+Tajikistan,0.314,TJK
+Mongolia,0.322,MNG
+Mexico,0.322,MEX
+Azerbaijan,0.323,AZE
+Trinidad and Tobago,0.323,TTO
+Argentina,0.328,ARG
+Georgia,0.331,GEO
+Bahamas,0.341,BHS
+Mauritius,0.347,MUS
+Tonga,0.354,TON
+Thailand,0.359,THA
+Samoa,0.36,WSM
+Maldives,0.369,MDV
+Kyrgyzstan,0.369,KGZ
+Fiji,0.37,FJI
+El Salvador,0.383,SLV
+Ecuador,0.384,ECU
+Peru,0.395,PER
+Jamaica,0.396,JAM
+Cape Verde,0.397,
+Saint Lucia,0.401,LCA
+Sri Lanka,0.401,LKA
+Rwanda,0.402,RWA
+South Africa,0.406,ZAF
+Panama,0.407,PAN
+Brazil,0.408,BRA
+Lebanon,0.411,LBN
+Belize,0.415,BLZ
+Bolivia,0.417,
+Bhutan,0.421,BTN
+Honduras,0.423,HND
+Colombia,0.428,COL
+Nicaragua,0.428,NIC
+Algeria,0.429,DZA
+Philippines,0.43,PHL
+Suriname,0.436,SUR
+Namibia,0.44,NAM
+Paraguay,0.446,PRY
+Egypt,0.449,EGY
+Jordan,0.45,JOR
+Nepal,0.452,NPL
+Morocco,0.454,MAR
+Dominican Republic,0.455,DOM
+Laos,0.459,
+Iran,0.459,
+Guyana,0.462,GUY
+Botswana,0.465,BWA
+Cambodia,0.474,KHM
+Myanmar,0.478,MMR
+Venezuela,0.479,
+Guatemala,0.479,GTM
+Indonesia,0.48,IDN
+Syria,0.482,
+India,0.488,IND
+Burundi,0.504,BDI
+Ethiopia,0.517,ETH
+Kenya,0.518,KEN
+Mozambique,0.523,MOZ
+Gabon,0.525,GAB
+Zimbabwe,0.527,ZWE
+Senegal,0.533,SEN
+Uganda,0.535,UGA
+Angola,0.536,AGO
+Sao Tome and Principe,0.537,STP
+Bangladesh,0.537,BGD
+Ghana,0.538,GHA
+Pakistan,0.538,PAK
+Zambia,0.539,ZMB
+Sudan,0.545,SDN
+Lesotho,0.553,LSO
+Tanzania,0.556,
+Cameroon,0.56,CMR
+Malawi,0.565,MWI
+Eswatini,0.567,SWZ
+Republic of the Congo,0.57,
+Togo,0.573,TGO
+Iraq,0.577,IRQ
+Burkina Faso,0.594,BFA
+Benin,0.612,BEN
+Gambia,0.612,GMB
+Democratic Republic of the Congo,0.617,
+Mauritania,0.634,MRT
+Haiti,0.636,HTI
+Ivory Coast,0.638,
+Niger,0.642,NER
+Sierra Leone,0.644,SLE
+Liberia,0.65,LBR
+Afghanistan,0.655,AFG
+Mali,0.671,MLI
+Central African Republic,0.68,CAF
+Chad,0.71,TCD
+Papua New Guinea,0.725,PNG
+Yemen,0.795,YEM
