@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Gender Inequality Index and GDP Per Capita",
+    "subtitle": [
+      "2019 GII Rankings Source: Wikipedia",
+      "2023 GDPPC $ Source: IMF"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/histogram_gdppc_gii.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "and": [
+          {"field": "GII Value", "valid": true},
+          {"field": "Value", "valid": true}
+        ]
+      }
+    }
+  ],
+  "mark": "rect",
+  "width": 300,
+  "height": 200,
+  "encoding": {
+    "x": {
+      "bin": {"maxbins": 16},
+      "field": "GII Value",
+      "type": "quantitative",
+      "title": null
+    },
+    "y": {
+      "bin": {"maxbins": 20},
+      "field": "Value",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "legend": {"title": "No. of Countries"}
+    }
+  },
+  "config": {"view": {"stroke": "transparent"}}
+}
