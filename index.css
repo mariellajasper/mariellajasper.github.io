@@ -209,17 +209,16 @@ a:hover {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  flex: 1 1 calc(33.333% - 20px); /* Default card width */
+  /*flex: 1 1 calc(33.333% - 20px); /* Default card width */
   text-align: center;
-  overflow: auto;
   display: inline-block;
   max-width: 400px;
-  /*overflow: hidden;*/
+  /*overflow: hidden;overflow: auto;*/
 }
 
 .chart-container {
   max-width: 340px;
-  overflow: auto;  /* Enable scrolling if the content overflows */
+  /*overflow: auto;  /* Enable scrolling if the content overflows */
   display: flex;
   justify-content: center; /* Centering the chart */
   align-items: center; /* Centering the chart */
