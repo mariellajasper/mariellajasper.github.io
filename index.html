@@ -150,16 +150,64 @@
             </p>
         </div>
   </section>
+
+  <section class="chart-section">
+        <h2>Task 8: Analytics charts</h2>
+        <div class="card">
+            <figure id="Location21"></figure>
+            <p>
+                2D Histogram Heat Map. Gender Inequality Index and GDP Per Capita
+            </p>
+        </div>
+        <div class="card">
+          <figure id="Location22"></figure>
+            <p>
+                Bubble chart of Unpaid Work Ratio and Female Labour Force Participation.
+            </p>
+        </div>
+  </section>
+
+  <section class="chart-section">
+        <h2>Task 9: Maps - Base Maps and Choropleths</h2>
+        <div class="card">
+            <figure id="Location23"></figure>
+            <p>
+                .
+            </p>
+        </div>
+        <div class="card">
+          <figure id="Location24"></figure>
+            <p>
+                .
+            </p>
+        </div>
+  </section>
+
+  <section class="chart-section">
+        <h2>Task 10: Maps - Base Maps and Choropleths(Option 2)</h2>
+        <div class="card">
+            <figure id="Location25"></figure>
+            <p>
+                Interactive legend on time use stacked area chart.
+            </p>
+        </div>
+        <div class="card">
+          <figure id="Location26"></figure>
+            <p>
+                Interactive option to select gender gap, male, female. The title also adjusts to the input.
+            </p>
+        </div>
+  </section>
     
 
     <!-- This is a script, it's a way to run JavaScript code on the page -->
     <script>
         // This is a comment in JavaScript - it's a different language to HTML and CSS
 
-        let figure_1_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/wk1_chart1.json"; 
-        vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-        let figure_2_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/wk1_chart2.json"; // We're storing the URL of the graph we want to display in a variable                                                                                                                    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
-        vegaEmbed('#Location2', figure_2_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_2
+        let figure_1_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/wk1_chart1.json"; // Storing the URL of the graph in a variable
+        vegaEmbed('#Location1', figure_1_spec) // Using the vegaEmbed function to put a graph in the element with id figure_1
+        let figure_2_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/wk1_chart2.json";                                                                                                                     // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+        vegaEmbed('#Location2', figure_2_spec)
         let figure_3_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/wk2_chart1.json";
         vegaEmbed('#Location3', figure_3_spec)
         let figure_4_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/wk2_chart2.json";
@@ -196,6 +244,18 @@
         vegaEmbed('#Location19', figure_19_spec)
         let figure_20_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/wk7_chart2.json";
         vegaEmbed('#Location20', figure_20_spec)
+        let figure_21_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/wk8_chart1.json";
+        vegaEmbed('#Location21', figure_21_spec)
+        let figure_22_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/wk8_chart2.json";
+        vegaEmbed('#Location22', figure_22_spec)
+        let figure_23_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/wk8_chart1.json";
+        vegaEmbed('#Location23', figure_23_spec)
+        let figure_24_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/wk8_chart2.json";
+        vegaEmbed('#Location24', figure_24_spec)
+        let figure_25_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/wk10_chart1.json";
+        vegaEmbed('#Location25', figure_25_spec)
+        let figure_26_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/wk10_chart2.json";
+        vegaEmbed('#Location26', figure_26_spec)
     </script>
 
 
