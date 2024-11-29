@@ -238,18 +238,17 @@ a:hover {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 100px;
   text-align: center;
-  overflow: auto;
   display: inline-block;
   max-width: 800px;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 .card2 figure {
-  width: 100%; /* 100% width, but will maintain aspect ratio */
+  width: 90%; /* 100% width, but will maintain aspect ratio */
   height: auto; /* Keep the aspect ratio, will adjust to card size */
-  max-width: 100%; /* Make sure chart doesn't overflow horizontally */
-  max-height: 100%; /* Make sure chart doesn't overflow vertically */
+  max-width: 90%; /* Make sure chart doesn't overflow horizontally */
+  max-height: 90%; /* Make sure chart doesn't overflow vertically */
   object-fit: contain; /* Ensure chart scales to fit inside container */
 }
   
