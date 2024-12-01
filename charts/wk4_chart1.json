@@ -1,12 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 440,
+  "width": 420,
   "height": 260,
   "config": {
     "background": "#f0f8ff",
     "view": {"stroke": null},
     "axis": {"labelColor": "#333", "titleColor": "#333"}
   },
+  "padding": 10,
   "title": {
     "text": ["AVERAGE STAMP DUTY SET TO SOAR UNDER LABOUR"],
     "fontSize": 18,
@@ -102,7 +103,7 @@
         "fontWeight": "normal"
       },
       "encoding": {
-        "x": {"value": 305},
+        "x": {"value": 290},
         "y": {"value": 180},
         "text": {"value": "Stamp duty"}
       }
@@ -117,7 +118,7 @@
         "fontWeight": "normal"
       },
       "encoding": {
-        "x": {"value": 316},
+        "x": {"value": 300},
         "y": {"value": 195},
         "text": {"value": "holiday"}
       }
@@ -132,7 +133,7 @@
         "fontWeight": "normal"
       },
       "encoding": {
-        "x": {"value": 388},
+        "x": {"value": 370},
         "y": {"value": -10},
         "text": {"value": "Forecast"}
       }

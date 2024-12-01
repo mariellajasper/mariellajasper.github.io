@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 440,
+  "width": 420,
   "height": 260,
   "config": {"view": {"stroke": null}, "axis": {"labelColor": "#333"}},
   "title": {
