@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Gender Inequality Index",
+    "subtitle": [
+      "2019 Rankings; Source: Wikipedia",
+      "Natural Earth Projection"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "width": 600,
+  "height": 300,
+  "padding": 5,
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/map_world.geojson",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "naturalEarth1"},
+  "transform": [
+    {
+      "lookup": "properties.ISO3",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/gii_wikipedia_clean.csv"
+        },
+        "key": "ISO3",
+        "fields": ["GII Value", "Country"]
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.1},
+      "transform": [{"filter": "datum.properties.ISO3 != 'ATA'"}],
+      "encoding": {"color": {"value": "#ebebeb"}}
+    },
+    {
+      "mark": {"type": "geoshape"},
+      "encoding": {
+        "color": {
+          "field": "GII Value",
+          "type": "quantitative",
+          "legend": {"title": "", "values": ["0", "0.2", "0.4", "0.6", "0.8"]},
+          "scale": {"scheme": "bluepurple", "reverse": false}
+        },
+        "tooltip": [
+          {"field": "Country", "title": "Country"},
+          {"field": "GII Value"}
+        ]
+      }
+    }
+  ]
+}
