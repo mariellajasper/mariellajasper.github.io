@@ -212,20 +212,7 @@ a:hover {
   flex: 1 1 calc(33.333% - 20px); /* Default card width */
   text-align: center;
   display: inline-block;
-  max-width: 600px;
-  overflow: auto;
-  /*overflow: hidden;overflow: auto;*/
-}
-
-.bigcard {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  /*flex: 1 1 calc(33.333% - 20px); /* Default card width */
-  text-align: center;
-  display: inline-block;
-  max-width: 800px;
+  max-width: 850px;
   overflow: auto;
   /*overflow: hidden;overflow: auto;*/
 }
@@ -234,12 +221,6 @@ a:hover {
     transform: translateY(-2px);
     box-shadow: 0 0 30px var(--surface-glow);
 }
-
-.bigcard:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 30px var(--surface-glow);
-}
-
 
 /*
 .chart-container {
@@ -260,11 +241,6 @@ a:hover {
   /*max-height: 100%; /* Make sure chart doesn't overflow vertically */
 }
 
-.bigcard figure {
-  object-fit: contain;
-  width: auto;
-  height: auto;
-}
 
 /* Card 2 section for Project Page*/
 .card2 {
