@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "International Territorial Level Map, to change regional hierarchy: replace x in 'ITLx_2021_20m' in URL, and 'ITLx21NM' in tooltip, with 1, 2 or 3.",
+  "description": "Germany Federal States Map using Mercator Projection.",
   "title": {
     "text": "Migration by Federal State, Germany",
     "subtitle": ["Mercator Projection | Source: GENESIS-Online Destatis", ""],
@@ -9,7 +9,7 @@
     "anchor": "middle",
     "color": "black"
   },
-  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "config": {"background": "white"},
   "width": 300,
   "height": 300,
   "params": [
@@ -18,6 +18,7 @@
       "value": "Net Migration",
       "bind": {
         "input": "select",
+        "name": "Migration Type:",
         "options": [
           "Net Migration",
           "German Nationals Net Migration",
@@ -58,7 +59,7 @@
             "field": "Net Migration",
             "type": "quantitative",
             "legend": {"title": "", "orient": "right"},
-            "scale": {"scheme": "viridis", "reverse": false}
+            "scale": {"scheme": "purplegreen", "reverse": true, "domainMid": 0}
           },
           "value": null
         },
@@ -96,6 +97,8 @@
           },
           "value": null
         },
+        "stroke": {"value": "black"},
+        "strokeWidth": {"value": 0.1},
         "tooltip": [
           {"field": "State", "title": "State"},
           {"field": "Foreign Nationals Net Migration"}
