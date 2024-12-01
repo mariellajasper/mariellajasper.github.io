@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 420,
+  "width": 410,
   "height": 260,
   "config": {
     "background": "#f0f8ff",
@@ -103,7 +103,7 @@
         "fontWeight": "normal"
       },
       "encoding": {
-        "x": {"value": 290},
+        "x": {"value": 285},
         "y": {"value": 180},
         "text": {"value": "Stamp duty"}
       }
@@ -118,7 +118,7 @@
         "fontWeight": "normal"
       },
       "encoding": {
-        "x": {"value": 300},
+        "x": {"value": 295},
         "y": {"value": 195},
         "text": {"value": "holiday"}
       }
@@ -133,7 +133,7 @@
         "fontWeight": "normal"
       },
       "encoding": {
-        "x": {"value": 370},
+        "x": {"value": 365},
         "y": {"value": -10},
         "text": {"value": "Forecast"}
       }
