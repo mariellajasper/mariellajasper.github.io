@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Real GDP in Great Britain, 1955-2024",
+    "anchor": "start",
+    "subtitle": "Real GDP, quarterly, £ million | Source: ONS through ECO API",
+    "fontSize": 15,
+    "subtitleFontSize": 11,
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "height": 300,
+  "width": 310,
+  "autosize": {"type": "fit", "contains": "padding"},
+  "view": {"strokeOpacity": 0},
+  "data": {
+    "url": "https://api.economicsobservatory.com/gbr/gdp_r?vega",
+    "format": {"type": "json"}
+  },
+  "mark": {"type": "line", "color": "#6d2480", "strokeWidth": "1.2"},
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {"title": null, "titleColor": "#122B39", "grid": false}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {"title": null, "titleColor": "#122B39", "grid": false}
+    }
+  },
+  "config": {}
+}

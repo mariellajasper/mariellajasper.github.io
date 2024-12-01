@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Government Investment G7 Countries",
+    "subtitle": ["Central Gov GFCF, % of GDP | Source: OECD", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "selection": {
+    "region": {
+      "type": "multi",
+      "fields": ["Country"],
+      "bind": "legend",
+      "init": [{"Country": "United Kingdom"}]
+    }
+  },
+  "width": 300,
+  "height": 300,
+  "padding": 5,
+  "mark": {"type": "line", "smooth": false, "opacity": 1},
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/OECD_GFCF.csv"
+  },
+  "transform": [
+    {"calculate": "year(datum.TIME_PERIOD)", "as": "year"},
+    {
+      "filter": "datum.Country == 'United Kingdom' || datum.Country == 'Canada' || datum.Country == 'United States' || datum.Country == 'France' || datum.Country == 'Germany' || datum.Country == 'Japan' || datum.Country == 'Italy'"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "TIME_PERIOD",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "OBS_VALUE",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false}
+    },
+    "color": {
+      "field": "Country",
+      "title": null,
+      "scale": {
+        "domain": [
+          "United Kingdom",
+          "Canada",
+          "France",
+          "Germany",
+          "Italy",
+          "Japan",
+          "United States"
+        ],
+        "range": [
+          "red",
+          "#4c78a8",
+          "#f58518",
+          "#e35755",
+          "#54a24b",
+          "#f2a82c",
+          "#a68493"
+        ]
+      },
+      "legend": {"orient": "top-left"}
+    },
+    "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.3}
+  },
+  "config": {"view": {"stroke": "transparent"}}
+}
