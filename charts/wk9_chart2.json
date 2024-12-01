@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "UK Median Hourly Rates, £",
-    "subtitle": ["Wages. Source: ONS.", ""],
+    "text": "UK Median Hourly Rates",
+    "subtitle": ["Wages | Source: ONS.", ""],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
@@ -11,6 +11,7 @@
   "config": {"view": {"stroke": null}},
   "height": 200,
   "width": 250,
+  "padding": 5,
   "data": {
     "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/hourly_rates_price_data.csv"
   },
@@ -24,12 +25,20 @@
           "title": null,
           "axis": {"grid": false}
         },
-        "y": {"field": "Hourly_Rate", "type": "quantitative", "title": null},
+        "y": {
+          "field": "Hourly_Rate",
+          "type": "quantitative",
+          "title": null,
+          "axis": {"labelExpr": "'£' + format(datum.value, ',.0f')"}
+        },
         "color": {
           "field": "Category",
           "type": "nominal",
           "title": "Job Role",
-          "scale": {"scheme": "category10"},
+          "scale": {
+            "domain": ["Domestic Cleaner", "Child Minder", "Care Assistant"],
+            "range": ["#6d2480", "#fc5110", "#0c58c6"]
+          },
           "legend": null
         },
         "tooltip": [{"field": "Hourly_Rate", "title": "Hourly Rate"}]

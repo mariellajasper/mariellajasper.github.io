@@ -1,58 +1,107 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "UK Median Hourly Rates",
-    "subtitle": ["Wages | Source: ONS.", ""],
+    "text": {
+      "expr": "dataSource === 'female' ? 'Time Spent on Unpaid Work, Females' : dataSource === 'male' ? 'Time Spent on Unpaid Work, Males' : 'Time Spent on Unpaid Work, Gender Gap'"
+    },
+    "subtitle": [
+      "Proportion of time spent on unpaid domestic and care work (% of 24 hour day)",
+      "Most Recent Year Available, Source: World Bank",
+      "Natural Earth Projection"
+    ],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
-    "anchor": "start",
+    "anchor": "middle",
     "color": "black"
   },
-  "config": {"view": {"stroke": null}},
-  "height": 200,
-  "width": 250,
-  "padding": 5,
-  "data": {
-    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/hourly_rates_price_data.csv"
-  },
-  "layer": [
+  "params": [
     {
-      "mark": "line",
-      "encoding": {
-        "x": {
-          "field": "year",
-          "type": "temporal",
-          "title": null,
-          "axis": {"grid": false}
-        },
-        "y": {
-          "field": "Hourly_Rate",
-          "type": "quantitative",
-          "title": null,
-          "axis": {"labelExpr": "'£' + format(datum.value, ',.0f')"}
-        },
-        "color": {
-          "field": "Category",
-          "type": "nominal",
-          "title": "Job Role",
-          "scale": {
-            "domain": ["Domestic Cleaner", "Child Minder", "Care Assistant"],
-            "range": ["#6d2480", "#fc5110", "#0c58c6"]
-          },
-          "legend": null
-        },
-        "tooltip": [{"field": "Hourly_Rate", "title": "Hourly Rate"}]
+      "name": "dataSource",
+      "value": "gender_gap",
+      "bind": {
+        "input": "select",
+        "options": ["female", "male", "gender_gap"],
+        "labels": ["Female", "Male", "Gender Gap"],
+        "name": "Select: "
       }
+    }
+  ],
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "width": 600,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/map_world.geojson",
+    "format": {"property": "features"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.ISO3",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/unpaid_work_female_%25.csv"
+        },
+        "key": "ISO3",
+        "fields": ["most_recent_value_female", "country_female", "year_female"]
+      },
+      "default": null
     },
     {
-      "mark": {"type": "text", "align": "left", "dx": 5},
-      "encoding": {
-        "x": {"field": "year", "type": "temporal"},
-        "y": {"field": "Hourly_Rate", "type": "quantitative"},
-        "text": {"field": "Category", "type": "nominal"},
-        "color": {"field": "Category", "type": "nominal"}
+      "lookup": "properties.ISO3",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/unpaid_work_male_%25.csv"
+        },
+        "key": "ISO3",
+        "fields": ["most_recent_value_male", "country_male", "year_male"]
       },
-      "transform": [{"filter": "datum.year === 1704067200000"}]
+      "default": null
+    },
+    {
+      "lookup": "properties.ISO3",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/unpaid_work_gender_gap.csv"
+        },
+        "key": "ISO3",
+        "fields": ["gender_gap", "country_gender_gap", "year_gender_gap"]
+      },
+      "default": null
+    },
+    {
+      "calculate": "dataSource === 'female' ? datum.most_recent_value_female : dataSource === 'male' ? datum.most_recent_value_male : datum.gender_gap",
+      "as": "selected_value"
+    },
+    {
+      "calculate": "dataSource === 'female' ? datum.country_female : dataSource === 'male' ? datum.country_male : datum.country_gender_gap",
+      "as": "selected_country"
+    },
+    {
+      "calculate": "dataSource === 'female' ? datum.year_female : dataSource === 'male' ? datum.year_male : datum.year_gender_gap",
+      "as": "selected_year"
+    }
+  ],
+  "projection": {"type": "naturalEarth1"},
+  "layer": [
+    {
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.1},
+      "transform": [{"filter": "datum.properties.ISO3 != 'ATA'"}],
+      "encoding": {"color": {"value": "lightgrey"}}
+    },
+    {
+      "mark": {"type": "geoshape"},
+      "encoding": {
+        "color": {
+          "field": "selected_value",
+          "type": "quantitative",
+          "legend": {"title": ""},
+          "scale": {"scheme": "viridis", "reverse": false}
+        },
+        "tooltip": [
+          {"field": "selected_country", "title": "Country"},
+          {"field": "selected_value", "title": "% of Day"},
+          {"field": "selected_year", "title": "Year"}
+        ]
+      }
     }
   ]
 }
