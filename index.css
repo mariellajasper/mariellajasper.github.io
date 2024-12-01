@@ -222,16 +222,16 @@ a:hover {
     box-shadow: 0 0 30px var(--surface-glow);
 }
 
-/*
+
 .chart-container {
-  max-width: 580px;
+  max-width: 800px;
   object-fit: contain; 
   overflow: auto;
   display: flex;
   justify-content: center;
   align-items: center; 
 }
-*/
+
 
 .card figure {
   object-fit: contain; /* Ensure chart scales to fit inside container */
