@@ -240,14 +240,17 @@ a:hover {
     box-shadow: 0 0 30px var(--surface-glow);
 }
 
+
+/*
 .chart-container {
   max-width: 580px;
-  object-fit: contain; /* Ensure chart scales to fit inside container */
-  overflow: auto;  /* Enable scrolling if the content overflows */
+  object-fit: contain; 
+  overflow: auto;
   display: flex;
-  justify-content: center; /* Centering the chart */
-  align-items: center; /* Centering the chart */
+  justify-content: center;
+  align-items: center; 
 }
+*/
 
 .card figure {
   object-fit: contain; /* Ensure chart scales to fit inside container */
