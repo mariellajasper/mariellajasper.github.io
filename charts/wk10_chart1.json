@@ -19,7 +19,12 @@
     "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/ons_24h.csv"
   },
   "selection": {
-    "region": {"type": "multi", "fields": ["Activity"], "bind": "legend"}
+    "region": {
+      "type": "multi",
+      "fields": ["Activity"],
+      "bind": "legend",
+      "init": [{"Activity": "Unpaid household work"}]
+    }
   },
   "transform": [
     {"calculate": "timeParse(datum.Time, '%H:%M')", "as": "parsed_time"},
@@ -48,22 +53,35 @@
       "title": "",
       "legend": {
         "orient": "right",
-        "title": "Activity (Click to Select)",
+        "title": "Activity",
         "direction": "vertical"
       },
-      "scale": {"scheme": "category20"},
-      "sort": [
-        "Sleep and rest",
-        "Unpaid household work",
-        "Unpaid care",
-        "Paid work",
-        "Watching television",
-        "Personal care",
-        "Entertainment and leisure",
-        "Education and study",
-        "Travel",
-        "Other"
-      ]
+      "scale": {
+        "domain": [
+          "Sleep and rest",
+          "Unpaid household work",
+          "Unpaid care",
+          "Paid work",
+          "Watching television",
+          "Personal care",
+          "Entertainment and leisure",
+          "Education and study",
+          "Travel",
+          "Other"
+        ],
+        "range": [
+          "#9044a0",
+          "#fc5110",
+          "#cc4f0e",
+          "#7b9fc7",
+          "#77c5d0",
+          "#386fbe",
+          "#3b9930",
+          "#e35755",
+          "#e5c74a",
+          "#6a93d9"
+        ]
+      }
     },
     "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.1},
     "order": {"field": "order"},
