@@ -4,11 +4,11 @@
   "width": 300,
   "height": 300,
   "title": {
-    "text": "Unpaid Work Ratio and Female Labour Force Participation",
+    "text": "Unpaid Work and Lifestyle in selected OECD Countries",
     "subtitle": [
-      "Female Labor Force Participation Rate, 15+, 2023",
-      "Female-to-male ratio of time spent on unpaid work, various years",
-      "Sources: OECD Time Use Data; OECD Gender Statistics; IMF",
+      "Average minutes per day spent on unpaid work, males and females",
+      "With GDP per capita, current prices  (U.S. dollars) 2024",
+      "Sources: OECD Time Use Data; IMF",
       ""
     ],
     "subtitleFontStyle": "italic",
@@ -18,47 +18,42 @@
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/labourforceparticipation_ratiounpaidwork_gdppc.csv"
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/unpaid_work_income_per_cap.csv"
   },
+  "transform": [
+    {
+      "calculate": "round(datum.unpaid_work_female) + ' mins'",
+      "as": "rounded_female_label"
+    },
+    {
+      "calculate": "round(datum.unpaid_work_male) + ' mins'",
+      "as": "rounded_male_label"
+    }
+  ],
   "params": [{"name": "view", "select": "interval", "bind": "scales"}],
   "mark": "circle",
   "encoding": {
     "y": {
-      "field": "2023",
+      "field": "unpaid_work_male",
       "type": "quantitative",
-      "scale": {"zero": false},
-      "axis": {"title": "Labor Force Participation, Female 15+, %"}
+      "scale": {"zero": false, "domain": [0, 360]},
+      "axis": {"title": "Male"}
     },
     "x": {
-      "field": "ratio",
-      "scale": {"type": "linear", "zero": false},
-      "axis": {"title": "Female-to-Male Unpaid Work Ratio"}
+      "field": "unpaid_work_female",
+      "scale": {"type": "linear", "domain": [0, 360]},
+      "axis": {"title": "Female"}
     },
     "size": {
-      "field": "Value",
+      "field": "GDPPC",
       "type": "quantitative",
-      "legend": {"title": "GDP per Capita"}
+      "legend": {"title": "GDP per Capita", "format": "$,d"}
     },
     "tooltip": [
       {"field": "Country", "type": "nominal"},
-      {
-        "field": "2023",
-        "type": "quantitative",
-        "title": "Female Labor Force Participation Rate",
-        "format": ""
-      },
-      {
-        "field": "ratio",
-        "type": "quantitative",
-        "title": "Female-to-male ratio of unpaid work",
-        "format": ""
-      },
-      {
-        "field": "Value",
-        "type": "quantitative",
-        "title": "Income per Capita",
-        "format": ".0f"
-      }
+      {"field": "rounded_female_label", "title": "Female Unpaid Work"},
+      {"field": "rounded_male_label", "title": "Male Unpaid Work"},
+      {"field": "GDPPC", "title": "Income per Capita", "format": "$,d"}
     ],
     "color": {"value": "#6d2480"}
   },
