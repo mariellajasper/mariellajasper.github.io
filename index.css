@@ -44,21 +44,6 @@ body {
   display: block;
 }
 
-/*
-.hero .btn {
-  background: #6d2480;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  font-family: 'Poppins', sans-serif;
-}
-.hero .btn:hover {
-  background: #530a63;
-  transform: scale(1.05);
-}
-*/
 
 
 /* Headings */
@@ -232,6 +217,10 @@ a:hover {
   align-items: center; 
 }
 
+.card p {
+  object-fit: contain;
+  max-width: 100%;
+}
 
 .card figure {
   object-fit: contain; /* Ensure chart scales to fit inside container */
@@ -262,6 +251,11 @@ a:hover {
   max-width: 90%; /* Make sure chart doesn't overflow horizontally */
   max-height: 90%; /* Make sure chart doesn't overflow vertically */
   object-fit: contain; /* Ensure chart scales to fit inside container */
+}
+
+.card2 p {
+  object-fit: contain;
+  max-width: 100%;
 }
 
 .card2 img {
