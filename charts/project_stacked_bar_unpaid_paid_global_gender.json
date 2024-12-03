@@ -4,12 +4,14 @@
   "data": {
     "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/world_unpaid_paid_work_time_by_gender.csv"
   },
+  "view": {"strokeOpacity": 0},
   "title": {
     "text": "Gender distribution of unpaid and paid work",
     "anchor": "start",
     "subtitle": [
       "Weighted world average from 64 countries, latest year, age group 15 and older",
-      "Source: ILO calculations based on Charmes, forthcoming"
+      "Source: ILO calculations based on Charmes, forthcoming",
+      ""
     ],
     "fontSize": 14,
     "subtitleFontSize": 10,
@@ -19,40 +21,101 @@
   },
   "height": 280,
   "width": 300,
-  "mark": "bar",
-  "config": {"axis": {"grid": false, "domain": false}},
+  "config": {"axis": {"grid": false}},
   "transform": [
-    {"filter": "datum.work_type === 'unpaid' || datum.work_type === 'paid'"}
+    {"filter": "datum.work_type === 'unpaid' || datum.work_type === 'paid'"},
+    {
+      "calculate": "datum.work_type === 'unpaid' ? 'Unpaid' : datum.work_type === 'paid' ? 'Paid' : datum.gender",
+      "as": "caps_work_type"
+    },
+    {
+      "calculate": "floor(datum.hours) + 'h ' + round((datum.hours - floor(datum.hours))*60)+ 'm'",
+      "as": "time_label"
+    },
+    {
+      "calculate": "datum.gender === 'men' ? 'Men' : datum.gender === 'women' ? 'Women' : datum.gender",
+      "as": "gender_label"
+    },
+    {
+      "calculate": "datum.work_type === 'unpaid' ? 0 : 1",
+      "as": "work_type_order"
+    }
   ],
-  "encoding": {
-    "x": {
-      "field": "gender",
-      "scale": {"padding": 0.4},
-      "axis": {
-        "title": null,
-        "labelPadding": 5,
-        "ticks": false,
-        "labelAngle": 0
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "tooltip": {
+          "expr": "'Time spent on '+datum.work_type + ' work, '+datum.gender+': ' + datum.time_label"
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "gender_label",
+          "scale": {"padding": 0.4},
+          "axis": {
+            "domain": false,
+            "labelFontWeight": "bold",
+            "labelFontSize": 12,
+            "title": null,
+            "labelPadding": 5,
+            "ticks": false,
+            "labelAngle": 0
+          }
+        },
+        "y": {
+          "field": "hours",
+          "type": "quantitative",
+          "stack": "zero",
+          "axis": {
+            "domain": false,
+            "ticks": false,
+            "titlePadding": 0,
+            "title": "",
+            "labels": false
+          }
+        },
+        "color": {
+          "field": "work_type",
+          "type": "nominal",
+          "scale": {
+            "domain": ["unpaid", "paid"],
+            "range": ["#6d2480", "#fc5110"]
+          },
+          "legend": null
+        },
+        "order": {"field": "work_type_order", "type": "quantitative"}
       }
     },
-    "y": {
-      "field": "hours",
-      "type": "quantitative",
-      "axis": {
-        "titlePadding": 10,
-        "title": "Hours per day",
-        "values": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    {
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "dy": 10
+      },
+      "encoding": {
+        "x": {"field": "gender_label"},
+        "y": {"field": "hours", "type": "quantitative", "stack": "zero"},
+        "text": {"field": "time_label"},
+        "color": {"value": "white"},
+        "order": {"field": "work_type_order", "type": "quantitative"}
       }
     },
-    "color": {
-      "field": "work_type",
-      "type": "nominal",
-      "scale": {"domain": ["unpaid", "paid"], "range": ["#F28E2B", "#4E79A7"]},
-      "legend": {"orient": "top-left", "direction": "horizontal", "title": null}
-    },
-    "tooltip": [
-      {"field": "work_type", "title": "Type of Work", "type": "nominal"},
-      {"field": "hours", "title": "Hours", "type": "quantitative"}
-    ]
-  }
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 0,
+        "dy": -30
+      },
+      "encoding": {
+        "x": {"value": 260},
+        "y": {"field": "hours", "aggregate": "median", "type": "quantitative"},
+        "text": {"field": "caps_work_type"},
+        "color": {"field": "work_type", "type": "nominal"}
+      }
+    }
+  ]
 }
