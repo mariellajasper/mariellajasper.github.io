@@ -208,7 +208,7 @@ a:hover {
 }
 
 
-.chart-container {
+.chart-container, .card p {
   max-width: 800px;
   object-fit: contain; 
   overflow: auto;
@@ -217,12 +217,12 @@ a:hover {
   align-items: center; 
 }
 
-.card p {
+/*.card p {
   object-fit: contain;
   max-width: 100%;
-}
+}*/
 
-.card figure {
+.card figure, .card p {
   object-fit: contain; /* Ensure chart scales to fit inside container */
   width: auto; /* 100% width, but will maintain aspect ratio */
   height: auto; /* Keep the aspect ratio, will adjust to card size */
