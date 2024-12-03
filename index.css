@@ -257,7 +257,7 @@ a:hover {
 }
 
 .card2 img {
-  width: 260; /* 100% width, but will maintain aspect ratio */
+  width: 300px; /* 100% width, but will maintain aspect ratio */
   height: auto; /* Keep the aspect ratio, will adjust to card size */
   max-width: 90%; /* Make sure chart doesn't overflow horizontally */
   max-height: 90%; /* Make sure chart doesn't overflow vertically */
