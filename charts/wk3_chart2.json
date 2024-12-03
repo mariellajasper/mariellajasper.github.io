@@ -21,7 +21,7 @@
   "padding": 5,
   "mark": {"type": "line", "smooth": false, "opacity": 1},
   "data": {
-    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/OECD_GFCF.csv"
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/OECD_GFCF.csv"
   },
   "transform": [
     {"calculate": "year(datum.TIME_PERIOD)", "as": "year"},
