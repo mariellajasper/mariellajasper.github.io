@@ -38,7 +38,8 @@
       "bin": {"maxbins": 20},
       "field": "Value",
       "type": "quantitative",
-      "title": null
+      "title": null,
+      "axis": {"format": "$,d"}
     },
     "color": {
       "aggregate": "count",
