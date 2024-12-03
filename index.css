@@ -211,7 +211,7 @@ a:hover {
 }
 
 .card p {
-  width: 80%; /* Match the figure's width */
+  width: 300; /* Match the figure's width */
   text-align: center; /* Center text alignment */
   word-wrap: break-word;
 }
