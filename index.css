@@ -249,7 +249,7 @@ a:hover {
 */
 
 .card img {
-  max-width: 250; 
+  max-width: 300px; 
   height: auto; 
   object-fit: contain;
 }
@@ -280,7 +280,7 @@ a:hover {
 }
 
 .card2 img {
-  max-width: 250;
+  max-width: 300px;
   height: auto; 
   object-fit: contain;
   border: 1px solid #ddd;
