@@ -197,8 +197,7 @@ a:hover {
 }
 
 .card figure, .card p {
-  display: block;
-  max-width: 100%; /* Ensure they do not overflow */
+  max-width: 80%; /* Ensure they do not overflow */
   margin: 0 auto; /* Center-align within the card */
 }
 .card a {
@@ -211,7 +210,7 @@ a:hover {
 }
 
 .card p {
-  width: 300; /* Match the figure's width */
+  width: 80%; /* Match the figure's width */
   text-align: center; /* Center text alignment */
   word-wrap: break-word;
 }
