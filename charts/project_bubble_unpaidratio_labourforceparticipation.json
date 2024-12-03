@@ -20,44 +20,51 @@
   "data": {
     "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/labourforceparticipation_ratiounpaidwork_gdppc.csv"
   },
+  "transform": [
+    {"calculate": "round(datum.ratio * 100) / 100", "as": "ratio_label"},
+    {
+      "calculate": "datum.participation_rate+'%'",
+      "as": "participation_rate_label"
+    },
+    {"calculate": "'$'+round(datum.GDPPC)", "as": "GDPPC_label"}
+  ],
   "params": [{"name": "view", "select": "interval", "bind": "scales"}],
   "mark": "circle",
   "encoding": {
     "y": {
-      "field": "2023",
+      "field": "participation_rate",
       "type": "quantitative",
       "scale": {"zero": false},
-      "axis": {"title": "Labor Force Participation, Female 15+, %"}
+      "axis": {"title": null, "labelExpr": "datum.value + '%'"}
     },
     "x": {
       "field": "ratio",
       "scale": {"type": "linear", "zero": false},
-      "axis": {"title": "Female-to-Male Unpaid Work Ratio"}
+      "axis": {"title": null}
     },
     "size": {
-      "field": "Value",
+      "field": "GDPPC",
       "type": "quantitative",
-      "legend": {"title": "GDP per Capita"}
+      "legend": {"title": "GDP per Capita", "format": "$,d"}
     },
     "tooltip": [
       {"field": "Country", "type": "nominal"},
       {
-        "field": "2023",
-        "type": "quantitative",
+        "field": "participation_rate_label",
         "title": "Female Labor Force Participation Rate",
         "format": ""
       },
       {
-        "field": "ratio",
+        "field": "ratio_label",
         "type": "quantitative",
         "title": "Female-to-male ratio of unpaid work",
         "format": ""
       },
       {
-        "field": "Value",
+        "field": "GDPPC",
         "type": "quantitative",
         "title": "Income per Capita",
-        "format": ".0f"
+        "format": "$,d"
       }
     ],
     "color": {"value": "#6d2480"}

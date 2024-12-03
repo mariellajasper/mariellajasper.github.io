@@ -20,45 +20,40 @@
   "data": {
     "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/unpaid_work_income_per_cap.csv"
   },
+  "transform": [
+    {
+      "calculate": "round(datum.unpaid_work_female) + ' mins'",
+      "as": "rounded_female_label"
+    },
+    {
+      "calculate": "round(datum.unpaid_work_male) + ' mins'",
+      "as": "rounded_male_label"
+    }
+  ],
   "params": [{"name": "view", "select": "interval", "bind": "scales"}],
   "mark": "circle",
   "encoding": {
     "y": {
       "field": "unpaid_work_male",
       "type": "quantitative",
-      "scale": {"zero": false, "domain": [0, 350]},
+      "scale": {"zero": false, "domain": [0, 360]},
       "axis": {"title": "Male"}
     },
     "x": {
       "field": "unpaid_work_female",
-      "scale": {"type": "linear", "domain": [0, 350]},
+      "scale": {"type": "linear", "domain": [0, 360]},
       "axis": {"title": "Female"}
     },
     "size": {
-      "field": "Value",
+      "field": "GDPPC",
       "type": "quantitative",
-      "legend": {"title": "GDP per Capita"}
+      "legend": {"title": "GDP per Capita", "format": "$,d"}
     },
     "tooltip": [
       {"field": "Country", "type": "nominal"},
-      {
-        "field": "unpaid_work_female",
-        "type": "quantitative",
-        "title": "Female Unpaid Work",
-        "format": ".0f"
-      },
-      {
-        "field": "unpaid_work_male",
-        "type": "quantitative",
-        "title": "Male Unpaid Work",
-        "format": ".0f"
-      },
-      {
-        "field": "Value",
-        "type": "quantitative",
-        "title": "Income per Capita",
-        "format": ".0f"
-      }
+      {"field": "rounded_female_label", "title": "Female Unpaid Work"},
+      {"field": "rounded_male_label", "title": "Male Unpaid Work"},
+      {"field": "GDPPC", "title": "Income per Capita", "format": "$,d"}
     ],
     "color": {"value": "#6d2480"}
   },
