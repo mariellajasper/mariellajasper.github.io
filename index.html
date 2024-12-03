@@ -163,13 +163,13 @@
         <div class="card">
             <figure id="Location21"></figure>
             <p>
-                2D Histogram Heat Map. Gender Inequality Index and GDP Per Capita, data cleaned and formatted in <a href="https://colab.research.google.com/drive/1RcSnNlKExg8klra_Z3aI6W7aI1YLgHq2?usp=sharing">Google Colab</a>
+                This 2D histogram heatmap shows the relationship between the Gender Inequality Index and GDP Per Capita, darker cells indicate more countries in corresponding ranges. Data cleaned in <a href="https://colab.research.google.com/drive/1RcSnNlKExg8klra_Z3aI6W7aI1YLgHq2?usp=sharing">Google Colab</a>
             </p>
         </div>
         <div class="card">
           <figure id="Location22"></figure>
             <p>
-                Bubble chart of Unpaid Work Ratio and Female Labour Force Participation.
+                This bubble chart compares unpaid work time (minutes/day) for males and females in OECD countries, highlighting GDP per capita via bubble size.
             </p>
         </div>
   </section>
@@ -179,13 +179,13 @@
         <div class="card">
             <figure id="Location23"></figure>
             <p>
-                Map showing nursery prices. Price data scraped in <a href="https://colab.research.google.com/drive/1DcFR7Yk27S4me1Ea1kKx2pslncsCW1Hg?usp=sharing">Google Colab</a>.
+                Using <a href="https://colab.research.google.com/drive/1DcFR7Yk27S4me1Ea1kKx2pslncsCW1Hg?usp=sharing">Google Colab</a>, I scraped UK price data to analyse the value of care and domestic work. The map illustrates regional nursery fee variations (2001–2024); darker shades indicate higher costs. 
             </p>
         </div>
         <div class="card">
           <figure id="Location24"></figure>
             <p>
-                Line chart showing three different jobs and changes in hourly rates.
+                This line chart shows increasing wages for 3 care-related occupations, with care assistants’ high wages suggesting higher valuation.
             </p>
         </div>
   </section>
@@ -195,22 +195,18 @@
         <div class="card">
             <figure id="Location25"></figure>
             <p>
-                Interactive legend on time use stacked area chart. Data scraped from pdf in <a href="https://colab.research.google.com/drive/1Y1YEnBGg2hesi0xTJc4XTGIPR0xK21RZ?usp=sharing">Google Colab</a>
+                This time use stacked area chart has an interactive legend. American Time Use Data scraped from a PDF in <a href="https://colab.research.google.com/drive/1Y1YEnBGg2hesi0xTJc4XTGIPR0xK21RZ?usp=sharing">Google Colab</a>.
             </p>
         </div>
         <div class="card">
           <figure id="Location26"></figure>
             <p>
-                Interactive option to select gender gap, male, female. The title also adjusts to the input.
+                This map has an interactive select box to choose gender gap, male, female. The title adjusts to the input, and the gender gap map has a different colour scheme to highlight it is the difference between female and male. World Bank data cleaned in <a href="https://colab.research.google.com/drive/1BdnueJd6FrwovYNp8wcdL9Y4CmXyD9_v?usp=sharing">Google Colab</a>.
             </p>
         </div>
   </section>
     
-
-    <!-- This is a script, it's a way to run JavaScript code on the page -->
     <script>
-        // This is a comment in JavaScript - it's a different language to HTML and CSS
-
         let figure_1_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/wk1_chart1.json"; // Storing the URL of the graph in a variable
         vegaEmbed('#Location1', figure_1_spec) // Using the vegaEmbed function to put a graph in the element with id figure_1
         let figure_2_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/wk1_chart2.json";                                                                                                                     // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
