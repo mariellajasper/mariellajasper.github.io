@@ -241,7 +241,6 @@ a:hover {
   /*max-height: 100%; /* Make sure chart doesn't overflow vertically */
 }
 
-
 /* Card 2 section for Project Page*/
 .card2 {
   background-color: #fff;
@@ -263,6 +262,17 @@ a:hover {
   max-width: 90%; /* Make sure chart doesn't overflow horizontally */
   max-height: 90%; /* Make sure chart doesn't overflow vertically */
   object-fit: contain; /* Ensure chart scales to fit inside container */
+}
+
+.card2 img {
+  width: 260; /* 100% width, but will maintain aspect ratio */
+  height: auto; /* Keep the aspect ratio, will adjust to card size */
+  max-width: 90%; /* Make sure chart doesn't overflow horizontally */
+  max-height: 90%; /* Make sure chart doesn't overflow vertically */
+  object-fit: contain; /* Ensure chart scales to fit inside container */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
 }
   
 /* Images */
