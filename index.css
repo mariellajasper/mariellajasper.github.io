@@ -154,6 +154,7 @@ p {
   margin-bottom: 1em;
   font-weight: 300;
   text-align: center;
+  display:block;
 }
 
 
@@ -187,7 +188,7 @@ a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 10px;
   text-align: center;
-  display: block;
+  display: inline-block;
   max-width: 850px;
   overflow: auto;
   /*overflow: hidden;overflow: auto;*/
@@ -197,7 +198,7 @@ a:hover {
 .card {
   background-color: #fff;
   text-align: center;
-  display: block;
+  display: inline-block;
   max-width: 850px;
   overflow: auto;
   /*overflow: hidden;overflow: auto;*/
@@ -212,6 +213,7 @@ a:hover {
   max-width: 80%;
   text-align: center; 
   word-wrap: break-word;
+  display:block;
 }
 
 .outercard:hover {
@@ -261,7 +263,7 @@ a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 60px;
   text-align: center;
-  display: block;
+  display: inline-block;
   max-width: 800px;
   overflow: hidden;
 }
