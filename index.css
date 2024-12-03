@@ -195,6 +195,21 @@ a:hover {
   /*overflow: hidden;overflow: auto;*/
 }
 
+.card figure, .card p {
+  max-width: 100%; /* Ensure they do not overflow */
+  margin: 0 auto; /* Center-align within the card */
+}
+
+.card figure {
+  width: 80%; /* Set a common width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card p {
+  width: 80%; /* Match the figure's width */
+  text-align: center; /* Center text alignment */
+}
+
 .card:hover {
     transform: translateY(-2px);
     box-shadow: 0 0 30px var(--surface-glow);
@@ -209,6 +224,7 @@ a:hover {
   align-items: center; 
 }
 
+/*
 .card p {
   object-fit: contain;
   max-width: 300;
@@ -224,6 +240,7 @@ a:hover {
   width: auto;
   height: auto; 
 }
+*/
 
 .card img {
   max-width: 250; 
