@@ -193,7 +193,10 @@ a:hover {
   padding: 10px;
   text-align: center;
   align-items: center;
-  display: inline-block;
+  /*display: inline-block;*/
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Ensure content stacks vertically */
+  justify-content: center; /* Center content vertically */
   max-width: 850px;
   /*overflow: hidden;overflow: auto;*/
 }
