@@ -181,13 +181,11 @@ a:hover {
   margin-bottom: 2.5em;
 }
 
-/* Card styles */
-.card {
+.outercard {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  /*flex: 1 1 calc(33.333% - 20px); /* Default card width */
   text-align: center;
   display: block;
   max-width: 850px;
@@ -195,8 +193,14 @@ a:hover {
   /*overflow: hidden;overflow: auto;*/
 }
 
-.card a {
-  max-width: 100%; 
+/* Card styles */
+.card {
+  background-color: #fff;
+  text-align: center;
+  display: block;
+  max-width: 850px;
+  overflow: auto;
+  /*overflow: hidden;overflow: auto;*/
 }
 
 .card figure {
@@ -204,13 +208,13 @@ a:hover {
   height: auto; 
 }
 
-.card p {
+.outercard p {
   max-width: 80%;
   text-align: center; 
   word-wrap: break-word;
 }
 
-.card:hover {
+.outercard:hover {
     transform: translateY(-2px);
     box-shadow: 0 0 30px var(--surface-glow);
 }
@@ -292,7 +296,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
   }
-  .card {
+  .outercard {
     flex: 1 1 100%;
   }
   .card2 {
