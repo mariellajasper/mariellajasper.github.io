@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 20px;
   border-radius: 5px;
   text-align: center;
-  display: inline-block;
+  display: block;
   transition: all 0.3s ease;
 }
 
@@ -154,6 +154,7 @@ p {
   margin-bottom: 1em;
   font-weight: 300;
   text-align: center;
+  display: block
 }
 
 
@@ -189,14 +190,14 @@ a:hover {
   padding: 10px;
   /*flex: 1 1 calc(33.333% - 20px); /* Default card width */
   text-align: center;
-  display: inline-block;
+  display: block;
   max-width: 850px;
   overflow: auto;
   /*overflow: hidden;overflow: auto;*/
 }
 
 .card figure, .card p {
-  display: inline-block;
+  display: block;
   max-width: 100%; /* Ensure they do not overflow */
   margin: 0 auto; /* Center-align within the card */
 }
@@ -262,7 +263,7 @@ a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 60px;
   text-align: center;
-  display: inline-block;
+  display: block;
   max-width: 800px;
   overflow: hidden;
 }
