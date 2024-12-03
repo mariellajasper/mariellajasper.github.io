@@ -195,22 +195,18 @@ a:hover {
   /*overflow: hidden;overflow: auto;*/
 }
 
-.card figure, .card p {
-  max-width: 80%; /* Ensure they do not overflow */
-  margin: 0 auto; /* Center-align within the card */
-}
 .card a {
   max-width: 100%; 
 }
 
 .card figure {
-  width: 80%; /* Set a common width */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 80%;
+  height: auto; 
 }
 
 .card p {
-  width: 80%; /* Match the figure's width */
-  text-align: center; /* Center text alignment */
+  max-width: 80%;
+  text-align: center; 
   word-wrap: break-word;
 }
 
