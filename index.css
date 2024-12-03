@@ -214,7 +214,8 @@ a:hover {
 
 .card p {
   object-fit: contain;
-  max-width: 400px;
+  max-width: 450px;
+  text-align: center;
 }
 
 .card figure {
