@@ -78,6 +78,10 @@
     {
       "calculate": "dataSource === 'female' ? datum.year_female : dataSource === 'male' ? datum.year_male : datum.year_gender_gap",
       "as": "selected_year"
+    },
+    {
+      "calculate": "round(datum.selected_value * 100) / 100 + '%'",
+      "as": "rounded_value"
     }
   ],
   "projection": {"type": "naturalEarth1"},
@@ -93,12 +97,16 @@
         "color": {
           "field": "selected_value",
           "type": "quantitative",
-          "legend": {"title": ""},
-          "scale": {"scheme": "viridis", "reverse": false}
+          "legend": {"title": "", "labelExpr": "datum.value + '%'"},
+          "scale": {
+            "scheme": {
+              "expr": "dataSource === 'gender_gap' ? 'bluepurple' : 'greenblue'"
+            }
+          }
         },
         "tooltip": [
           {"field": "selected_country", "title": "Country"},
-          {"field": "selected_value", "title": "% of Day"},
+          {"field": "rounded_value", "title": "Proportion of Day"},
           {"field": "selected_year", "title": "Year"}
         ]
       }

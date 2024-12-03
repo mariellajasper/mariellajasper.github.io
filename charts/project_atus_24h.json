@@ -18,6 +18,14 @@
   "data": {
     "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/atus_24h.csv"
   },
+  "selection": {
+    "region": {
+      "type": "multi",
+      "fields": ["Activity"],
+      "bind": "legend",
+      "init": [{"Activity": "Household activities"}]
+    }
+  },
   "transform": [
     {"calculate": "datetime(2024, 0, 1, datum.Time)", "as": "Time2"},
     {"calculate": "format(datum.Time, '00') + ':00'", "as": "TimeFormatted"},
@@ -32,12 +40,12 @@
       "field": "Time2",
       "type": "temporal",
       "title": "",
-      "axis": {"format": "%H:00"}
+      "axis": {"format": "%H:00", "grid": false}
     },
     "y": {
       "aggregate": "sum",
       "field": "Value",
-      "axis": {"format": ".0%"},
+      "axis": {"format": ".0%", "grid": false},
       "title": "",
       "stack": "normalize"
     },
@@ -49,19 +57,33 @@
         "title": "Activity",
         "direction": "vertical"
       },
-      "scale": {"scheme": "category20"},
-      "sort": [
-        "Sleep and personal care",
-        "Household activities",
-        "Unpaid care",
-        "Paid work",
-        "Leisure and sports",
-        "Eating and drinking",
-        "Purchasing goods and services",
-        "Education",
-        "Other"
-      ]
+      "scale": {
+        "domain": [
+          "Sleep and personal care",
+          "Household activities",
+          "Unpaid care",
+          "Paid work",
+          "Leisure and sports",
+          "Eating and drinking",
+          "Purchasing goods and services",
+          "Education",
+          "Other"
+        ],
+        "range": [
+          "#9044a0",
+          "#fc5110",
+          "#cc4f0e",
+          "#7b9fc7",
+          "#77c5d0",
+          "#386fbe",
+          "#3b9930",
+          "#e35755",
+          "#e5c74a",
+          "#6a93d9"
+        ]
+      }
     },
+    "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.1},
     "order": {"field": "order"},
     "tooltip": [
       {"field": "Activity", "title": "Activity", "type": "nominal"},
