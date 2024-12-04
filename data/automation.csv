@@ -1,0 +1,58 @@
+Activity,source,automation_score
+Cooking,ons,0.617
+Dish washing,ons,0.692
+Cleaning and other household upkeep,ons,0.681
+Making and mending clothes,ons,0.623
+Laundry and ironing,ons,0.662
+Gardening,ons,0.486
+Pet care,ons,0.525
+Shopping,ons,0.681
+Home maintenance,ons,0.567
+Car maintenance,ons,0.559
+Service use,ons,0.681
+Household management,ons,0.681
+Other housework,ons,0.681
+Physical care of a child,ons,0.558
+Teaching a child,ons,0.558
+Interacting with a child,ons,0.558
+Accompanying a child,ons,0.558
+Escorting a child,ons,0.658
+Care for an adult,ons,0.538
+Cooking,frey_osborne,0.8
+Dish washing,frey_osborne,0.77
+Cleaning and other household upkeep,frey_osborne,0.66
+Making and mending clothes,frey_osborne,0.94
+Laundry and ironing,frey_osborne,0.76
+Gardening,frey_osborne,0.76
+Pet care,frey_osborne,0.593
+Shopping,frey_osborne,0.66
+Home maintenance,frey_osborne,0.65
+Car maintenance,frey_osborne,0.61
+Service use,frey_osborne,0.66
+Household management,frey_osborne,0.66
+Other housework,frey_osborne,0.66
+Physical care of a child,frey_osborne,0.084
+Teaching a child,frey_osborne,0.084
+Interacting with a child,frey_osborne,0.084
+Accompanying a child,frey_osborne,0.084
+Escorting a child,frey_osborne,0.775
+Care for an adult,frey_osborne,0.52
+Cooking,nri,0.458
+Dish washing,nri,0.92
+Cleaning and other household upkeep,nri,0.995
+Making and mending clothes,nri,0.553
+Laundry and ironing,nri,0.889
+Gardening,nri,0.362
+Pet care,nri,0.108
+Shopping,nri,0.827
+Home maintenance,nri,0.663
+Car maintenance,nri,0.868
+Service use,nri,0.827
+Household management,nri,0.827
+Other housework,nri,0.827
+Physical care of a child,nri,0.003
+Teaching a child,nri,0.003
+Interacting with a child,nri,0.003
+Accompanying a child,nri,0.003
+Escorting a child,nri,0.89
+Care for an adult,nri,0.06
