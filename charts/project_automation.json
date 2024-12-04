@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 300,
+  "height": 250,
+  "title": {
+    "text": "Automation of Unpaid Domestic and Care Activities",
+    "subtitle": [
+      "Source: E. Hertog et al, Technological Forecasting & Social Change (2023)",
+      ""
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "title": {"anchor": "start"},
+    "axisY": {"ticks": false},
+    "axisX": {"ticks": false}
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/automation.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "calculate": "{'nri': 'NRI', 'ons': 'ONS', 'frey_osborne': 'Frey & Osborne'}[datum.source]",
+      "as": "source_legend"
+    }
+  ],
+  "mark": {"type": "point", "shape": "circle", "size": 20},
+  "encoding": {
+    "x": {
+      "field": "automation_score",
+      "type": "quantitative",
+      "title": null,
+      "scale": {"domain": [0, 1]},
+      "axis": {"grid": true, "gridOpacity": 0.4}
+    },
+    "y": {
+      "field": "Activity",
+      "type": "ordinal",
+      "title": null,
+      "sort": "-x",
+      "axis": {"grid": true, "labelPadding": 5, "gridOpacity": 0.4}
+    },
+    "color": {
+      "field": "source_legend",
+      "type": "nominal",
+      "title": "Source",
+      "scale": {"scheme": "tableau10"},
+      "legend": {"orient": "top-left"}
+    },
+    "tooltip": [
+      {"field": "Activity", "type": "ordinal", "title": "Activity"},
+      {"field": "source_legend", "type": "nominal", "title": "Source"},
+      {
+        "field": "automation_score",
+        "type": "quantitative",
+        "title": "Automation Score"
+      }
+    ]
+  }
+}
