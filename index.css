@@ -160,7 +160,7 @@ h2 {
 p {
   margin-bottom: 1em;
   font-weight: 300;
-  max-width: 550px;
+  max-width: 650px;
   text-align: center;
   display:block;
 }
@@ -182,13 +182,16 @@ a:hover {
 /*section settings*/
 .chart-section {
   display: flex;
-  max-width: 855px;
+  max-width: 1000px;
+  width: 100%;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
   padding: 40px 20px;
   background-color: #c5d7fe;
-  margin: 20px 0;
+  margin: 0 auto;
+  padding: 20px;
+  /*margin: 20px 0;*/
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 2.5em;
 }
