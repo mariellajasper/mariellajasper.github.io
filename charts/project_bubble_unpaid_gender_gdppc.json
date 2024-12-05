@@ -4,10 +4,10 @@
   "width": 300,
   "height": 300,
   "title": {
-    "text": "Unpaid Work and Lifestyle in selected OECD Countries",
+    "text": "Unpaid Work and Living Standards in selected OECD Countries",
     "subtitle": [
       "Average minutes per day spent on unpaid work, males and females",
-      "With GDP per capita, current prices  (U.S. dollars) 2024",
+      "GDP per capita as a measure of living standards, current prices  (U.S. dollars) 2024",
       "Sources: OECD Time Use Data; IMF",
       ""
     ],
@@ -53,7 +53,7 @@
       {"field": "Country", "type": "nominal"},
       {"field": "rounded_female_label", "title": "Female Unpaid Work"},
       {"field": "rounded_male_label", "title": "Male Unpaid Work"},
-      {"field": "GDPPC", "title": "Income per Capita", "format": "$,d"}
+      {"field": "GDPPC", "title": "GDP per Capita", "format": "$,d"}
     ],
     "color": {"value": "#6d2480"}
   },
