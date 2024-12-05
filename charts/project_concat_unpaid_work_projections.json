@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/technical_brief_clean_long.csv"
+  },
+  "title": {
+    "text": "Forecast: Gender Inequality in Unpaid Work",
+    "subtitle": [
+      "Estimates of proportion of time spent in unpaid care and domestic work, % of 24 hour day",
+      "SOURCE UN Women and the Pardee Center for International Futures",
+      ""
+    ],
+    "fontSize": 15,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "subtitleColor": "black",
+    "anchor": "start",
+    "color": "black"
+  },
+  "params": [
+    {
+      "name": "selectedRegion",
+      "select": {"type": "point", "fields": ["Region"]},
+      "value": "World"
+    }
+  ],
+  "hconcat": [
+    {
+      "title": {
+        "text": "Forecast 2050",
+        "subtitle": [""],
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "subtitleColor": "black",
+        "color": "black"
+      },
+      "transform": [
+        {"filter": "datum.Year == 2050"},
+        {"calculate": "datum.Value/100", "as": "percentage_value"},
+        {"calculate": "datum.Value/100", "as": "percentage_value"}
+      ],
+      "mark": "bar",
+      "width": 250,
+      "height": 200,
+      "encoding": {
+        "x": {
+          "field": "Region",
+          "type": "nominal",
+          "title": null,
+          "axis": {"labelAngle": -45, "grid": false},
+          "sort": [
+            "World",
+            "Australia and New Zealand",
+            "Oceania (excl. Australia and New Zealand)",
+            "Central and Southern Asia",
+            "Europe and Northern America",
+            "Eastern and South-Eastern Asia",
+            "Northern Africa and Western Asia",
+            "Sub-Saharan Africa",
+            "Latin America and the Caribbean"
+          ]
+        },
+        "xOffset": {"field": "Sex"},
+        "y": {
+          "field": "percentage_value",
+          "type": "quantitative",
+          "title": null,
+          "axis": {"grid": false, "format": "%"}
+        },
+        "color": {
+          "field": "Sex",
+          "type": "nominal",
+          "scale": {"range": ["#6d2480", "#fc5110"]},
+          "legend": {"title": "Gender"}
+        },
+        "opacity": {
+          "condition": {"param": "selectedRegion", "value": 1},
+          "value": 0.6
+        },
+        "tooltip": [
+          {"field": "Region", "type": "nominal"},
+          {"field": "Sex", "type": "nominal"},
+          {"field": "Value", "type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "transform": [
+        {"filter": {"param": "selectedRegion"}},
+        {"filter": "datum.Year >= 2015 && datum.Year <= 2050"},
+        {"filter": {"param": "selectedRegion", "empty": false}},
+        {"calculate": "round(datum.Value*100)/10000", "as": "percentage_value2"}
+      ],
+      "title": {
+        "text": {"expr": "selectedRegion.Region"},
+        "subtitle": ["Estimates 2015-2023 and Forecast 2023-2050"],
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "subtitleColor": "black",
+        "color": "black"
+      },
+      "mark": {"type": "line", "point": false},
+      "width": 250,
+      "height": 200,
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "title": null,
+          "type": "quantitative",
+          "axis": {
+            "values": ["2015", "2023", "2050"],
+            "format": "d",
+            "grid": true,
+            "gridDash": [5, 5]
+          }
+        },
+        "y": {
+          "field": "percentage_value2",
+          "title": null,
+          "type": "quantitative",
+          "scale": {"domain": [0, 0.25]},
+          "axis": {"grid": false, "format": "%"}
+        },
+        "color": {
+          "field": "Sex",
+          "type": "nominal",
+          "scale": {"range": ["#6d2480", "#fc5110"]},
+          "legend": {"title": "Gender"}
+        },
+        "tooltip": [
+          {"field": "Year", "type": "quantitative"},
+          {"field": "Sex", "type": "nominal"},
+          {
+            "field": "Value",
+            "title": "Proportion of day %",
+            "type": "quantitative"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {"view": {"stroke": "transparent"}}
+}
