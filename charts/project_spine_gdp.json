@@ -19,7 +19,7 @@
       "bind": {
         "input": "select",
         "options": ["All", "OECD", "G7"],
-        "labels": ["All", "OECD", "G7"],
+        "labels": ["All", "OECD", "G7 excl. Italy"],
         "name": "Country Group: "
       }
     }
@@ -30,7 +30,7 @@
   },
   "transform": [
     {
-      "filter": "countryGroup == 'All' || (countryGroup == 'G7' && indexof(['Canada', 'France', 'Germany', 'Italy', 'Japan', 'United Kingdom', 'United States'], datum.Country) >= 0) ||(countryGroup == 'OECD' && indexof(['Australia', 'New Zealand', 'Canada', 'Germany', 'France', 'United Kingdom', 'Belgium', 'Netherlands', 'Slovenia', 'Greece', 'Japan', 'Ireland', 'Portugal', 'Spain', 'United States', 'Turkey', 'Poland', 'Lithuania', 'Latvia', 'Estonia', 'Hungary', 'Korea, Republic of'], datum.Country) >= 0)"
+      "filter": "countryGroup == 'All' || (countryGroup == 'G7' && indexof(['Canada', 'France', 'Germany', 'Italy', 'Japan', 'United Kingdom', 'United States'], datum.Country) >= 0) ||(countryGroup == 'OECD' && indexof(['Australia', 'Italy', 'New Zealand', 'Canada', 'Germany', 'France', 'United Kingdom', 'Belgium', 'Netherlands', 'Slovenia', 'Greece', 'Japan', 'Ireland', 'Portugal', 'Spain', 'United States', 'Turkey', 'Poland', 'Lithuania', 'Latvia', 'Estonia', 'Hungary', 'Korea, Republic of'], datum.Country) >= 0)"
     },
     {
       "calculate": "datum.Country === 'The former Yugoslav Republic of Macedonia' ? 'Macedonia' : datum.Country === 'Korea, Republic of' ? 'South Korea' : datum.Country === 'Iran, Islamic Republic of' ? 'Iran' : datum.Country === 'Moldova, Republic of' ? 'Moldova' : datum.Country === 'Tanzania, United Republic of' ? 'Tanzania' : datum.Country",
