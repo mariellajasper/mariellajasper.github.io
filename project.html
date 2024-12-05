@@ -47,50 +47,63 @@
 
     <section class="chart-section">
         <h2>Aims of project</h2>
-        <p>Unpaid work is often unmeasured and undervalued. The prevailing measure of ‘economic health’ is gross domestic product (GDP), a monetary value of goods and services produced in an economy.</p>
-        <p>Yet GDP does not include unpaid care and domestic work, for which data is lacking, meaning the impact of unpaid work on lifestyle, wellbeing, and economic opportunities often goes unrecognised. For example, in 2016, the value of the UK’s unpaid household service work was estimated at 63.1% of GDP (ONS, 2018), but comparable statistics covering multiple years and countries are rare.</p>
-        <p>In a world with aging populations, artificial intelligence, and pervasive economic and gender inequality, valuing and analysing unpaid work is imperative. This project aims quantify and visualise how unpaid care and domestic work affect lifestyle and time use, wellbeing, and economic opportunities, and analyse how these impacts vary for men and women. </p>
+        <p>Unpaid work is often unmeasured and undervalued. It is not included in gross domestic product (GDP) and generally only measured in Time Use Surveys (TUS) which are not standardised nor regularly recorded in all countries (Charmes, 2021). Consequently, the impact of unpaid work on lifestyle, wellbeing, and economic opportunities often goes unrecognised (ILO, 2009).</p>
+        <p>In a world with concerns about aging populations, artificial intelligence, and pervasive economic and gender inequality, valuing and analysing unpaid work is imperative. This project aims to quantify and visualise how unpaid care and domestic work affect time use, daily life, and economic opportunities, and analyse how these impacts vary for men and women over time. </p>
+        <h2>Data and Charts</h2>
+        <p>As my raw and cleaned data is open on Github <>, the chart subtitles contain sources, and my Colab data cleaning codes are linked in-text, my project charts are reproducible and accessible. I used tabula, pandas, functions, and loops to scrape data, for automation and less duplication of code. For consistency and compatibility in Vega-Lite, I converted all data into long-form. </p>
         <div class="card2">
             <figure id="stacked_bar_unpaid_paid_global_gender"></figure>
         </div>
-        <p>This stacked bar chart shows an overview: women do more unpaid and total work than men.</p>
+        <p>This chart gives an overview of average time spent on work: globally women do roughly 3 times more unpaid work than men, and more total work. </p>
         
         <div class="card2">
           <figure id="unpaid_work_maps"></figure>
         </div>
-        <p>Map showing proportion of time spent on unpaid domestic and care work (% of 24 hour day)</p>
+        <p>To examine whether this is true for all countries or only as a global aggregate, I cleaned World Bank data in Colab <>, selecting values from the most recent TUS. Women do more unpaid work than men in every country - up to 19.3%pt (4h47m) more per day.</p>
         
         <div class="card2">
           <figure id="concat_unpaid_work_projections"></figure>
         </div>
-        <p>Proportion of time spent in unpaid care and domestic work, by sex. Different regions have different predicted trends by UN for unpaid work done by men and women. What will unpaid work commitments look like over next few years? How can policymakers work to address the imbalance?</p>
+        <p>Scraping PDF data in Colab <> for estimates and predications of time spent on unpaid work revealed large but decreasing gender gaps in all regions 2015-2050.</p>
 
         <div class="card2">
             <figure id="ons_24h"></figure>
             <figure id="atus_24h"></figure>
         </div>
-        <p>Unpaid care and domestic work in daily life. Percent of the UK population engaging in selected activities by time of day, March 2023 weekly averages</p>
-        <p>Percent of the US population (15+) engaging in selected activities by time of day, 2023 annual averages</p>
-
+        <p>To examine the scale of unpaid work in daily life, I converted ONS TUS data into long-format and scraped the ATUS data from a PDF - I aligned the activities and converted AM/PM into 24-hour time. </p>
         <div class="card2">
-            <figure id="bubble_unpaid_gender_gdppc"></figure>
             <img src="https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/images/regression_unpaid_gender_gdppc.png" alt="Regression">
         </div>
         <div class="card2">
             <figure id="bubble_unpaidratio_labourforceparticipation"></figure>
             <img src="https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/images/regression_unpaidratio_labourforceparticipation.png" alt="Regression">
         </div>
-        <p>Bubble ratio labour force</p>
+        <p>The first bubble chart uses data scraped from the OECD API and IMF data in Colab <>. Combining this with labour force data in Colab <>, I also analysed the relationship between the female-to-male ratio of unpaid work and female labour force participation, and performed linear regression analysis using scikit machine learning.</p>
 
         <div class="card2">
           <figure id="project_spine_gdp"></figure>
         </div>
-        <p>Spine</p>
+        <p>ILO estimates, scraped from a PDF in Colab <>, of the value of unpaid work demonstrate further gender imbalances.</p>
 
         <div class="card2">
           <figure id="automation"></figure>
         </div>
-        <p>dot plot</p>
+        <p>Finally, I considered the future of unpaid work and its potential automation through AI, with PDF data scraped in Colab.</p>
+        <h2>Challenges in Data Cleaning and Analysis</h2>
+        <p>Much of my data is from PDF reports and articles leading to a lot of scraping, which limited automation via loops as tables and rows would often differ considerably, requiring manual cleaning. Similarly, I had to use manual mappings as the ISO3166 library did not convert all countries to ISO3 codes. </p>
+        <p>The time of day stacked area chart provided some difficulties with time formatting. Data presentation was also important: I chose the colours, order of activities, and interactive legend to emphasise unpaid work. I could only find time-of-day data for the US and UK, as most published TUS data is aggregated. There is no time-of-day data disaggregated by gender.</p>
+        <p>For the Unpaid Work and Living Standards bubble chart, I wanted to add a gender parity line. However this caused issues with the interactive scaling, so I set the initial chart view to show the same axes domains to emphasise women do more unpaid work than men in every country, while interactivity still allows detailed exploration of the datapoints. Additionally, I was unsuccessful in retrieving OECD API data in JSON format, so I retrieved it in csv format using the headers dictionary.</p>
+        <p>The greatest challenge was the lack of standardised TUS and unpaid work valuation data. Nevertheless, my project’s data and charts explore the value of, time spent on, and gender inequality in unpaid work estimates, which prompt important conclusions. </p>
+
+        <h2>Conclusions</h2>
+        <p>On average, in every country, women spend more time on unpaid domestic and care work than men – currently approximately three times more and predicted to fall to two times more by 2050. High female-to-male unpaid work ratios are correlated with lower female labour market participation, causing reduced economic opportunities for women. Furthermore, most unpaid and paid work in the UK and US occur during the same hours (09:00-18:00), suggesting a potential trade-off between the two. This supports the regression result that the burden of unpaid work on women reduces their labour market participation. To remedy this, policies should be implemented to accelerate the progress towards gender equality in paid and unpaid work.</p>
+        <p>Despite unpaid work being a significant portion of daily life (around 3h per day, chart 1), and despite the large estimated value of unpaid work (41.3% of GDP in Australia, chart 7), unpaid work is not measured or analysed proportionately to paid work. Researching the motivations and socioeconomic factors behind unpaid work could improve policy approaches. </p>
+        <p>The high AI automation scores of several unpaid domestic activities suggests the potential of a second revolution for automating unpaid work, which could reduce women’s time spent on unpaid work. Automating unpaid work is therefore an interesting research and business area. </p>
+    </section>
+            
+    <section>
+        <p>Note: For the purpose of this project, I use ‘gender’ and ‘sex’ interchangeably as binary factors referring to men and women or males and females. In reality, there is a spectrum of intersex and gender identities, but these are not yet reflected in many data sources (NIH, 2023). < https://pmc.ncbi.nlm.nih.gov/articles/PMC10523819/>. Considering this topic through sociologic and economic perspectives supported by more data inclusive of gender identities, could reveal more about how societal and gender expectations affect unpaid/paid work participation and equality. 
+    </p>
     </section>
 
 
