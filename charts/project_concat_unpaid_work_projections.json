@@ -28,7 +28,7 @@
     {
       "title": {
         "text": "Forecast 2050",
-        "subtitle": [""],
+        "subtitle": ["Time spent on unpaid work, % of 24 hour day"],
         "subtitleFontStyle": "italic",
         "subtitleFontSize": 10,
         "subtitleColor": "black",
