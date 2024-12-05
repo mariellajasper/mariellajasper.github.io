@@ -9,11 +9,14 @@
     "axisY": {"ticks": false}
   },
   "title": {
-    "text": "How adults spend their day",
+    "text": "How US Adults Spend Their Day",
     "subtitle": [
       "Percent of the population (15+) engaging in selected activities by time of day, 2023 annual averages",
       "Source: American Time Use Survey, Bureau of Labor Statistics"
-    ]
+    ],
+    "fontSize": 14,
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic"
   },
   "data": {
     "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/atus_24h.csv"
