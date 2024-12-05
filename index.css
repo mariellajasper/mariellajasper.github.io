@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 24px;
   margin-bottom: 16px;
   font-weight: 600;
-  /*max-width: 800px;*/
+  max-width: 800px;
   font-family: 'Poppins', sans-serif;
   display: block;
   width: 100%;
@@ -137,23 +137,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Headings bigger than paragraph */
-.big {
-  font-size: 2.5em;
-}
-
 h2 {
   font-size: 1.75em;
+  max-width: 800px;
 }
 
 .small {
-  font-size: 1.25em;
+  font-size: 1em;
+  font-style: italic;
 }
 
 /* Paragraph */
 p {
   margin-bottom: 1em;
   font-weight: 300;
-  width: 100%;
+  max-width: 800px;
   text-align: center;
   display:block;
 }
