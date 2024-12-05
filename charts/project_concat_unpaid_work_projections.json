@@ -79,7 +79,7 @@
         },
         "tooltip": [
           {"field": "Region", "type": "nominal"},
-          {"field": "Sex", "type": "nominal"},
+          {"field": "Sex", "title": "Gender", "type": "nominal"},
           {"field": "Value", "type": "quantitative"}
         ]
       }
@@ -129,12 +129,8 @@
         },
         "tooltip": [
           {"field": "Year", "type": "quantitative"},
-          {"field": "Sex", "type": "nominal"},
-          {
-            "field": "Value",
-            "title": "Proportion of day %",
-            "type": "quantitative"
-          }
+          {"field": "Sex", "title": "Gender", "type": "nominal"},
+          {"field": "Value", "title": "Proportion of day %", "type": "quantitative"}
         ]
       }
     }
