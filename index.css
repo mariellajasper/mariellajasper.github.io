@@ -143,15 +143,16 @@ h2 {
 }
 
 .small {
-  font-size: 1em;
+  font-size: 12px;
   font-style: italic;
+  font-weight: 250;
 }
 
 /* Paragraph */
 p {
   margin-bottom: 1em;
   font-weight: 300;
-  max-width: 800px;
+  width: 500px;
   text-align: center;
   display:block;
 }
