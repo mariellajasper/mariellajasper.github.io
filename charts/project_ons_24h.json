@@ -9,11 +9,14 @@
     "axisY": {"ticks": false}
   },
   "title": {
-    "text": "How adults spend their day",
+    "text": "How UK adults spend their day",
     "subtitle": [
       "Percent of the population engaging in selected activities by time of day, March 2023 weekly averages",
       "Source: Time Use Survey, Office for National Statistics"
-    ]
+    ],
+    "fontSize": 14,
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic"
   },
   "data": {
     "url": "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/data/ons_24h.csv"
