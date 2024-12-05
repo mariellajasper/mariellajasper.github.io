@@ -3,11 +3,14 @@
   "width": 300,
   "height": 250,
   "title": {
-    "text": "Automation of Unpaid Domestic and Care Activities",
+    "text": "AI Automation: The Future of Unpaid Work?",
     "subtitle": [
       "Source: E. Hertog et al, Technological Forecasting & Social Change (2023)",
-      ""
-    ]
+      "Automation Scores of Unpaid Domestic and Care Activities"
+    ],
+    "fontSize": 14,
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic"
   },
   "config": {
     "view": {"stroke": "transparent"},
