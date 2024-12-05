@@ -8,7 +8,7 @@
     "subtitle": [
       "Value of unpaid care work as a percentage of GDP, US$ PPP 2011, by sex, latest year",
       "Source: ILO calculations based on Charmes, forthcoming and ILOSTAT.",
-      "Time Use Surveys from 1999-2015"
+      "Time Use Surveys from 1999-2015. Countries without data not included in country groups."
     ],
     "anchor": "start"
   },
@@ -19,7 +19,7 @@
       "bind": {
         "input": "select",
         "options": ["All", "OECD", "G7"],
-        "labels": ["All", "OECD", "G7 excl. Italy"],
+        "labels": ["All", "OECD", "G7"],
         "name": "Country Group: "
       }
     }
