@@ -10,6 +10,9 @@
       "Source: ILO calculations based on Charmes, forthcoming and ILOSTAT.",
       "Time Use Surveys from 1999-2015. Countries without data not included in country groups."
     ],
+    "fontSize": 14,
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic",
     "anchor": "start"
   },
   "params": [
