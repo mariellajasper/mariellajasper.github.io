@@ -2,12 +2,12 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": {
-      "expr": "dataSource === 'female' ? 'Time Spent on Unpaid Work, Females' : dataSource === 'male' ? 'Time Spent on Unpaid Work, Males' : 'Time Spent on Unpaid Work, Gender Gap'"
+      "expr": "dataSource === 'female' ? 'Time Spent on Unpaid Work, Females' : dataSource === 'male' ? 'Time Spent on Unpaid Work, Males' : 'Time Spent on Unpaid Work, Gender Gap (Females-Males)'"
     },
     "subtitle": [
-      "Proportion of time spent on unpaid domestic and care work (% of 24 hour day)",
-      "Most Recent Year Available, Source: World Bank",
-      "Natural Earth Projection"
+      "Proportion of time spent on unpaid domestic and care work",
+      "(% of 24 hour day or percentage point difference)",
+      "Most Recent Year Available, Source: World Bank, Natural Earth Projection"
     ],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
@@ -21,7 +21,7 @@
       "bind": {
         "input": "select",
         "options": ["female", "male", "gender_gap"],
-        "labels": ["Female", "Male", "Gender Gap"],
+        "labels": ["Females", "Males", "Gender Gap"],
         "name": "Select: "
       }
     }
@@ -80,7 +80,7 @@
       "as": "selected_year"
     },
     {
-      "calculate": "round(datum.selected_value * 100) / 100 + '%'",
+      "calculate": "round(datum.selected_value * 100) / 100 + (dataSource === 'gender_gap' ? 'pp gender gap' : '%')",
       "as": "rounded_value"
     }
   ],
@@ -97,16 +97,17 @@
         "color": {
           "field": "selected_value",
           "type": "quantitative",
-          "legend": {"title": "", "labelExpr": "datum.value + '%'"},
+          "legend": {
+            "title": "",
+            "labelExpr": "datum.value + (dataSource === 'gender_gap' ? 'pp' : '%')"
+          },
           "scale": {
-            "scheme": {
-              "expr": "dataSource === 'gender_gap' ? 'bluepurple' : 'greenblue'"
-            }
+            "scheme": {"expr": "dataSource === 'gender_gap' ? 'bluepurple' : 'greenblue'"}
           }
         },
         "tooltip": [
           {"field": "selected_country", "title": "Country"},
-          {"field": "rounded_value", "title": "Proportion of Day"},
+          {"field": "rounded_value","title": "Proportion of Day"},
           {"field": "selected_year", "title": "Year"}
         ]
       }
