@@ -61,7 +61,7 @@
         <p>Map showing proportion of time spent on unpaid domestic and care work (% of 24 hour day)</p>
         
         <div class="card2">
-          <figure id="trellis_line_unpaid_paid_work_projections"></figure>
+          <figure id="concat_unpaid_work_projections"></figure>
         </div>
         <p>Proportion of time spent in unpaid care and domestic work, by sex. Different regions have different predicted trends by UN for unpaid work done by men and women. What will unpaid work commitments look like over next few years? How can policymakers work to address the imbalance?</p>
 
@@ -99,8 +99,8 @@
         vegaEmbed('#stacked_bar_unpaid_paid_global_gender', figure_1_spec)
         let figure_2_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_unpaid_work_maps.json";                                                                                                                  // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
         vegaEmbed('#unpaid_work_maps', figure_2_spec)
-        let figure_3_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_trellis_line_unpaid_paid_work_projections.json";
-        vegaEmbed('#trellis_line_unpaid_paid_work_projections', figure_3_spec)
+        let figure_3_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_concat_unpaid_work_projections.json";
+        vegaEmbed('#concat_unpaid_work_projections', figure_3_spec)
         let figure_4_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_ons_24h.json";
         vegaEmbed('#ons_24h', figure_4_spec)
         let figure_5_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_atus_24h.json";
