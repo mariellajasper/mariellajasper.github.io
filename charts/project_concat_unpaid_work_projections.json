@@ -80,7 +80,7 @@
         "tooltip": [
           {"field": "Region", "type": "nominal"},
           {"field": "Sex", "title": "Gender", "type": "nominal"},
-          {"field": "Value", "type": "quantitative"}
+          {"field": "Value", "title": "Proportion of day %", "type": "quantitative"}
         ]
       }
     },
