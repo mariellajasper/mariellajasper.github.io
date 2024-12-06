@@ -2,30 +2,32 @@
 <!DOCTYPE html>
 <html> 
 <head>    
+    <!-- Link to css style sheet -->
     <link rel="stylesheet" type="text/css" href="index.css">
+
+    <!-- Name of webpage -->
     <title>Project: Unpaid Work</title> 
-    
+
+    <!-- JavaScript code to allow Vega-Lite visualisation embedding -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
+    <!-- Link to Google Fonts for Poppins and Merriweather fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
 
-    <style>
-        #chartGrid {
-            display: flex;
-        }
-    </style>
-    
+    <!-- Adding a website icon -->
     <link rel="icon" 
      type="image/png" 
      href="https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/images/site_icon.png">
     
 </head>
 
+<!-- The body is everything that appears on the webpage -->
 <body> 
+    <!-- Navigation bar with links along the top of my page -->
     <nav class="navbar">
       <div class="page-title">Mariella Jasper</div>
       <a href="#" class="toggle-button">
@@ -41,12 +43,14 @@
         </ul>
       </div>
     </nav>
-    
+
+    <!-- My hero section has the project title and subtitle -->
     <section class="hero">
         <h1>Project: Unpaid Work, Lifestyle, and Gender</h1>
         <p>How do unpaid care and domestic work shape the lives of men and women?</p>
     </section>
 
+    <!-- The chart section below contains the four key areas of my project: aims, data and visualisations, challenges, and conclusions -->
     <section class="chart-section">
         <h1>Aims of project</h1>
         <p>Unpaid work is often unmeasured and undervalued. It is not included in gross domestic product (GDP) and generally only measured in Time Use Surveys (TUS) which are not standardised nor regularly recorded in all countries (<a href="https://data.unwomen.org/sites/default/files/documents/Publications/Measuring%20time%20use.pdf">Charmes, 2021</a>). Consequently, the impact of unpaid work on lifestyle, wellbeing, and economic opportunities often goes unrecognised (<a href="https://www.ilo.org/media/340286/download">ILO, 2009</a>).</p>
@@ -111,7 +115,8 @@
         <p>Despite unpaid work constituting a considerable portion of daily life (4h25m for women and 1h23m for men on average per day, visualisation 1), and despite the large estimated values of unpaid work globally (e.g. 41.3% of GDP in Australia and 22.0% in the UK, visualisation 7), unpaid work is not measured or analysed proportionately to paid work. Researching the motivations and socioeconomic factors behind unpaid work could improve policy approaches to increase gender equality and living standards.</p>
         <p>Finally, high automation scores of several unpaid domestic activities indicate AI could create a second revolution, building on the achievements of electrical domestic appliances. Further automation could reduce women’s time spent on unpaid work - this could be an important research field and a profitable market.</p>
     </section>
-            
+
+    <!-- This section gives the word count and a note on terminology -->
     <section class="chart-section">
         <p>Word count, excluding titles and headings: 798 words (Aims 111, Data 258, Challenges 220, Conclusions 209).</p>
         <p class="small">Note: For the purpose of this project, I use ‘gender’ and ‘sex’ interchangeably as binary factors referring to men and women or males and females. In reality, there is a spectrum of intersex and gender identities, but these are not yet reflected in many data sources (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10523819/">NIH, 2023</a>). Considering this topic through sociologic and economic perspectives supported by data inclusive of gender identities could reveal more about how societal and gender expectations affect unpaid and paid work participation and equality. 
@@ -119,9 +124,10 @@
     </section>
 
 
+    <!-- This JavaScript section allows embedding of my Vega-Lite visualisations -->
     <script>
-        let figure_1_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_stacked_bar_unpaid_paid_global_gender.json"; 
-        vegaEmbed('#stacked_bar_unpaid_paid_global_gender', figure_1_spec)
+        let figure_1_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_stacked_bar_unpaid_paid_global_gender.json"; // Storing the URL of the graph in a variable
+        vegaEmbed('#stacked_bar_unpaid_paid_global_gender', figure_1_spec) // Using the vegaEmbed function to put a graph in the element with id stacked_bar_unpaid_paid_global_gender
         let figure_2_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_unpaid_work_maps.json";                                                                                                                
         vegaEmbed('#unpaid_work_maps', figure_2_spec)
         let figure_3_spec = "https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/charts/project_concat_unpaid_work_projections.json";
