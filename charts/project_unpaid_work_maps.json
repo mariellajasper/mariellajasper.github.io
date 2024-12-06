@@ -80,7 +80,7 @@
       "as": "selected_year"
     },
     {
-      "calculate": "round(datum.selected_value * 100) / 100 + (dataSource === 'gender_gap' ? 'pp gender gap' : '%')",
+      "calculate": "round(datum.selected_value * 100) / 100 + (dataSource === 'gender_gap' ? 'pp' : '%')",
       "as": "rounded_value"
     }
   ],
