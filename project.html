@@ -51,64 +51,64 @@
         <h1>Aims of project</h1>
         <p>Unpaid work is often unmeasured and undervalued. It is not included in gross domestic product (GDP) and generally only measured in Time Use Surveys (TUS) which are not standardised nor regularly recorded in all countries (<a href="https://data.unwomen.org/sites/default/files/documents/Publications/Measuring%20time%20use.pdf">Charmes, 2021</a>). Consequently, the impact of unpaid work on lifestyle, wellbeing, and economic opportunities often goes unrecognised (<a href="https://www.ilo.org/media/340286/download">ILO, 2009</a>).</p>
         <p>With ageing populations, the rise of artificial intelligence, and pervasive economic and gender inequality, valuing and analysing unpaid work is more relevant than ever. This project aims to quantify and visualise how unpaid care and domestic work affect time use, daily life, and economic opportunities, and analyse how these impacts vary for men and women over time. </p>
-        <h1>Data and Charts</h1>
-        <p>My project charts are reproducible and accessible because my data is on <a href="https://github.com/mariellajasper/mariellajasper.github.io">GitHub</a>, the chart subtitles contain sources, and my Colab data cleaning notebooks with comments are linked in-text. For automation, I used tabula, pandas, functions, and loops to scrape data in Colab. For consistency and compatibility in Vega-Lite, I converted all data into long-form.</p>
+        <h1>Data and Visualisations</h1>
+        <p>My project visualisations are reproducible and accessible because my data is on <a href="https://github.com/mariellajasper/mariellajasper.github.io">GitHub</a>, the visualisation subtitles contain sources, and my Colab data cleaning notebooks with comments are linked in-text. For automation, I used tabula, pandas, functions, and loops to scrape data in Colab. For consistency and compatibility in Vega-Lite, I converted all data into long-form.</p>
         <div class="card2">
-            <h2>Chart 1</h2>
+            <h2>Visualisation 1</h2>
             <figure id="stacked_bar_unpaid_paid_global_gender"></figure>
         </div>
-        <p>This chart gives an overview of average time spent on work: globally women do approximately three times more unpaid work than men. </p>
+        <p>This visualisation gives an overview of average time spent on work: globally women do approximately three times more unpaid work than men. </p>
         
         <div class="card2">
-          <h2>Chart 2</h2>
+          <h2>Visualisation 2</h2>
             <figure id="unpaid_work_maps"></figure>
         </div>
         <p>To examine whether this is true for all countries or only as a global aggregate, I cleaned data in <a href="https://colab.research.google.com/drive/1BdnueJd6FrwovYNp8wcdL9Y4CmXyD9_v?usp=sharing">Colab</a>, selecting values from the most recent TUS, revealing women do more unpaid work than men in every country.</p>
         
         <div class="card2">
-            <h2>Chart 3</h2>
+            <h2>Visualisation 3</h2>
           <figure id="concat_unpaid_work_projections"></figure>
         </div>
         <p>Scraping PDF data in <a href="https://colab.research.google.com/drive/1nMLDg93JfOViuKtwNzsTaUGJiwnWB-lc?usp=sharing">Colab</a> for unpaid work forecasts shows large but decreasing gender gaps in all regions 2015-2050.</p>
 
         <div class="card2">
-            <h2>Chart 4</h2>
+            <h2>Visualisation 4</h2>
             <figure id="ons_24h"></figure>
             <figure id="atus_24h"></figure>
         </div>
         <p>To examine the scale of unpaid work in daily life, I converted ONS TUS data into long-format and scraped the ATUS data from a PDF in <a href="https://colab.research.google.com/drive/1Y1YEnBGg2hesi0xTJc4XTGIPR0xK21RZ?usp=sharing">Colab</a> - I aligned the activities and converted AM/PM into 24-hour time. </p>
         <div class="card2">
-            <h2>Chart 5</h2>
+            <h2>Visualisation 5</h2>
             <figure id="bubble_unpaid_gender_gdppc"></figure>
         </div>
         <div class="card2">
-            <h2>Chart 6</h2>
+            <h2>Visualisation 6</h2>
             <figure id="bubble_unpaidratio_labourforceparticipation"></figure>
             <img src="https://raw.githubusercontent.com/mariellajasper/mariellajasper.github.io/refs/heads/main/images/regression_unpaidratio_labourforceparticipation.png" alt="Regression">
         </div>
         <p>The first bubble chart uses data scraped from the OECD API and IMF data in <a href="https://colab.research.google.com/drive/1wL9bcgZFj2QxoXRFraqkLBnOphmAK5bx?usp=sharing">Colab</a>. Combining this with labour force data in <a href="https://colab.research.google.com/drive/1yfBi6G7LEwsWzHdvWG-sVd_aEfGXFtOs?usp=sharing">Colab</a>, I then analysed the relationship between the female-to-male ratio of unpaid work and female labour force participation, and performed linear regression analysis using scikit machine learning.</p>
 
         <div class="card2">
-            <h2>Chart 7</h2>
+            <h2>Visualisation 7</h2>
           <figure id="project_spine_gdp"></figure>
         </div>  
         <p>Scraped from a PDF in <a href="https://colab.research.google.com/drive/1CmOi3_nuoRxa9MztGxbnaBreHU4cQ1EY?usp=sharing">Colab</a>,  ILO calculations of unpaid work’s value demonstrate further gender imbalances. </p>
 
         <div class="card2">
-            <h2>Chart 8</h2>
+            <h2>Visualisation 8</h2>
           <figure id="automation"></figure>
         </div>  
         <p>Finally, I considered the future of unpaid work and its potential automation through AI, with PDF data scraped in <a href="https://colab.research.google.com/drive/1fiRWkTh6CiSuFkrzcIkug5ZS8Hf_AbUD?usp=sharing">Colab.</a></p>
         
         <h1>Challenges in Data Cleaning and Analysis</h1>
         <p>As much of my data is from reports and articles, I had to scrape multiple PDFs. This limited automation via loops, because tables and rows would often differ considerably, requiring manual cleaning. Similarly, I used manual country mappings as the ISO3166 library did not convert all countries to ISO3 codes.</p>
-        <p>To emphasise unpaid work in the stacked area chart, I carefully chose the colours, order of activities, and interactive legend. I could only find time-of-day data for the US and UK, as most published TUS data is aggregated, and unfortunately there is no time-of-day data disaggregated by gender which limited my gender analysis.</p>
+        <p>To emphasise unpaid work in the stacked area visualisation, I carefully chose the colours, order of activities, and interactive legend. I could only find time-of-day data for the US and UK, as most published TUS data is aggregated, and unfortunately there is no time-of-day data disaggregated by gender which limited my gender analysis.</p>
         <p>For the Unpaid Work and Living Standards bubble chart, I wanted to add a gender parity line. However this caused issues with the interactive scaling, so I set the initial chart view to show the same axes domains to emphasise women do more unpaid work than men in every country, while interactivity still allows detailed exploration of the datapoints. Additionally, I was unsuccessful in retrieving OECD API data in JSON format, so I retrieved it in csv format using the headers dictionary.</p>
-        <p>The greatest challenge was the lack of standardised TUS and unpaid work valuation data. Nevertheless, my project’s data and charts explore the time spent on, value of, and gender inequality in unpaid work estimates, which prompt important conclusions.</p>
+        <p>The greatest challenge was the lack of standardised TUS and unpaid work valuation data. Nevertheless, my project’s data and visualisations explore the time spent on, value of, and gender inequality in unpaid work estimates, which prompt important conclusions.</p>
 
         <h1>Conclusions</h1>
         <p>My project quantifies that on average, in every country, women spend more time on unpaid domestic and care work than men. Most unpaid and paid work in the UK and US occur during the same hours (09:00-18:00), suggesting a potential trade-off between the activities. This supports the regression result that the burden of unpaid work on women reduces their labour market participation, causing reduced economic opportunities for women. To remedy this, policies should be implemented to accelerate progress towards gender equality in paid and unpaid work.</p>
-        <p>Despite unpaid work constituting a considerable portion of daily life (4h25m for women and 1h23m for men on average per day, chart 1), and despite the large estimated values of unpaid work globally (e.g. 41.3% of GDP in Australia and 22% in the UK, chart 7), unpaid work is not measured or analysed proportionately to paid work. Researching the motivations and socioeconomic factors behind unpaid work could improve policy approaches to improve gender equality and living standards.</p>
+        <p>Despite unpaid work constituting a considerable portion of daily life (4h25m for women and 1h23m for men on average per day, visualisation 1), and despite the large estimated values of unpaid work globally (e.g. 41.3% of GDP in Australia and 22% in the UK, visualisation 7), unpaid work is not measured or analysed proportionately to paid work. Researching the motivations and socioeconomic factors behind unpaid work could improve policy approaches to improve gender equality and living standards.</p>
         <p>Finally, high AI automation scores of several unpaid domestic activities suggest the potential of a revolution for automating unpaid work, which could reduce women’s time spent on unpaid work - this could be both an important research field and a profitable market.</p>
     </section>
             
